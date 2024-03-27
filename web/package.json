@@ -1,0 +1,19 @@
+{
+  "name": "@whitehawkcec/whitehawk-proto",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src-gen/**/*.ts --format cjs,esm --minify --clean && tsc"
+  },
+  "dependencies": {
+    "@protobuf-ts/runtime": "^2.8.1",
+    "@protobuf-ts/runtime-rpc": "^2.8.1",
+    "google-protobuf": "^3.21.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "tsup": "^6.6.3",
+    "typescript": "^4.8.4"
+  }
+}
