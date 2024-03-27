@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package mtprm.proto.app.admin.resources.entities.v1;
+
+import "mtprm/proto/app/uuid/v1/message.proto";
+
+service Service {
+  rpc Create(CreateRequest) returns (CreateResponse) {}
+  rpc Read(ReadRequest) returns (ReadResponse) {}
+  rpc Update(UpdateRequest) returns (UpdateResponse) {}
+  rpc Delete(DeleteRequest) returns (DeleteResponse) {}
+  rpc List(ListRequest) returns (ListResponse) {}
+}
+
+message CreateRequest {
+  EntityData data = 1;
+}
+
+message CreateResponse {
+  mtprm.proto.app.uuid.v1.Uuid entity_id = 1;
+}
+
+message ReadRequest {
+  mtprm.proto.app.uuid.v1.Uuid entity_id = 1;
+}
+
+message ReadResponse {
+  Entity entity = 1;
+}
+
+message UpdateRequest {
+  Entity entity = 1;
+}
+
+message UpdateResponse {}
+
+message DeleteRequest {
+  mtprm.proto.app.uuid.v1.Uuid entity_id = 1;
+}
+
+message DeleteResponse {}
+
+message ListRequest {}
+
+message ListResponse {
+  repeated Entity entities = 1;
+}
+
+message Entity {
+  mtprm.proto.app.uuid.v1.Uuid entity_id = 1;
+  EntityData data = 2;
+}
+
+message EntityData {
+  string name = 1;
+  uint64 case_number = 2;
+  string resolved_domain = 3;
+}
