@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/MTPRM/mtprm-proto/compare/2.0.0...3.0.0) (2024-03-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **app-admin:** remove example `.proto`
+
+### Features
+
+* **app-admin:** remove example `.proto` ([ba3bae1](https://github.com/MTPRM/mtprm-proto/commit/ba3bae1a716ab9e7bc44ea25a5a0109efed06755))
+
 ## 2.0.0 (2024-03-27)
 
 
