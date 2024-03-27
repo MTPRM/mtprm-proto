@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Auto format
+
+on:
+  schedule:
+    - cron: "0 5 * * 1-5"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install nix
+        uses: cachix/install-nix-action@v21
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(nix develop --command pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Cache pnpm
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Cache maven
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Install dependencies
+        run: nix develop --command pnpm install
+
+      - name: Ignore changes to lock files
+        run: |
+          git checkout .
+
+      - name: Configure git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Auto format (buf)
+        run: |
+          nix develop --command buf format -w
+      - name: Commit changes (buf)
+        run: |
+          git add -u
+          git commit -m 'style: `buf format -w`' || true
+
+      - name: Auto format (java)
+        run: |
+          cd java/
+          nix develop --command ./mvnw -s settings.xml -Pformat
+      - name: Commit changes (java)
+        run: |
+          git add -u
+          git commit -m 'style: `./mvnw -settings.xml -Pformat`' || true
+
+      - name: Auto format (prettier)
+        run: |
+          git ls-files '*.js' '*.yml' '*.yaml' '*.json' '*.md' -z | xargs -0 nix develop --command pnpm exec prettier --write
+      # Cannot modify .github/workflows (refusing to allow a GitHub App to create or update workflow)
+      - name: Ignore github workflows
+        run: |
+          git checkout .github/workflows
+      - name: Commit changes (prettier)
+        run: |
+          git add -u
+          git commit -m 'style: `prettier --write`' || true
+
+      - name: Push changes
+        run: |
+          git push
