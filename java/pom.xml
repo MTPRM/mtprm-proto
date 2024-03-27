@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.whitehawk.mtprm.proto</groupId>
+  <artifactId>proto</artifactId>
+  <version>0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <github.repo>mtprm/mtprm-proto</github.repo>
+    <github.url>https://maven.pkg.github.com/${github.repo}</github.url>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <!-- maven-install-plugin -->
+    <installAtEnd>true</installAtEnd>
+    <!-- maven-deploy-plugin -->
+    <deployAtEnd>false</deployAtEnd>
+
+    <!-- Allows output directory to be overridden -->
+    <build.dir.name>target</build.dir.name>
+  </properties>
+
+  <modules>
+    <module>proto-parent</module>
+    <module>proto-server</module>
+  </modules>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <url>${github.url}</url>
+    </repository>
+  </distributionManagement>
+
+  <build>
+    <directory>${basedir}/${build.dir.name}</directory>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.8</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.1.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.0.0-M1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-failsafe-plugin</artifactId>
+          <version>3.0.0-M5</version>
+          <executions>
+            <execution>
+              <id>integration-test</id>
+              <goals>
+                <goal>integration-test</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>verify</id>
+              <goals>
+                <goal>verify</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <argLine>-Xmx2g</argLine>
+          </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-help-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>3.0.0-M1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.9.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>3.2.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M4</version>
+          <configuration>
+            <argLine>-Xmx500m</argLine>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>com.diffplug.spotless</groupId>
+          <artifactId>spotless-maven-plugin</artifactId>
+          <version>2.11.1</version>
+
+          <configuration>
+            <java>
+              <removeUnusedImports />
+
+              <importOrder>
+                <order>java,javax,org,com,</order>
+              </importOrder>
+
+              <eclipse>
+                <version>4.13.0</version>
+                <file>
+                  ${maven.multiModuleProjectDirectory}/../.dev/eclipse/eclipse-formatter.xml
+                </file>
+              </eclipse>
+
+              <replaceRegex>
+                <name>removeBlankLinesAfterOpenBrace</name>
+                <searchRegex>(?m)(?&lt;=\{\n)\n+()</searchRegex>
+                <!-- HACK: Use empty group as workaround for empty string -->
+                <replacement>$1</replacement>
+              </replaceRegex>
+
+              <replaceRegex>
+                <name>removeBlankLinesBeforeCloseBrace</name>
+                <searchRegex>(?m)(?&lt;=\n)\n+(?=\s*\})()</searchRegex>
+                <!-- HACK: Use empty group as workaround for empty string -->
+                <replacement>$1</replacement>
+              </replaceRegex>
+            </java>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>versions-maven-plugin</artifactId>
+          <version>2.8.1</version>
+          <configuration>
+            <generateBackupPoms>false</generateBackupPoms>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>se.jiderhamn</groupId>
+          <artifactId>promote-maven-plugin</artifactId>
+          <version>2.0.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <profiles>
+    <!--
+      | Arguments                   | Output |
+      | =========================== | ====== |
+      | -DnewVersion=A              | A      |
+    -->
+    <profile>
+      <id>prepare-release</id>
+      <build>
+        <defaultGoal>versions:set</defaultGoal>
+      </build>
+    </profile>
+    <profile>
+      <id>build-release</id>
+      <build>
+        <defaultGoal>
+          clean source:jar verify promote:make-promotable
+        </defaultGoal>
+      </build>
+    </profile>
+    <profile>
+      <id>publish-release</id>
+      <build>
+        <defaultGoal>promote:artifacts deploy:deploy</defaultGoal>
+      </build>
+    </profile>
+    <profile>
+      <id>format</id>
+      <build>
+        <defaultGoal>spotless:apply</defaultGoal>
+      </build>
+    </profile>
+  </profiles>
+</project>
