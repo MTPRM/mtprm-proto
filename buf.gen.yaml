@@ -8,6 +8,5 @@ plugins:
     out: java/proto-server/src-gen/main/java/
   - plugin: buf.build/connectrpc/es:v1.4.0
     out: web/src-gen
-  # dependencies
   - plugin: buf.build/bufbuild/es
     out: web/src-gen
