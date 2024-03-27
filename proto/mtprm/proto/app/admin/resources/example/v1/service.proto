@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package mtprm.proto.app.admin.resources.example.v1;
+
+service ExampleService {
+  rpc Example(ExampleRequest) returns (ExampleResponse) {}
+}
+
+message ExampleRequest {
+  string sentence = 1;
+}
+
+message ExampleResponse {
+  string sentence = 1;
+}
