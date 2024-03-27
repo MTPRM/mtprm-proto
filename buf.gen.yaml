@@ -1,0 +1,13 @@
+version: v1
+managed:
+  enabled: true
+plugins:
+  - plugin: buf.build/protocolbuffers/java:v24.3
+    out: java/proto-server/src-gen/main/java/
+  - plugin: buf.build/grpc/java:v1.58.0
+    out: java/proto-server/src-gen/main/java/
+  - plugin: buf.build/connectrpc/es:v1.4.0
+    out: web/src-gen
+  # dependencies
+  - plugin: buf.build/bufbuild/es
+    out: web/src-gen
