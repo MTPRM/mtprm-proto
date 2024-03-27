@@ -7,6 +7,9 @@
     "build": "tsup src-gen/**/*.ts --format cjs,esm --minify --clean && tsc"
   },
   "dependencies": {
+    "@bufbuild/protobuf": "^1.8.0",
+    "@connectrpc/connect": "^1.4.0",
+    "@connectrpc/connect-web": "^1.4.0",
     "@protobuf-ts/runtime": "^2.8.1",
     "@protobuf-ts/runtime-rpc": "^2.8.1",
     "google-protobuf": "^3.21.2"
