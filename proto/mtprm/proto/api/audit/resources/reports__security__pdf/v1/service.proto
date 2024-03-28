@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.proto.api.audit.resources.reports__security__pdf.v1;
+
+service Service {
+  rpc Get(GetRequest) returns (GetResponse) {}
+}
+
+message GetRequest {}
+
+message GetResponse {
+  bytes chunk = 1;
+}
