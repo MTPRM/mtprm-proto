@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/MTPRM/mtprm-proto/compare/4.0.0...5.0.0) (2024-03-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-audit:** prefer to use imported `GradeLetter`
+
+### Features
+
+* **api-audit:** add `entities__0__reports__security__docx.v1` resource ([c0d866c](https://github.com/MTPRM/mtprm-proto/commit/c0d866cebb18ece35815079f2010a3b38647a358))
+* **api-audit:** add `entities__0__reports__security__pdf.v1` resource ([1aff1c5](https://github.com/MTPRM/mtprm-proto/commit/1aff1c5b629495690e7b94ed993d63dfc7ef801d))
+* **api-audit:** add `entities__0__reports__security.v1` resource ([82737c8](https://github.com/MTPRM/mtprm-proto/commit/82737c8e523f372dbce9da5b7c335249bb490ee7))
+* **api-audit:** add `reports__security__docx.v1` resource ([792fa1d](https://github.com/MTPRM/mtprm-proto/commit/792fa1d5582fe3321c976366f662fc8f13611527))
+* **api-audit:** add `reports__security__pdf.v1` resource ([40237c4](https://github.com/MTPRM/mtprm-proto/commit/40237c4af06d6b52e64591e8f53373f76e0a9872))
+* **api-audit:** add `reports__security.v1` resource ([69ee3da](https://github.com/MTPRM/mtprm-proto/commit/69ee3dab37fbb16c3ee39b2238d848753d2a2906))
+* **api-audit:** prefer to use imported `GradeLetter` ([a2aa1be](https://github.com/MTPRM/mtprm-proto/commit/a2aa1bee67405c0172e3ac98ec4e468047349c5b))
+* **api:** add `grade_letter` message ([759cc65](https://github.com/MTPRM/mtprm-proto/commit/759cc65343fb213e210017c1e022af3eece25751))
+* **api:** add `time` message ([030736e](https://github.com/MTPRM/mtprm-proto/commit/030736e74fd0fb324dcdb215b0d9269c3912dd3f))
+
+
+### Bug Fixes
+
+* **api-audit:** use correct import ([e223435](https://github.com/MTPRM/mtprm-proto/commit/e22343513a4851703b694e66f24029f8270c5fd7))
+
 ## [4.0.0](https://github.com/MTPRM/mtprm-proto/compare/3.0.0...4.0.0) (2024-03-28)
 
 
