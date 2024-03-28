@@ -17,11 +17,11 @@ message CreateRequest {
 }
 
 message CreateResponse {
-  mtprm.proto.app.uuid.v1.Uuid entity_id = 1;
+  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
 }
 
 message ReadRequest {
-  mtprm.proto.app.uuid.v1.Uuid entity_id = 1;
+  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
 }
 
 message ReadResponse {
@@ -35,7 +35,7 @@ message UpdateRequest {
 message UpdateResponse {}
 
 message DeleteRequest {
-  mtprm.proto.app.uuid.v1.Uuid entity_id = 1;
+  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
 }
 
 message DeleteResponse {}
@@ -49,7 +49,7 @@ message ListResponse {
 }
 
 message Entity {
-  mtprm.proto.app.uuid.v1.Uuid entity_id = 1;
+  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
   EntityData data = 2;
 }
 
