@@ -3,6 +3,7 @@ syntax = "proto3";
 package mtprm.proto.api.audit.resources.entities.v1;
 
 import "mtprm/proto/api/uuid/v1/message.proto";
+import "mtprm/proto/api/grade_letter/v1/message.proto";
 
 service Service {
   rpc Create(CreateRequest) returns (CreateResponse) {}
@@ -41,7 +42,7 @@ message DeleteRequest {
 message DeleteResponse {}
 
 message ListRequest {
-  optional GradeLetter grade_letter = 1;
+  optional mtprm.proto.api.grade_letter.v1.GradeLetter grade_letter = 1;
 }
 
 message ListResponse {
@@ -57,13 +58,4 @@ message EntityData {
   string name = 1;
   uint64 case_number = 2;
   string resolved_domain = 3;
-}
-
-enum GradeLetter {
-  GRADE_LETTER_UNSPECIFIED = 0;
-  GRADE_LETTER_A = 1;
-  GRADE_LETTER_B = 2;
-  GRADE_LETTER_C = 3;
-  GRADE_LETTER_D = 4;
-  GRADE_LETTER_F = 5;
 }
