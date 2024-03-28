@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.proto.api.audit.resources.entities__0__reports__security__pdf.v1;
+
+import "mtprm/proto/api/uuid/v1/message.proto";
+
+service Service {
+  rpc Get(GetRequest) returns (GetResponse) {}
+}
+
+message GetRequest {
+  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
+}
+
+message GetResponse {
+  bytes chunk = 1;
+}
