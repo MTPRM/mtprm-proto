@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/MTPRM/mtprm-proto/compare/3.0.0...4.0.0) (2024-03-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **app:** remove `app` project
+
+### Features
+
+* **api-audit:** add `entities/v1` resource ([2701f81](https://github.com/MTPRM/mtprm-proto/commit/2701f81dd010014e9423b80ea881b741cc60aab1))
+* **api:** add `uuid` message ([1619585](https://github.com/MTPRM/mtprm-proto/commit/161958524d33ccf1f6978f1ee88068e9bc683afc))
+* **app:** remove `app` project ([e6e9410](https://github.com/MTPRM/mtprm-proto/commit/e6e94102992c422a671f1059cf72cef1632fccfb))
+
 ## [3.0.0](https://github.com/MTPRM/mtprm-proto/compare/2.0.0...3.0.0) (2024-03-27)
 
 
