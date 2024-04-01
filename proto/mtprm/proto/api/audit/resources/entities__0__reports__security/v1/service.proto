@@ -3,9 +3,8 @@ syntax = "proto3";
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.proto.api.audit.resources.entities__0__reports__security.v1;
 
+import "mtprm/proto/api/security_report/v1/message.proto";
 import "mtprm/proto/api/uuid/v1/message.proto";
-import "mtprm/proto/api/time/v1/message.proto";
-import "mtprm/proto/api/grade_letter/v1/message.proto";
 
 service Service {
   rpc Get(GetRequest) returns (GetResponse) {}
@@ -16,73 +15,5 @@ message GetRequest {
 }
 
 message GetResponse {
-  SecurityReport security_report = 1;
-}
-
-message SecurityReport {
-  SecuritReportProfile security_report_profile = 1;
-  ThirdPartyProfile third_party_profile = 2;
-  Data data = 3;
-}
-
-message SecuritReportProfile {
-  mtprm.proto.api.time.v1.IsoDateTime report_date = 1;
-  mtprm.proto.api.time.v1.IsoDateTime last_report_date = 2;
-}
-
-message ThirdPartyProfile {
-  mtprm.proto.api.uuid.v1.Uuid id = 1;
-  string name = 2;
-  string resolved_domain = 3;
-  string industry = 4;
-}
-
-message Data {
-  ScoreSummary score_summary = 1;
-  PerformanceSummary performance = 2;
-  repeated RiskDomainIssuesMetrics risk_domain_issues_metrics = 3;
-}
-
-message ScoreSummary {
-  mtprm.proto.api.grade_letter.v1.GradeLetter risk_rating_grade = 1;
-  string rating_description = 2;
-}
-
-message PerformanceSummary {
-  uint32 risk_rating_score = 1;
-  repeated RiskDomainPerformance risk_domain_performance = 2;
-}
-
-enum RiskDomainId {
-  RISK_DOMAIN_ID_UNSPECIFIED = 0;
-  RISK_DOMAIN_ID_APP_SECURITY = 1;
-  RISK_DOMAIN_ID_BREACH_EVENTS = 2;
-  RISK_DOMAIN_ID_DNS_SECURITY = 3;
-  RISK_DOMAIN_ID_EMAIL_SECURITY = 4;
-  RISK_DOMAIN_ID_NETWORK_FILTERING = 5;
-  RISK_DOMAIN_ID_SOFTWARE_PATCHING = 6;
-  RISK_DOMAIN_ID_SYSTEM_HOSTING = 7;
-  RISK_DOMAIN_ID_SYSTEM_REPUTATION = 8;
-  RISK_DOMAIN_ID_WEB_ENCRYPTION = 9;
-}
-
-message RiskDomain {
-  RiskDomainId id = 1;
-  string name = 2;
-}
-
-message RiskDomainPerformance {
-  RiskDomain risk_domain = 1;
-  mtprm.proto.api.grade_letter.v1.GradeLetter overall_grade = 2;
-}
-
-message RiskDomainIssuesMetrics {
-  RiskDomain risk_domain = 1;
-  IssuesMetrics issues_metrics = 2;
-}
-
-message IssuesMetrics {
-  uint32 num_crit_issues = 1;
-  uint32 num_high_issues = 2;
-  uint32 num_med_issues = 3;
+  mtprm.proto.api.security_report.v1.SecurityReport security_report = 1;
 }
