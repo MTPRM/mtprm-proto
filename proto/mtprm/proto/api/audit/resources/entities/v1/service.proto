@@ -4,49 +4,27 @@ package mtprm.proto.api.audit.resources.entities.v1;
 
 import "mtprm/proto/api/uuid/v1/message.proto";
 import "mtprm/proto/api/grade_letter/v1/message.proto";
+import "mtprm/proto/api/time/v1/message.proto";
 
 service Service {
-  rpc Create(CreateRequest) returns (CreateResponse) {}
-  rpc Read(ReadRequest) returns (ReadResponse) {}
-  rpc Update(UpdateRequest) returns (UpdateResponse) {}
-  rpc Delete(DeleteRequest) returns (DeleteResponse) {}
   rpc List(ListRequest) returns (ListResponse) {}
 }
 
-message CreateRequest {
-  EntityData data = 1;
-}
-
-message CreateResponse {
-  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
-}
-
-message ReadRequest {
-  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
-}
-
-message ReadResponse {
-  Entity entity = 1;
-}
-
-message UpdateRequest {
-  Entity entity = 1;
-}
-
-message UpdateResponse {}
-
-message DeleteRequest {
-  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
-}
-
-message DeleteResponse {}
-
-message ListRequest {
-  optional mtprm.proto.api.grade_letter.v1.GradeLetter grade_letter = 1;
-}
+message ListRequest {}
 
 message ListResponse {
-  repeated Entity entities = 1;
+  SyncInfo sync_data = 1;
+  repeated Entity entities = 2;
+}
+
+message SyncInfo {
+  SyncData wh_sync_data = 1;
+  SyncData rr_sync_data = 2;
+}
+
+message SyncData {
+  uint32 num_new_entities = 1;
+  uint32 num_removed_entities = 2;
 }
 
 message Entity {
@@ -58,4 +36,17 @@ message EntityData {
   string name = 1;
   uint64 case_number = 2;
   string resolved_domain = 3;
+  InherentRiskRating inherent_risk_rating = 4;
+  mtprm.proto.api.grade_letter.v1.GradeLetter overall_grade_letter = 5;
+  mtprm.proto.api.time.v1.IsoDateTime created_at = 6;
+  mtprm.proto.api.time.v1.IsoDateTime last_report_date = 7;
+}
+
+enum InherentRiskRating {
+  INHERENT_RISK_RATING_UNSPECIFIED = 0;
+  INHERENT_RISK_RATING_ENTERPRISE_CRIT = 1;
+  INHERENT_RISK_RATING_VERY_HIGH = 2;
+  INHERENT_RISK_RATING_HIGH = 3;
+  INHERENT_RISK_RATING_MED = 4;
+  INHERENT_RISK_RATING_LOW = 5;
 }
