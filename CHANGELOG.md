@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/MTPRM/mtprm-proto/compare/6.0.0...7.0.0) (2024-04-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-audit:** prefer only `List` service, returns needed entity info
+* **api-admin:** use correct package name
+* **api-admin:** move resource to `api-admin`
+* **api-admin:** move resource to `api-admin`
+* **api-admin:** move resource to `api-admin`
+* **api-admin:** move resource to `api-admin`
+* **api-admin:** move resource to `api-admin`
+* **api-admin:** move resource to `api-admin`
+* **api-admin:** move resource to `api-admin`
+
+### Features
+
+* **api-admin:** move resource to `api-admin` ([13eb522](https://github.com/MTPRM/mtprm-proto/commit/13eb5225d5027c91d1bb894fdf6f588ef4d602f7))
+* **api-admin:** move resource to `api-admin` ([ac0f107](https://github.com/MTPRM/mtprm-proto/commit/ac0f1073f9123dfe355b846ee4bdaf152e7cb0f8))
+* **api-admin:** move resource to `api-admin` ([7469394](https://github.com/MTPRM/mtprm-proto/commit/74693941d240dec2fc3672ded697407fa1c00a1b))
+* **api-admin:** move resource to `api-admin` ([ca7578c](https://github.com/MTPRM/mtprm-proto/commit/ca7578c95ac1ff2e840220592ea93e2a21095e61))
+* **api-admin:** move resource to `api-admin` ([c084c8b](https://github.com/MTPRM/mtprm-proto/commit/c084c8b2a62ff4ef9835283ce2786dae876edb7e))
+* **api-admin:** move resource to `api-admin` ([77196a4](https://github.com/MTPRM/mtprm-proto/commit/77196a47e5a64a2c45e4247aa2c985b267c8f828))
+* **api-admin:** move resource to `api-admin` ([596ede2](https://github.com/MTPRM/mtprm-proto/commit/596ede2eaf29716e81bd0d7ad75f69d4f0431682))
+* **api-audit:** prefer only `List` service, returns needed entity info ([3365547](https://github.com/MTPRM/mtprm-proto/commit/3365547749b31685719164fdb1db66ac6983f83e))
+
+
+### Bug Fixes
+
+* **api-admin:** use correct package name ([53ec777](https://github.com/MTPRM/mtprm-proto/commit/53ec7771ab90d9edd0fe43b6e71f6538d2a90f88))
+
 ## [6.0.0](https://github.com/MTPRM/mtprm-proto/compare/5.0.0...6.0.0) (2024-04-02)
 
 
