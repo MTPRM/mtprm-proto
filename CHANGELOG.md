@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/MTPRM/mtprm-proto/compare/5.0.0...6.0.0) (2024-04-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-audit:** prefer to use imported message
+* **api-audit:** prefer to use imported message
+
+### Features
+
+* **api-audit:** add `entities__0__reports` service ([ed8ec3b](https://github.com/MTPRM/mtprm-proto/commit/ed8ec3b32b1ecc5f3881721af9c80733e6517524))
+* **api-audit:** add `transactions/v1` service ([5605cb8](https://github.com/MTPRM/mtprm-proto/commit/5605cb8232c9c119a8cf9f386e0ec883aebaab3b))
+* **api-audit:** add `usage/v1` service ([0afc106](https://github.com/MTPRM/mtprm-proto/commit/0afc106c82ae874ff89a7a7f82e4b7e4d84bc01d))
+* **api-audit:** prefer to use imported message ([9edbdea](https://github.com/MTPRM/mtprm-proto/commit/9edbdea1dc14bc237d55f74c4d174df35c8a85d9))
+* **api-audit:** prefer to use imported message ([881d7d2](https://github.com/MTPRM/mtprm-proto/commit/881d7d2335234d2d27a3dc3af15f5296206ce616))
+* **api:** add `security_report/v1` message ([689e62a](https://github.com/MTPRM/mtprm-proto/commit/689e62a70986080879d5a63840b26a2e21e3c2de))
+
 ## [5.0.0](https://github.com/MTPRM/mtprm-proto/compare/4.0.0...5.0.0) (2024-03-28)
 
 
