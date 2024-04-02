@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.0.0](https://github.com/MTPRM/mtprm-proto/compare/7.0.0...8.0.0) (2024-04-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-admin:** avoid using `EntityData` in `CreateRequest`
+
+### Features
+
+* **api-admin:** add `requested_domain` to `EntityData` ([78cb3d0](https://github.com/MTPRM/mtprm-proto/commit/78cb3d0e2d65850361145810dc7b3d4a8a639b86))
+* **api-admin:** prefer to return `stream` ([9b3aa22](https://github.com/MTPRM/mtprm-proto/commit/9b3aa227fc082ecbb7837f36f4e219d995d33e75))
+* **api-admin:** prefer to return `stream` ([650c757](https://github.com/MTPRM/mtprm-proto/commit/650c757affc372760ed4b9a77a45a95761ad34de))
+* **api-admin:** prefer to return `stream` ([7d40935](https://github.com/MTPRM/mtprm-proto/commit/7d40935fb09ddc0caf8b7f27b8880e16f6388e7a))
+* **api-admin:** prefer to return `stream` ([e1f02cf](https://github.com/MTPRM/mtprm-proto/commit/e1f02cf5cbf62510747ef7b1bf95bf36d5c8ba6e))
+* **dev:** add `eclipse-formatter.xml` ([dee99e0](https://github.com/MTPRM/mtprm-proto/commit/dee99e07df1b82bef8a58d78ed6986da7162b3ef))
+
+
+### Bug Fixes
+
+* **api-admin:** avoid using `EntityData` in `CreateRequest` ([1983b87](https://github.com/MTPRM/mtprm-proto/commit/1983b8796f115cba42b0216402c1ef915f76c405))
+
 ## [7.0.0](https://github.com/MTPRM/mtprm-proto/compare/6.0.0...7.0.0) (2024-04-02)
 
 
