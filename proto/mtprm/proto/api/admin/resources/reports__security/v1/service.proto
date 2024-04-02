@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
-package mtprm.proto.api.audit.resources.reports__security.v1;
+package mtprm.proto.api.admin.resources.reports__security.v1;
 
 import "mtprm/proto/api/security_report/v1/message.proto";
 
