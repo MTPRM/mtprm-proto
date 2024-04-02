@@ -6,7 +6,7 @@ package mtprm.proto.api.admin.resources.entities__0__reports__security__pdf.v1;
 import "mtprm/proto/api/uuid/v1/message.proto";
 
 service Service {
-  rpc Get(GetRequest) returns (GetResponse) {}
+  rpc Get(GetRequest) returns (stream GetResponse) {}
 }
 
 message GetRequest {
