@@ -60,4 +60,5 @@ message EntityData {
   string name = 1;
   uint64 case_number = 2;
   string resolved_domain = 3;
+  string requested_domain = 4;
 }
