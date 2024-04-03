@@ -1,5 +1,5 @@
 version: v1
-name: buf.build/mtprm/proto
+name: buf.build/mtprm/mtprm-proto
 breaking:
   use:
     - FILE

@@ -4,10 +4,10 @@ managed:
   # This will generate packages as "mtprm.*" instead of "com.mtprm.*"
   # See: https://github.com/bufbuild/buf/issues/1949
   java_package_prefix:
-    default: "fake"
+    default: 'fake'
     except:
       # This matches the `buf.yaml` `name`
-      - buf.build/mtprm/proto
+      - buf.build/mtprm/mtprm-proto
 plugins:
   - plugin: buf.build/protocolbuffers/java:v24.3
     out: java/proto-server/src-gen/main/java/
