@@ -15,5 +15,6 @@
     "rootDir": "src-gen",
     "outDir": "dist"
   },
+  "include": ["./src-gen/**/*"],
   "exclude": ["dist", "node_modules"]
 }
