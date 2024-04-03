@@ -26,6 +26,7 @@ build() {
 deploy() {
   deploy_java
   deploy_web
+  deploy_buf_build
 }
 
 build_buf() {
@@ -60,6 +61,12 @@ build_web() {
 deploy_web() {
   cd web
   pnpm publish --no-git-checks || exit
+  cd ..
+}
+
+deploy_buf_build() {
+  cd proto
+  buf push
   cd ..
 }
 
