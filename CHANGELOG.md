@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [9.0.0](https://github.com/mtprm/mtprm-proto/compare/8.0.1...9.0.0) (2024-04-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* **proto:** change module name
+
+### Features
+
+* **proto:** change module name ([489294a](https://github.com/mtprm/mtprm-proto/commit/489294a8c62acf90e89fe96f505b7a55f7f6b8a9))
+
 ### [8.0.1](https://github.com/mtprm/mtprm-proto/compare/8.0.0...8.0.1) (2024-04-03)
 
 ## [8.0.0](https://github.com/MTPRM/mtprm-proto/compare/7.0.0...8.0.0) (2024-04-02)
