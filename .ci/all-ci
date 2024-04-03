@@ -21,6 +21,7 @@ build() {
   build_buf
   build_java $version
   build_web $version
+  build_buf_build $version
 }
 
 deploy() {
@@ -39,6 +40,13 @@ build_java() {
   cd java
   ./mvnw -B -Pprepare-release -DnewVersion=$version -s settings.xml || exit
   ./mvnw -B -Pbuild-release -s settings.xml || exit
+  cd ..
+}
+
+build_buf_build() {
+  version=$1
+  cd proto
+  echo $version >TAG_NAME
   cd ..
 }
 
@@ -66,7 +74,7 @@ deploy_web() {
 
 deploy_buf_build() {
   cd proto
-  buf push || exit
+  buf push --tag $(cat TAG_NAME) || exit
   cd ..
 }
 
