@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package mtprm.proto.api.audit.resources.transactions.v1;
 
-import "mtprm/proto/api/uuid/v1/message.proto";
-import "mtprm/proto/api/time/v1/message.proto";
+import "mtprm/proto/uuid/v1/message.proto";
+import "mtprm/proto/time/v1/message.proto";
 import "google/protobuf/struct.proto";
 
 service Service {
@@ -12,7 +12,7 @@ service Service {
 }
 
 message ReadRequest {
-  mtprm.proto.api.uuid.v1.Uuid transaction_id = 1;
+  mtprm.proto.uuid.v1.Uuid transaction_id = 1;
 }
 
 message ReadResponse {
@@ -26,11 +26,11 @@ message ListResponse {
 }
 
 message Transaction {
-  mtprm.proto.api.uuid.v1.Uuid id = 1;
+  mtprm.proto.uuid.v1.Uuid id = 1;
   Action action = 2;
   string endpoint = 3;
   string status = 4;
-  mtprm.proto.api.time.v1.IsoDateTime called_at = 5;
+  mtprm.proto.time.v1.IsoDateTime called_at = 5;
   TransactionData data = 6;
 }
 
@@ -54,7 +54,7 @@ message TransactionSummary {
   Action action = 2;
   string endpoint = 3;
   string status = 4;
-  mtprm.proto.api.time.v1.IsoDateTime called_at = 5;
+  mtprm.proto.time.v1.IsoDateTime called_at = 5;
 }
 
 message UserInfo {
