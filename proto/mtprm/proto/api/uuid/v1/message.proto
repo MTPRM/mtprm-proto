@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package mtprm.proto.api.uuid.v1;
-
-message Uuid {
-  string value = 1;
-}
