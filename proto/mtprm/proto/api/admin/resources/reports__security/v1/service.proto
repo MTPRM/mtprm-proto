@@ -3,7 +3,7 @@ syntax = "proto3";
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.proto.api.admin.resources.reports__security.v1;
 
-import "mtprm/proto/api/security_report/v1/message.proto";
+import "mtprm/proto/security_report/v1/message.proto";
 
 service Service {
   rpc Get(GetRequest) returns (GetResponse) {}
@@ -12,7 +12,7 @@ service Service {
 message GetRequest {}
 
 message GetResponse {
-  repeated mtprm.proto.api.security_report.v1.SecurityReport security_reports = 1;
+  repeated mtprm.proto.security_report.v1.SecurityReport security_reports = 1;
 }
 
 
