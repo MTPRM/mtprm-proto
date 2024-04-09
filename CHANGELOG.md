@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.0.0](https://github.com/mtprm/mtprm-proto/compare/9.0.3...10.0.0) (2024-04-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api:** remove unused message
+* **api:** remove unused message
+* **api:** remove unused message
+* **api:** remove unused message
+
+### Features
+
+* **api-admin:** prefer messages from `proto` directory ([da01442](https://github.com/mtprm/mtprm-proto/commit/da0144248eb132180ef9493efa85d51aa0e3442a))
+* **api-admin:** prefer messages from `proto` directory ([d25fccb](https://github.com/mtprm/mtprm-proto/commit/d25fccb12f563a7b852ac5973aba305d50315dd7))
+* **api-admin:** prefer messages from `proto` directory ([758fbdb](https://github.com/mtprm/mtprm-proto/commit/758fbdbcb40bc8ff82b1e7e7547ace178d89fde2))
+* **api-admin:** prefer messages from `proto` directory ([44654ca](https://github.com/mtprm/mtprm-proto/commit/44654cae866540f0e8485454c576c27fe0fd5875))
+* **api-admin:** prefer messages from `proto` directory ([e77bc86](https://github.com/mtprm/mtprm-proto/commit/e77bc86cf603a869283ff172f8f32f1d628f6190))
+* **api-audit:** prefer messages from `proto` directory ([8bba3d8](https://github.com/mtprm/mtprm-proto/commit/8bba3d8c7153cbecc3e89e899820af88f8fa1cb8))
+* **api-audit:** prefer messages from `proto` directory ([89cb950](https://github.com/mtprm/mtprm-proto/commit/89cb9507bfd156fa8f7a79ae7d165bbeb04d4bae))
+* **api-audit:** prefer messages from `proto` directory ([3b8475b](https://github.com/mtprm/mtprm-proto/commit/3b8475bc721eac1fc5cfcfcc87c8bd77ea3bb8de))
+* **api-audit:** prefer messages from `proto` directory ([2ef2d65](https://github.com/mtprm/mtprm-proto/commit/2ef2d65cf44e6fd9b8232f785af9dce8db44a96d))
+* **api:** remove unused message ([f3cdbcb](https://github.com/mtprm/mtprm-proto/commit/f3cdbcbd57a82746952abf531d8173d40e9c9cb3))
+* **api:** remove unused message ([84afdb5](https://github.com/mtprm/mtprm-proto/commit/84afdb590cb332a3fce7b0a1847a8253a48a78a2))
+* **api:** remove unused message ([fe1ec92](https://github.com/mtprm/mtprm-proto/commit/fe1ec92c26ec9b68630a200e3f75b62056b51c42))
+* **api:** remove unused message ([077761b](https://github.com/mtprm/mtprm-proto/commit/077761b47710b53fa38c0c636448f5a5090edbdf))
+* **proto:** add `grade_letter` message ([0c0bfba](https://github.com/mtprm/mtprm-proto/commit/0c0bfbaa91a274285bd17bdc1ae6b2e56cc0a9e1))
+* **proto:** add `security_report` message ([fc76cfb](https://github.com/mtprm/mtprm-proto/commit/fc76cfbf15a48aa585cc0d6a92b05815f40380ee))
+* **proto:** add `time` message ([12333e7](https://github.com/mtprm/mtprm-proto/commit/12333e73bee1a64ab76a6cb073e07500c6d209e9))
+* **proto:** add `uuid` message ([ec5471b](https://github.com/mtprm/mtprm-proto/commit/ec5471bf6241b4e30a2e66efc83c799ca2fd91b6))
+
 ### [9.0.3](https://github.com/mtprm/mtprm-proto/compare/9.0.2...9.0.3) (2024-04-03)
 
 ### [9.0.2](https://github.com/mtprm/mtprm-proto/compare/9.0.1...9.0.2) (2024-04-03)
