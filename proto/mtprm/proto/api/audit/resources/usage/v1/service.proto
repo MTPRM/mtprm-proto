@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package mtprm.proto.api.audit.resources.usage.v1;
 
-import "mtprm/proto/api/time/v1/message.proto";
+import "mtprm/proto/time/v1/message.proto";
 
 service Service {
   rpc List(ListRequest) returns (ListResponse) {}
@@ -22,7 +22,7 @@ message UsageSummary {
 message UserInfo {
   string email = 1;
   optional string name = 2;
-  mtprm.proto.api.time.v1.IsoDateTime last_authentication = 3;
+  mtprm.proto.time.v1.IsoDateTime last_authentication = 3;
   uint32 num_requests = 4;
 }
 
