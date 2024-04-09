@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package mtprm.proto.api.admin.resources.entities.v1;
 
-import "mtprm/proto/api/uuid/v1/message.proto";
-import "mtprm/proto/api/grade_letter/v1/message.proto";
+import "mtprm/proto/uuid/v1/message.proto";
+import "mtprm/proto/grade_letter/v1/message.proto";
 
 service Service {
   rpc Create(CreateRequest) returns (CreateResponse) {}
@@ -20,11 +20,11 @@ message CreateRequest {
 }
 
 message CreateResponse {
-  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
+  mtprm.proto.uuid.v1.Uuid entity_id = 1;
 }
 
 message ReadRequest {
-  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
+  mtprm.proto.uuid.v1.Uuid entity_id = 1;
 }
 
 message ReadResponse {
@@ -38,13 +38,13 @@ message UpdateRequest {
 message UpdateResponse {}
 
 message DeleteRequest {
-  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
+  mtprm.proto.uuid.v1.Uuid entity_id = 1;
 }
 
 message DeleteResponse {}
 
 message ListRequest {
-  optional mtprm.proto.api.grade_letter.v1.GradeLetter grade_letter = 1;
+  optional mtprm.proto.grade_letter.v1.GradeLetter grade_letter = 1;
 }
 
 message ListResponse {
@@ -52,7 +52,7 @@ message ListResponse {
 }
 
 message Entity {
-  mtprm.proto.api.uuid.v1.Uuid entity_id = 1;
+  mtprm.proto.uuid.v1.Uuid entity_id = 1;
   EntityData data = 2;
 }
 
