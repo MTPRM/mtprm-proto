@@ -1,5 +1,7 @@
 # mtprm-proto
 
+Deploys to [Buf Schema Registry](https://buf.build/mtprm/mtprm-proto/).
+
 API defined via:
 
 - [Protocol Buffers](https://developers.google.com/protocol-buffers)
@@ -16,19 +18,13 @@ This will cause the [build.yml](./.github/workflows/build.yml) to be executed.
 
 ## Building (manual)
 
-### Generate source code
-
-```bash
-buf generate
-```
-
-### Build language-specific artifacts
+### Build
 
 ```bash
 .ci/all-ci build $(git describe)
 ```
 
-### Publish language-specific artifacts
+### Publish artifacts
 
 ```bash
 .ci/all-ci publish
