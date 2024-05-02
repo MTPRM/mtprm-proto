@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.1.0](https://github.com/MTPRM/mtprm-proto/compare/10.0.0...10.1.0) (2024-05-02)
+
+
+### Features
+
+* **api-admin:** add `organizations__0__entities__0__reports__security__docx/v1` resource ([0a912c5](https://github.com/MTPRM/mtprm-proto/commit/0a912c5ff4f3b21c3400e86089795eb6dfcf26b8))
+* **api-admin:** add `organizations__0__entities__0__reports__security__pdf/v1` resource ([c4c2243](https://github.com/MTPRM/mtprm-proto/commit/c4c2243bba3ee2bdfd46bfe0516e65af7be751e9))
+* **api-admin:** add `organizations__0__entities__0__reports__security/v1` resource ([9ec6780](https://github.com/MTPRM/mtprm-proto/commit/9ec6780ef5a6f49563ac3d2a1bfa0633f04593ee))
+* **api-admin:** add `organizations__0__entities/v1` resource ([7fb0835](https://github.com/MTPRM/mtprm-proto/commit/7fb0835ba78030a4b1050c68e0478a1a37ddb3e1))
+* **api-admin:** add `organizations__0__reports__security__docx/v1` resource ([3a0c14d](https://github.com/MTPRM/mtprm-proto/commit/3a0c14d59239aa0cc307398ab0e90e9e3a26031a))
+* **api-admin:** add `organizations__0__reports__security__pdf/v1` resource ([4d6fd70](https://github.com/MTPRM/mtprm-proto/commit/4d6fd70d7c6e216453b78e3ded2fc0b71b74a146))
+* **api-admin:** add `organizations__0__reports__security/v1` resource ([6b637b4](https://github.com/MTPRM/mtprm-proto/commit/6b637b4eac0dfe9dd961087c8f67137ca2c13d61))
+* **api-audit:** add `organizations__0__entities__0__reports/v1` resource ([9d1cb87](https://github.com/MTPRM/mtprm-proto/commit/9d1cb8799c2d2d226614600b761a837578cf11bd))
+* **api-audit:** add `organizations__0__entities/v1` resource ([bc84f84](https://github.com/MTPRM/mtprm-proto/commit/bc84f8430eab659d0a1a151a7213ac43a8186a0d))
+* **api-audit:** add `organizations__0__transactions/v1` resource ([6871fd5](https://github.com/MTPRM/mtprm-proto/commit/6871fd5176e43bd8f5f9635618fc2dfcc1b93c05))
+* **api-audit:** add `organizations__0__usage/v1` resource ([fb28ad2](https://github.com/MTPRM/mtprm-proto/commit/fb28ad25419690c1dd9be7e3511e443cd4279826))
+* remove custom generation for `java` ([32c54f0](https://github.com/MTPRM/mtprm-proto/commit/32c54f04678e62d7ca8e3b91684a5cf9010844aa))
+* remove custom generation for `web` ([95c2026](https://github.com/MTPRM/mtprm-proto/commit/95c202661737bc045a01b5ef4351084343981796))
+
 ## [10.0.0](https://github.com/mtprm/mtprm-proto/compare/9.0.3...10.0.0) (2024-04-09)
 
 
