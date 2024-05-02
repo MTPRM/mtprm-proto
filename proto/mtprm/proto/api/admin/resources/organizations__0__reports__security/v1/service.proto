@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.proto.api.admin.resources.organizations__0__reports__security.v1;
+
+import "mtprm/proto/security_report/v1/message.proto";
+
+service Service {
+  rpc Get(GetRequest) returns (GetResponse) {}
+}
+
+message GetRequest {
+  string org_id = 1;
+}
+
+message GetResponse {
+  repeated mtprm.proto.security_report.v1.SecurityReport security_reports = 1;
+}
+
+
