@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.2.0](https://github.com/MTPRM/mtprm-proto/compare/10.1.0...10.2.0) (2024-05-16)
+
+
+### Features
+
+* **api-admin:** add `organizations__0__entities__0__reports__control_mappings__xslx.v1` resource ([f35638f](https://github.com/MTPRM/mtprm-proto/commit/f35638f43b882da3e3a11fc733929ddc17925b20))
+
 ## [10.1.0](https://github.com/MTPRM/mtprm-proto/compare/10.0.0...10.1.0) (2024-05-02)
 
 
