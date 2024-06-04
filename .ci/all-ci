@@ -27,7 +27,7 @@ deploy() {
 }
 
 build_buf() {
-  buf lint || exit
+  pnpm exec buf lint || exit
 }
 
 build_buf_build() {
@@ -39,7 +39,7 @@ build_buf_build() {
 
 deploy_buf_build() {
   cd proto
-  buf push --tag $(cat TAG_NAME) || exit
+  pnpm exec buf push --tag $(cat TAG_NAME) || exit
   cd ..
 }
 
