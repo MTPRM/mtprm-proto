@@ -12,7 +12,7 @@
 
   "buf.binaryPath": "./node_modules/@bufbuild/buf/bin/buf",
 
-  "xml.format.splitAttributes": true,
+  "xml.format.splitAttributes": "splitNewLine",
 
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
