@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [11.0.0](https://github.com/MTPRM/mtprm-proto/compare/10.3.0...11.0.0) (2024-06-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* move `proto-2` to `proto`
+* move `proto` to `proto-old`
+
+### Features
+
+* **api-admin:** add `organizations__0__entities` resource ([09f35dd](https://github.com/MTPRM/mtprm-proto/commit/09f35dd763674df7a3de0c16ef31f9d2b7830766))
+* **core:** add `uuid.v1` message ([726541a](https://github.com/MTPRM/mtprm-proto/commit/726541a94c078ebc13234faef517c5c85a480702))
+* move `proto-2` to `proto` ([9af0001](https://github.com/MTPRM/mtprm-proto/commit/9af00018788a1693c7ea91fefdc885872ee00225))
+* move `proto` to `proto-old` ([45a8565](https://github.com/MTPRM/mtprm-proto/commit/45a8565b9c2e3a22b7b7e34c146d2c986ac203d1))
+
+
+### Bug Fixes
+
+* **api-admin:** remove rating from entity data ([78ff829](https://github.com/MTPRM/mtprm-proto/commit/78ff8294b94484793fa5fa6ed70c6efee99bb2ba))
+
 ## [10.3.0](https://github.com/MTPRM/mtprm-proto/compare/10.2.0...10.3.0) (2024-06-04)
 
 
