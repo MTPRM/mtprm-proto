@@ -61,5 +61,4 @@ message EntityData {
   uint64 case_number = 2;
   string resolved_domain = 3;
   string requested_domain = 4;
-  uint64 rating_numeric = 5;
 }
