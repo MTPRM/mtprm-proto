@@ -1,0 +1,63 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.audit.resources.organizations__0__entities.v1;
+
+import "mtprm/core/time/v1/message.proto";
+import "mtprm/core/entity/v1/message.proto";
+
+service Service {
+  rpc List(ListRequest) returns (ListResponse) {}
+}
+
+message ListRequest {
+  string org_id = 1;
+}
+
+message ListResponse {
+  SyncInfo sync_data = 1;
+  repeated EntityMoreInfo entities = 2;
+}
+
+message SyncInfo {
+  SyncData wh_sync_data = 1;
+  SyncData rr_sync_data = 2;
+}
+
+message SyncData {
+  uint32 num_new_entities = 1;
+  uint32 num_removed_entities = 2;
+}
+
+message EntityMoreInfo {
+  mtprm.core.entity.v1.Entity core = 1;
+  oneof risk_recon_entity {
+    RiskReconEntityData data = 2;
+  }
+}
+
+message RiskReconEntityData {
+  InherentRiskRating inherent_risk_rating = 1;
+  uint32 numeric_rating = 2;
+  GradeLetter overall_grade_letter = 3;
+  mtprm.core.time.v1.IsoDateTime created_at = 4;
+  mtprm.core.time.v1.IsoDateTime last_report_date = 5;
+}
+
+enum InherentRiskRating {
+  INHERENT_RISK_RATING_UNSPECIFIED = 0;
+  INHERENT_RISK_RATING_ENTERPRISE_CRIT = 1;
+  INHERENT_RISK_RATING_VERY_HIGH = 2;
+  INHERENT_RISK_RATING_HIGH = 3;
+  INHERENT_RISK_RATING_MED = 4;
+  INHERENT_RISK_RATING_LOW = 5;
+}
+
+enum GradeLetter {
+  GRADE_LETTER_UNSPECIFIED = 0;
+  GRADE_LETTER_A = 1;
+  GRADE_LETTER_B = 2;
+  GRADE_LETTER_C = 3;
+  GRADE_LETTER_D = 4;
+  GRADE_LETTER_F = 5;
+}
