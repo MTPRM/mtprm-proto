@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.0.0](https://github.com/MTPRM/mtprm-proto/compare/11.0.5...12.0.0) (2024-06-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-admin:** use imported `entity` message
+
+### Features
+
+* **api-admin:** add `organizations__0__entities__0__reports__issues__xlsx` resource ([82ae469](https://github.com/MTPRM/mtprm-proto/commit/82ae4693b5cfffc4e749f738c769dd248e49bdd5))
+* **api-admin:** add `organizations__0__entities__0__reports__summary__docx` resource ([b6c3acc](https://github.com/MTPRM/mtprm-proto/commit/b6c3acc48d9bd809800aa654b8822bb1c4dc4fc9))
+* **api-admin:** add `organizations__0__entities__0__reports__summary__pdf` resource ([0e6e838](https://github.com/MTPRM/mtprm-proto/commit/0e6e838a721475bcbed163c194749682e8df84c2))
+* **api-admin:** add `organizations__0__entities__0__reports__summary` resource ([557dd55](https://github.com/MTPRM/mtprm-proto/commit/557dd558a62e456fef2236de647083b5cb7021ce))
+* **api-admin:** use imported `entity` message ([7563cd9](https://github.com/MTPRM/mtprm-proto/commit/7563cd9b5fc28f6c23a69da2e3830db58c0912d2))
+* **api-audit:** add `organizations__0__entities` resource ([f5b5f61](https://github.com/MTPRM/mtprm-proto/commit/f5b5f611c87d4a3bdc6c8b8d45b7a692947076f5))
+* **core:** add `entity` message ([c2e85d7](https://github.com/MTPRM/mtprm-proto/commit/c2e85d75d42822fffbbef347a2ae3a6ef1b84b00))
+* **core:** add `summary_report` message ([bed4a4e](https://github.com/MTPRM/mtprm-proto/commit/bed4a4ee93d4d9bfa4a47dda86c49dd1cd3396ee))
+* **core:** add `time` message ([ec70ac2](https://github.com/MTPRM/mtprm-proto/commit/ec70ac2bab08f32fa1c3a8ceb63212ef1c3b11ec))
+
 ### [11.0.5](https://github.com/mtprm/mtprm-proto/compare/11.0.4...11.0.5) (2024-06-04)
 
 ### [11.0.4](https://github.com/mtprm/mtprm-proto/compare/11.0.3...11.0.4) (2024-06-04)
