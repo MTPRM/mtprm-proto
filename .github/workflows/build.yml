@@ -49,6 +49,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
+      - name: Install dependencies
+        run: |
+          nix develop --command pnpm install
+
       - name: Build all
         run: |
           nix develop --command ./.ci/all-ci build $(git describe)
