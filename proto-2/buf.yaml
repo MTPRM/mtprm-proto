@@ -1,0 +1,12 @@
+version: v2
+modules:
+  - name: buf.build/mtprm/mtprm-api-admin
+    path: mtprm-api-admin
+  - name: buf.build/mtprm/mtprm-core
+    path: mtprm-core
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - DEFAULT
