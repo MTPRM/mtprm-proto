@@ -12,7 +12,7 @@
       {
         devShell = pkgs.mkShellNoCC {
           packages = with pkgs; [
-            buf
+            #buf
             nodePackages.pnpm
           ];
         };
