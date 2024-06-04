@@ -32,15 +32,11 @@ build_buf() {
 
 build_buf_build() {
   version=$1
-  cd proto
   echo $version >TAG_NAME
-  cd ..
 }
 
 deploy_buf_build() {
-  cd proto
   pnpm exec buf push --tag $(cat TAG_NAME) || exit
-  cd ..
 }
 
 main "$@"
