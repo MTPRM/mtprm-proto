@@ -1,12 +1,10 @@
 {
   "recommendations": [
     "bufbuild.vscode-buf",
-    "bungcip.better-toml",
     "DavidAnson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
-    "mariusschulz.yarn-lock-syntax",
     "ms-vsliveshare.vsliveshare",
     "redhat.java",
     "redhat.vscode-yaml",
