@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package mtprm.core.entity.v1;
+
+import "mtprm/core/uuid/v1/message.proto";
+
+message Entity {
+  mtprm.core.uuid.v1.Uuid entity_id = 1;
+  EntityData data = 2;
+}
+
+message EntityData {
+  string name = 1;
+  uint64 case_number = 2;
+  string domain = 3;
+}
