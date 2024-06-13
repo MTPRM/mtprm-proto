@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.1.0](https://github.com/MTPRM/mtprm-proto/compare/12.0.0...12.1.0) (2024-06-13)
+
+
+### Features
+
+* **api-admin:** add `organizations__0__reports__issues__xlsx.v1` ([aa032f7](https://github.com/MTPRM/mtprm-proto/commit/aa032f72dd106c0a4658d6261358a680955bbd04))
+
 ## [12.0.0](https://github.com/MTPRM/mtprm-proto/compare/11.0.5...12.0.0) (2024-06-04)
 
 
