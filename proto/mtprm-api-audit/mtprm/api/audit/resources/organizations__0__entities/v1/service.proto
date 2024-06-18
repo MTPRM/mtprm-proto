@@ -37,7 +37,7 @@ message EntityMoreInfo {
 }
 
 message RiskReconEntityData {
-  string risk_relationship = 1;
+  repeated string risk_relationship = 1;
   InherentRiskRating inherent_risk_rating = 2;
   uint32 numeric_rating = 3;
   GradeLetter overall_grade_letter = 4;
