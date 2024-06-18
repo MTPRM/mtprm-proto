@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.2.0](https://github.com/MTPRM/mtprm-proto/compare/12.1.0...12.2.0) (2024-06-18)
+
+
+### Features
+
+* **api-audit:** capture `risk_relationship` ([0607c60](https://github.com/MTPRM/mtprm-proto/commit/0607c6095f2140fe8965f5b860707add090a3823))
+
 ## [12.1.0](https://github.com/MTPRM/mtprm-proto/compare/12.0.0...12.1.0) (2024-06-13)
 
 
