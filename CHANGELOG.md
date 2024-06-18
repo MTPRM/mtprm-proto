@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [12.3.0](https://github.com/MTPRM/mtprm-proto/compare/12.2.0...12.3.0) (2024-06-18)
+
+
+### Features
+
+* **api-audit:** prefer array of string ([bd35e7d](https://github.com/MTPRM/mtprm-proto/commit/bd35e7d5585fc1d1f42417329979df6ba697d552))
+
 ## [12.2.0](https://github.com/MTPRM/mtprm-proto/compare/12.1.0...12.2.0) (2024-06-18)
 
 
