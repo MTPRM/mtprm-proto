@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [14.0.0](https://github.com/MTPRM/mtprm-proto/compare/13.0.0...14.0.0) (2024-06-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-audit:** remove extra/unused `risk_relationship` + `overall_grade_letter`
+
+### Features
+
+* **api-audit:** remove extra/unused `risk_relationship` + `overall_grade_letter` ([6fe7b07](https://github.com/MTPRM/mtprm-proto/commit/6fe7b079668d759f46e7d219fb343a5feaf8cd6e))
+
 ## [13.0.0](https://github.com/MTPRM/mtprm-proto/compare/12.3.0...13.0.0) (2024-06-24)
 
 
