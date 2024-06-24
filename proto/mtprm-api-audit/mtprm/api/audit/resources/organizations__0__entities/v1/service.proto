@@ -37,12 +37,9 @@ message EntityMoreInfo {
 }
 
 message RiskReconEntityData {
-  repeated string risk_relationship = 1;
-  repeated RiskConfig risk_config = 2;
-  uint32 numeric_rating = 3;
-  GradeLetter overall_grade_letter = 4;
-  mtprm.core.time.v1.IsoDateTime created_at = 5;
-  mtprm.core.time.v1.IsoDateTime last_report_date = 6;
+  repeated RiskConfig risk_config = 1;
+  uint32 numeric_rating = 2;
+  mtprm.core.time.v1.IsoDateTime last_report_date = 3;
 }
 
 message RiskConfig {
@@ -57,13 +54,4 @@ enum InherentRiskRating {
   INHERENT_RISK_RATING_HIGH = 3;
   INHERENT_RISK_RATING_MED = 4;
   INHERENT_RISK_RATING_LOW = 5;
-}
-
-enum GradeLetter {
-  GRADE_LETTER_UNSPECIFIED = 0;
-  GRADE_LETTER_A = 1;
-  GRADE_LETTER_B = 2;
-  GRADE_LETTER_C = 3;
-  GRADE_LETTER_D = 4;
-  GRADE_LETTER_F = 5;
 }
