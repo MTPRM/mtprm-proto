@@ -38,11 +38,16 @@ message EntityMoreInfo {
 
 message RiskReconEntityData {
   repeated string risk_relationship = 1;
-  InherentRiskRating inherent_risk_rating = 2;
+  repeated RiskConfig risk_config = 2;
   uint32 numeric_rating = 3;
   GradeLetter overall_grade_letter = 4;
   mtprm.core.time.v1.IsoDateTime created_at = 5;
   mtprm.core.time.v1.IsoDateTime last_report_date = 6;
+}
+
+message RiskConfig {
+  InherentRiskRating inherent_risk = 1;
+  string risk_relationship = 2;
 }
 
 enum InherentRiskRating {
