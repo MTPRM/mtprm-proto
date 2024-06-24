@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [13.0.0](https://github.com/MTPRM/mtprm-proto/compare/12.3.0...13.0.0) (2024-06-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-audit:** mirror `risk_config` data model
+
+### Features
+
+* **api-audit:** mirror `risk_config` data model ([700bffd](https://github.com/MTPRM/mtprm-proto/commit/700bffd9b3ec670fbab7a64e85fab6f808796183))
+
 ## [12.3.0](https://github.com/MTPRM/mtprm-proto/compare/12.2.0...12.3.0) (2024-06-18)
 
 
