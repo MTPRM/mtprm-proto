@@ -1,9 +1,0 @@
-version: v1
-name: buf.build/mtprm/mtprm-proto
-breaking:
-  use:
-    - FILE
-lint:
-  allow_comment_ignores: true
-  use:
-    - DEFAULT
