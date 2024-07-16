@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [14.2.0](https://github.com/mtprm/mtprm-proto/compare/14.1.0...14.2.0) (2024-07-16)
+
+
+### Features
+
+* **api-admin:** add service `organizations__0__reports__combined__template_xlsx.v1` ([793504a](https://github.com/mtprm/mtprm-proto/commit/793504a2728db2a6ddbd220663f0ff2f57f09e7c))
+* **proto:** add messages for `indirect_file` ([0617a75](https://github.com/mtprm/mtprm-proto/commit/0617a75511d402b4723961679b39a6474545bc6f))
+
 ## [14.1.0](https://github.com/MTPRM/mtprm-proto/compare/14.0.0...14.1.0) (2024-07-11)
 
 
