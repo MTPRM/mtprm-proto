@@ -5,6 +5,8 @@ name: Auto format
 on:
   schedule:
     - cron: '0 5 * * 1-5'
+  # manual execution via web UI
+  workflow_dispatch:
 
 jobs:
   build:
