@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [14.3.0](https://github.com/mtprm/mtprm-proto/compare/14.2.0...14.3.0) (2024-07-18)
+
+
+### Features
+
+* **api-admin:** add service `organizations__0__reports__combined__template_download_info.v1` ([cc61c9b](https://github.com/mtprm/mtprm-proto/commit/cc61c9b1611ca2cdc76dec0c865ec8f1bc66aa8c))
+* **api-admin:** add service `organizations__0__reports__combined__template_upload_info.v1` ([db66140](https://github.com/mtprm/mtprm-proto/commit/db661405a6f6bba175fd13aaf706095725c70c69))
+
 ## [14.2.0](https://github.com/mtprm/mtprm-proto/compare/14.1.0...14.2.0) (2024-07-16)
 
 
