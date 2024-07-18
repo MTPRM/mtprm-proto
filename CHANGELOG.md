@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.0.0](https://github.com/mtprm/mtprm-proto/compare/14.3.0...15.0.0) (2024-07-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-admin:** remove service `organizations__0__reports__combined__template_xlsx.v1`
+
+### Features
+
+* **api-admin:** add service `organizations__0__entities__0__reports__combined__xlsx.v1` ([40118c2](https://github.com/mtprm/mtprm-proto/commit/40118c26b255f3f5d11f8c0a6f948c0d8457cc68))
+* **api-admin:** remove service `organizations__0__reports__combined__template_xlsx.v1` ([b537444](https://github.com/mtprm/mtprm-proto/commit/b537444fb91d7e6635f31c88808da7f00b8264b3))
+
 ## [14.3.0](https://github.com/mtprm/mtprm-proto/compare/14.2.0...14.3.0) (2024-07-18)
 
 ### Features
