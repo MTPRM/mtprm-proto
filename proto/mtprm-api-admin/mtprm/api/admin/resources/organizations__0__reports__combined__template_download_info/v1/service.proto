@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.admin.resources.organizations__0__reports__combined__template_download_info.v1;
+
+import "mtprm/core/indirect_file/v1/message.proto";
+
+service Service {
+  rpc Get(GetRequest) returns (GetResponse) {}
+}
+
+message GetRequest {
+  string org_id = 1;
+}
+
+message GetResponse {
+  mtprm.core.indirect_file.v1.IndirectDownloadViaGet download = 1 ;
+}
