@@ -16,7 +16,7 @@ message GetRequest {
 }
 
 message GetResponse {
-  mtprm.core.indirect_file.v1.IndirectDownloadViaGet download = 1 ;
+  mtprm.core.indirect_file.v1.IndirectDownloadViaGet download = 1;
 }
 
 message SetRequest {

@@ -3,8 +3,8 @@ syntax = "proto3";
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.core.summary_report.v1;
 
-import "mtprm/core/uuid/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
+import "mtprm/core/uuid/v1/message.proto";
 
 message SummaryReport {
   SummaryReportProfile summary_report_profile = 1;
@@ -43,7 +43,6 @@ enum GradeLetter {
   GRADE_LETTER_D = 4;
   GRADE_LETTER_F = 5;
 }
-
 
 message PerformanceSummary {
   uint32 risk_rating_score = 1;

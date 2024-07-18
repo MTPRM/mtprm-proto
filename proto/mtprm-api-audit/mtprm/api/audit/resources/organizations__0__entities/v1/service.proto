@@ -3,8 +3,8 @@ syntax = "proto3";
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.api.audit.resources.organizations__0__entities.v1;
 
-import "mtprm/core/time/v1/message.proto";
 import "mtprm/core/entity/v1/message.proto";
+import "mtprm/core/time/v1/message.proto";
 
 service Service {
   rpc List(ListRequest) returns (ListResponse) {}
