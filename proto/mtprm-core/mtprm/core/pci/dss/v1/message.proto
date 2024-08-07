@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package mtprm.core.pci.dss.v1;
+
+enum ComplianceLevel {
+  COMPLIANCE_LEVEL_UNSPECIFIED = 0;
+  COMPLIANCE_LEVEL_ONE = 1;
+  COMPLIANCE_LEVEL_TWO = 2;
+  COMPLIANCE_LEVEL_THREE = 3;
+  COMPLIANCE_LEVEL_FOUR = 4;
+}
