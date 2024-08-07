@@ -37,7 +37,7 @@ build_buf_build() {
 }
 
 deploy_buf_build() {
-  pnpm exec buf push --label $(cat TAG_NAME) || exit
+  pnpm exec buf push --label $(cat TAG_NAME) --label main || exit
 }
 
 main "$@"
