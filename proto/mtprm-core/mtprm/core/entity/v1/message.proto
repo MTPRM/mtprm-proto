@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package mtprm.core.entity.v1;
 
+import "mtprm/core/pci/dss/v1/message.proto";
+import "mtprm/core/time/v1/message.proto";
 import "mtprm/core/uuid/v1/message.proto";
 
 message Entity {
@@ -13,4 +15,8 @@ message EntityData {
   string name = 1;
   uint64 case_number = 2;
   string domain = 3;
+  mtprm.core.time.v1.IsoDateTime last_assessment_date = 4;
+  mtprm.core.pci.dss.v1.ComplianceLevel dss_level = 5;
+  string contact_email_primary = 6;
+  string contact_email_secondary = 7;
 }
