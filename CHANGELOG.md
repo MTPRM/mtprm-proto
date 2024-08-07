@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.1.0](https://github.com/mtprm/mtprm-proto/compare/15.0.0...15.1.0) (2024-08-07)
+
+
+### Features
+
+* **core:** add more fields to `EntityData` ([ffb7e7a](https://github.com/mtprm/mtprm-proto/commit/ffb7e7a6e3922a3c4b584d3536fbbf08d112e33a))
+* **proto:** add messages for `mtprm.core.pci.dss.v1` ([d13a7eb](https://github.com/mtprm/mtprm-proto/commit/d13a7eba013769683177ced4516e1d619ba52341))
+
 ## [15.0.0](https://github.com/mtprm/mtprm-proto/compare/14.3.0...15.0.0) (2024-07-18)
 
 ### ⚠ BREAKING CHANGES
