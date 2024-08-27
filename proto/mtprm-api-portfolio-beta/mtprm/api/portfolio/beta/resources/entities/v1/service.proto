@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
-package mtprm.api.admin.resources.entities.v1;
+package mtprm.api.portfolio.beta.resources.entities.v1;
 
 import "mtprm/core/entity/v1/message.proto";
 import "mtprm/core/uuid/v1/message.proto";
