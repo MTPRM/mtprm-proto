@@ -15,9 +15,7 @@ service Service {
 }
 
 message CreateRequest {
-  string name = 1;
-  uint64 case_number = 2;
-  string domain = 3;
+  mtprm.core.entity.v1.EntityData entity = 1;
 }
 
 message CreateResponse {
