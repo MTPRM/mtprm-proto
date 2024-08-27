@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.admin.resources.entities__0__reports__combined__xlsx.v1;
+
+import "mtprm/core/uuid/v1/message.proto";
+
+service Service {
+  rpc Get(GetRequest) returns (stream GetResponse) {}
+}
+
+message GetRequest {
+  mtprm.core.uuid.v1.Uuid entity_id = 2;
+}
+
+message GetResponse {
+  bytes chunk = 1;
+}
