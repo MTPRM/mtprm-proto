@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.admin.resources.entities__0__reports__summary.v1;
+
+import "mtprm/core/summary_report/v1/message.proto";
+import "mtprm/core/uuid/v1/message.proto";
+
+service Service {
+  rpc Get(GetRequest) returns (GetResponse) {}
+}
+
+message GetRequest {
+  mtprm.core.uuid.v1.Uuid entity_id = 1;
+}
+
+message GetResponse {
+  mtprm.core.summary_report.v1.SummaryReport summary_report = 1;
+}
