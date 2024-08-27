@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.0.0](https://github.com/MTPRM/mtprm-proto/compare/15.2.3...16.0.0) (2024-08-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **portfolio-beta:** prefer `EntityData` for `CreateRequest`
+* **portfolio-beta:** return `stream`
+
+### Features
+
+* **portfolio-beta:** prefer `EntityData` for `CreateRequest` ([b5dff98](https://github.com/MTPRM/mtprm-proto/commit/b5dff98939c5ce9d7965649288cba7949db9222e))
+
+
+### Bug Fixes
+
+* **portfolio-beta:** return `stream` ([0c9add4](https://github.com/MTPRM/mtprm-proto/commit/0c9add475eb24322aa8a0e1fd294bb37139fffe1))
+
 ### [15.2.3](https://github.com/MTPRM/mtprm-proto/compare/15.2.2...15.2.3) (2024-08-27)
 
 
