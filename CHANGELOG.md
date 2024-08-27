@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [15.2.3](https://github.com/MTPRM/mtprm-proto/compare/15.2.2...15.2.3) (2024-08-27)
+
+
+### Bug Fixes
+
+* **portfolio-beta:** use correct package ([ae90304](https://github.com/MTPRM/mtprm-proto/commit/ae903049d2761185d06aa996e803e793a412a816))
+* **portfolio-beta:** use correct package ([e032bf7](https://github.com/MTPRM/mtprm-proto/commit/e032bf752c21912eb3ac6284dc70f4ea3aff0551))
+* **portfolio-beta:** use correct package ([292670e](https://github.com/MTPRM/mtprm-proto/commit/292670ed56f18cb8ee8d6d3b321139b43c69ced0))
+* **portfolio-beta:** use correct package ([092d66a](https://github.com/MTPRM/mtprm-proto/commit/092d66a8c28e3b8aa233e18d42c752ed486e981b))
+
 ### [15.2.2](https://github.com/MTPRM/mtprm-proto/compare/15.2.1...15.2.2) (2024-08-27)
 
 ### [15.2.1](https://github.com/MTPRM/mtprm-proto/compare/15.2.0...15.2.1) (2024-08-27)
