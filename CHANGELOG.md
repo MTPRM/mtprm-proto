@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.2.0](https://github.com/MTPRM/mtprm-proto/compare/15.1.2...15.2.0) (2024-08-27)
+
+
+### Features
+
+* **portfolio-beta:** add `entities__0__reports__combined__xlsx/v1` service ([d769e19](https://github.com/MTPRM/mtprm-proto/commit/d769e1906257679768ad4c1fb2ab15d1482cdf60))
+* **portfolio-beta:** add `entities__0__reports__summary/v1` service ([ed801c3](https://github.com/MTPRM/mtprm-proto/commit/ed801c3e5e941174237728a45ff60b4366f18901))
+* **portfolio-beta:** add `entities/v1` services ([bc2d9b0](https://github.com/MTPRM/mtprm-proto/commit/bc2d9b01192bcbdd879fe2ff2f330e9e92ae6e02))
+* **portfolio-beta:** add `reports__combined__zip/v1` service ([b51fd89](https://github.com/MTPRM/mtprm-proto/commit/b51fd89a728f05b8c79bf47851640c257b6e71ec))
+
 ### [15.1.2](https://github.com/mtprm/mtprm-proto/compare/15.1.1...15.1.2) (2024-08-07)
 
 ### [15.1.1](https://github.com/mtprm/mtprm-proto/compare/15.1.0...15.1.1) (2024-08-07)
