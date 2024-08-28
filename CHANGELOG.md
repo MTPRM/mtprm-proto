@@ -4,30 +4,27 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [16.0.0](https://github.com/MTPRM/mtprm-proto/compare/15.2.3...16.0.0) (2024-08-27)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **portfolio-beta:** prefer `EntityData` for `CreateRequest`
-* **portfolio-beta:** return `stream`
+- **portfolio-beta:** prefer `EntityData` for `CreateRequest`
+- **portfolio-beta:** return `stream`
 
 ### Features
 
-* **portfolio-beta:** prefer `EntityData` for `CreateRequest` ([b5dff98](https://github.com/MTPRM/mtprm-proto/commit/b5dff98939c5ce9d7965649288cba7949db9222e))
-
+- **portfolio-beta:** prefer `EntityData` for `CreateRequest` ([b5dff98](https://github.com/MTPRM/mtprm-proto/commit/b5dff98939c5ce9d7965649288cba7949db9222e))
 
 ### Bug Fixes
 
-* **portfolio-beta:** return `stream` ([0c9add4](https://github.com/MTPRM/mtprm-proto/commit/0c9add475eb24322aa8a0e1fd294bb37139fffe1))
+- **portfolio-beta:** return `stream` ([0c9add4](https://github.com/MTPRM/mtprm-proto/commit/0c9add475eb24322aa8a0e1fd294bb37139fffe1))
 
 ### [15.2.3](https://github.com/MTPRM/mtprm-proto/compare/15.2.2...15.2.3) (2024-08-27)
 
-
 ### Bug Fixes
 
-* **portfolio-beta:** use correct package ([ae90304](https://github.com/MTPRM/mtprm-proto/commit/ae903049d2761185d06aa996e803e793a412a816))
-* **portfolio-beta:** use correct package ([e032bf7](https://github.com/MTPRM/mtprm-proto/commit/e032bf752c21912eb3ac6284dc70f4ea3aff0551))
-* **portfolio-beta:** use correct package ([292670e](https://github.com/MTPRM/mtprm-proto/commit/292670ed56f18cb8ee8d6d3b321139b43c69ced0))
-* **portfolio-beta:** use correct package ([092d66a](https://github.com/MTPRM/mtprm-proto/commit/092d66a8c28e3b8aa233e18d42c752ed486e981b))
+- **portfolio-beta:** use correct package ([ae90304](https://github.com/MTPRM/mtprm-proto/commit/ae903049d2761185d06aa996e803e793a412a816))
+- **portfolio-beta:** use correct package ([e032bf7](https://github.com/MTPRM/mtprm-proto/commit/e032bf752c21912eb3ac6284dc70f4ea3aff0551))
+- **portfolio-beta:** use correct package ([292670e](https://github.com/MTPRM/mtprm-proto/commit/292670ed56f18cb8ee8d6d3b321139b43c69ced0))
+- **portfolio-beta:** use correct package ([092d66a](https://github.com/MTPRM/mtprm-proto/commit/092d66a8c28e3b8aa233e18d42c752ed486e981b))
 
 ### [15.2.2](https://github.com/MTPRM/mtprm-proto/compare/15.2.1...15.2.2) (2024-08-27)
 
@@ -35,13 +32,12 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [15.2.0](https://github.com/MTPRM/mtprm-proto/compare/15.1.2...15.2.0) (2024-08-27)
 
-
 ### Features
 
-* **portfolio-beta:** add `entities__0__reports__combined__xlsx/v1` service ([d769e19](https://github.com/MTPRM/mtprm-proto/commit/d769e1906257679768ad4c1fb2ab15d1482cdf60))
-* **portfolio-beta:** add `entities__0__reports__summary/v1` service ([ed801c3](https://github.com/MTPRM/mtprm-proto/commit/ed801c3e5e941174237728a45ff60b4366f18901))
-* **portfolio-beta:** add `entities/v1` services ([bc2d9b0](https://github.com/MTPRM/mtprm-proto/commit/bc2d9b01192bcbdd879fe2ff2f330e9e92ae6e02))
-* **portfolio-beta:** add `reports__combined__zip/v1` service ([b51fd89](https://github.com/MTPRM/mtprm-proto/commit/b51fd89a728f05b8c79bf47851640c257b6e71ec))
+- **portfolio-beta:** add `entities__0__reports__combined__xlsx/v1` service ([d769e19](https://github.com/MTPRM/mtprm-proto/commit/d769e1906257679768ad4c1fb2ab15d1482cdf60))
+- **portfolio-beta:** add `entities__0__reports__summary/v1` service ([ed801c3](https://github.com/MTPRM/mtprm-proto/commit/ed801c3e5e941174237728a45ff60b4366f18901))
+- **portfolio-beta:** add `entities/v1` services ([bc2d9b0](https://github.com/MTPRM/mtprm-proto/commit/bc2d9b01192bcbdd879fe2ff2f330e9e92ae6e02))
+- **portfolio-beta:** add `reports__combined__zip/v1` service ([b51fd89](https://github.com/MTPRM/mtprm-proto/commit/b51fd89a728f05b8c79bf47851640c257b6e71ec))
 
 ### [15.1.2](https://github.com/mtprm/mtprm-proto/compare/15.1.1...15.1.2) (2024-08-07)
 
