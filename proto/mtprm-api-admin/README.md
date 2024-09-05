@@ -8,7 +8,7 @@ Use metadata key `jwt`.
 
 ```ts
 import { Service } from '@buf/mtprm_mtprm-api-admin.connectrpc_es/mtprm/api/admin/resources/organizations__0__entities/v1/service_connect'
-import type { PromiseClient } from '@connectrpc/connect'
+import { type PromiseClient, createPromiseClient } from '@connectrpc/connect'
 import { createPromiseClient } from '@connectrpc/connect'
 import { createGrpcWebTransport } from '@connectrpc/connect-web'
 
@@ -27,7 +27,7 @@ const transport = createGrpcWebTransport({
   ],
 })
 
-const client = new ServiceClient(transport)
+const client = createPromiseClient(Service, transport)
 
 client.create(
   {
