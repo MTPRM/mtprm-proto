@@ -1,6 +1,6 @@
 # mtprm-proto
 
-Deploys to [Buf Schema Registry](https://buf.build/mtprm/mtprm-proto/).
+Deploys to [Buf Schema Registry](https://buf.build/mtprm).
 
 API defined via:
 
