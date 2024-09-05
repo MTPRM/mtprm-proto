@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [16.0.1](https://github.com/mtprm/mtprm-proto/compare/16.0.0...16.0.1) (2024-09-05)
+
 ## [16.0.0](https://github.com/MTPRM/mtprm-proto/compare/15.2.3...16.0.0) (2024-08-27)
 
 ### ⚠ BREAKING CHANGES
