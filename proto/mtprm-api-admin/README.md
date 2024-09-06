@@ -23,18 +23,16 @@ const transport = createGrpcWebTransport({
       request.header.set(METADATA_KEY, jwtValue)
 
       return next(request)
-    }
+    },
   ],
 })
 
 const client = createPromiseClient(Service, transport)
 
-client.create(
-  {
-    org_id: {
-      value: '1231'
-    },
-    // ...
-  }
-)
+client.create({
+  org_id: {
+    value: '1231',
+  },
+  // ...
+})
 ```
