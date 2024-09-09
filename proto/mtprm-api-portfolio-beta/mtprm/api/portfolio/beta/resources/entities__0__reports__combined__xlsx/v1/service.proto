@@ -13,6 +13,8 @@ message GetRequest {
   mtprm.core.uuid.v1.Uuid entity_id = 2;
 }
 
+// This is a binary data.
+// The mime type is `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`
 message GetResponse {
   bytes chunk = 1;
 }
