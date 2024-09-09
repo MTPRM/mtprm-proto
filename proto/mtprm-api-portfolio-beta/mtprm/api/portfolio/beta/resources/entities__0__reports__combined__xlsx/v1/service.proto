@@ -16,7 +16,7 @@ message GetRequest {
 }
 
 // This is a binary data.
-// The mime type is `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`
+// The mime type is `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`.
 message GetResponse {
   bytes chunk = 1;
 }
