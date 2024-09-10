@@ -23,18 +23,16 @@ const transport = createGrpcTransport({
       request.header.set(METADATA_KEY, jwtValue)
 
       return next(request)
-    }
+    },
   ],
 })
 
 const client = createPromiseClient(Service, transport)
 
-client.create(
-  {
-    entity: {
-      name: '1231'
-      // other fields...
-    },
-  }
-)
+client.create({
+  entity: {
+    name: '1231',
+    // other fields...
+  },
+})
 ```
