@@ -5,6 +5,8 @@ package mtprm.api.portfolio.beta.resources.reports__combined__zip.v1;
 
 import "mtprm/core/uuid/v1/message.proto";
 
+// Produces a `.zip` file where each entry is the same calling the
+// entities__0__reports__combined__xlsx.v1 endpoint
 service Service {
   rpc Get(GetRequest) returns (stream GetResponse) {}
 }
