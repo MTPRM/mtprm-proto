@@ -5,7 +5,8 @@ package mtprm.api.portfolio.beta.resources.entities__0__reports__combined__xlsx.
 
 import "mtprm/core/uuid/v1/message.proto";
 
-// Download a spreadsheet report for an individual entity.
+// Produces a spreadsheet report for an individual entity. Report is a combination of the Summary
+// Report referenced in `entities__0__reports__summary.v1` and the Issues Report.
 service Service {
   rpc Get(GetRequest) returns (stream GetResponse) {}
 }
