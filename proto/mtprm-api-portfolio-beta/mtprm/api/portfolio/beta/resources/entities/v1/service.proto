@@ -6,6 +6,11 @@ package mtprm.api.portfolio.beta.resources.entities.v1;
 import "mtprm/core/entity/v1/message.proto";
 import "mtprm/core/uuid/v1/message.proto";
 
+// Create: add a new entity
+// Read: get an entity by ID
+// Update: update an existing entity's details
+// Delete: remove a entity by ID
+// List: retrieve a list of all entities
 service Service {
   rpc Create(CreateRequest) returns (CreateResponse) {}
   rpc Read(ReadRequest) returns (ReadResponse) {}
