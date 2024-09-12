@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.1.0](https://github.com/MTPRM/mtprm-proto/compare/16.0.2...16.1.0) (2024-09-12)
+
+
+### Features
+
+* **portfolio-beta:** add a comment about what the service does ([4bb07a5](https://github.com/MTPRM/mtprm-proto/commit/4bb07a5d279e89fe99c40432632130ac18ca35ab))
+* **portfolio-beta:** add a comment about what the service does ([443fc40](https://github.com/MTPRM/mtprm-proto/commit/443fc407d407682ebe0d2ab69531c1ea4507d381))
+* **portfolio-beta:** add a comment about what the service does ([80ea454](https://github.com/MTPRM/mtprm-proto/commit/80ea454af4b68bf2e4459b56c977bf8b1df83e4a))
+
 ### [16.0.2](https://github.com/mtprm/mtprm-proto/compare/16.0.1...16.0.2) (2024-09-09)
 
 ### [16.0.1](https://github.com/mtprm/mtprm-proto/compare/16.0.0...16.0.1) (2024-09-05)
