@@ -4,28 +4,25 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [16.3.0](https://github.com/MTPRM/mtprm-proto/compare/16.2.0...16.3.0) (2024-09-12)
 
-
 ### Features
 
-* **portfolio-beta:** add a comment about what the service does ([b298dc6](https://github.com/MTPRM/mtprm-proto/commit/b298dc67f69b690afd6c7942972556d899d251ee))
+- **portfolio-beta:** add a comment about what the service does ([b298dc6](https://github.com/MTPRM/mtprm-proto/commit/b298dc67f69b690afd6c7942972556d899d251ee))
 
 ## [16.2.0](https://github.com/MTPRM/mtprm-proto/compare/16.1.1...16.2.0) (2024-09-12)
 
-
 ### Features
 
-* **portfolio-beta:** update comment about what the service does ([9419bdd](https://github.com/MTPRM/mtprm-proto/commit/9419bdd8ab379a2545137febfa86c333ca8d79d8))
+- **portfolio-beta:** update comment about what the service does ([9419bdd](https://github.com/MTPRM/mtprm-proto/commit/9419bdd8ab379a2545137febfa86c333ca8d79d8))
 
 ### [16.1.1](https://github.com/MTPRM/mtprm-proto/compare/16.1.0...16.1.1) (2024-09-12)
 
 ## [16.1.0](https://github.com/MTPRM/mtprm-proto/compare/16.0.2...16.1.0) (2024-09-12)
 
-
 ### Features
 
-* **portfolio-beta:** add a comment about what the service does ([4bb07a5](https://github.com/MTPRM/mtprm-proto/commit/4bb07a5d279e89fe99c40432632130ac18ca35ab))
-* **portfolio-beta:** add a comment about what the service does ([443fc40](https://github.com/MTPRM/mtprm-proto/commit/443fc407d407682ebe0d2ab69531c1ea4507d381))
-* **portfolio-beta:** add a comment about what the service does ([80ea454](https://github.com/MTPRM/mtprm-proto/commit/80ea454af4b68bf2e4459b56c977bf8b1df83e4a))
+- **portfolio-beta:** add a comment about what the service does ([4bb07a5](https://github.com/MTPRM/mtprm-proto/commit/4bb07a5d279e89fe99c40432632130ac18ca35ab))
+- **portfolio-beta:** add a comment about what the service does ([443fc40](https://github.com/MTPRM/mtprm-proto/commit/443fc407d407682ebe0d2ab69531c1ea4507d381))
+- **portfolio-beta:** add a comment about what the service does ([80ea454](https://github.com/MTPRM/mtprm-proto/commit/80ea454af4b68bf2e4459b56c977bf8b1df83e4a))
 
 ### [16.0.2](https://github.com/mtprm/mtprm-proto/compare/16.0.1...16.0.2) (2024-09-09)
 
