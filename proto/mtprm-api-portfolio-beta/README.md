@@ -8,7 +8,6 @@ Use metadata key `api-key`.
 
 ```ts
 import { Service } from '@buf/mtprm_mtprm-api-portfolio-beta.connectrpc_es/mtprm/api/portfolio/beta/resources/entities/v1/service_connect'
-import { type PromiseClient, createPromiseClient } from '@connectrpc/connect'
 import { createPromiseClient } from '@connectrpc/connect'
 import { createGrpcTransport } from '@connectrpc/connect-node'
 
