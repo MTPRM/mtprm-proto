@@ -2,7 +2,7 @@
 
 ## Authentication
 
-Use metadata key `jwt`.
+Use metadata key `api-key`.
 
 ### Authentication Example (Typescript)
 
@@ -12,15 +12,15 @@ import { type PromiseClient, createPromiseClient } from '@connectrpc/connect'
 import { createPromiseClient } from '@connectrpc/connect'
 import { createGrpcTransport } from '@connectrpc/connect-node'
 
-const METADATA_KEY = 'jwt'
-const jwtValue = '123455...'
+const METADATA_KEY = 'api-key'
+const apiKeyValue = 'mak_...'
 
 const transport = createGrpcTransport({
   baseUrl: 'https://api-portfolio.whitehawk-mtprm.com',
   httpVersion: '2',
   interceptors: [
     (next) => async (request) => {
-      request.header.set(METADATA_KEY, jwtValue)
+      request.header.set(METADATA_KEY, apiKeyValue)
 
       return next(request)
     },
