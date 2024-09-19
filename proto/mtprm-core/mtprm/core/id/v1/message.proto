@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package mtprm.core.id.v1;
+
+// An identifier that happens to have a human-readable prefix.
+message PrefixedId {
+  // E.G. `foo_123456`
+  string value = 1;
+}
