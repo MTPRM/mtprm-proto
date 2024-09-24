@@ -35,3 +35,22 @@ client.create({
   },
 })
 ```
+
+## Design
+
+This API follows a resource-oriented design.
+
+Collection resources use these standard operations:
+
+- Create
+- Read
+- Update
+- Delete
+- List
+
+Singleton resources use these standard operations:
+
+- Get
+- Set
+
+This is similar to the [Google reccommendation](https://cloud.google.com/apis/design/resources).
