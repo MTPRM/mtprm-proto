@@ -53,4 +53,4 @@ Singleton resources use these standard operations:
 - Get
 - Set
 
-This is similar to the [Google reccommendation](https://cloud.google.com/apis/design/resources).
+This is similar to the [Google recommendation](https://cloud.google.com/apis/design/resources).
