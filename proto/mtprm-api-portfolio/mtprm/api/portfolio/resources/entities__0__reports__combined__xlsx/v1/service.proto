@@ -5,9 +5,8 @@ package mtprm.api.portfolio.resources.entities__0__reports__combined__xlsx.v1;
 
 import "mtprm/core/id/v1/message.proto";
 
-// Produces a spreadsheet report for an individual entity. Report is a combination of the Summary
-// Report referenced in `entities__0__reports__summary.v1` and the Issues Report.
 service Service {
+  // Retrieve the combined report for a specific entity. Produces a spreadsheet with the summary report details and the issues report details.
   rpc Get(GetRequest) returns (stream GetResponse) {}
 }
 
