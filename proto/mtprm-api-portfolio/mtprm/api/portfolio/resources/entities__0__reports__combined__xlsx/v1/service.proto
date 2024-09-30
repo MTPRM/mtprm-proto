@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.portfolio.resources.entities__0__reports__combined__xlsx.v1;
+
+import "mtprm/core/id/v1/message.proto";
+
+// Produces a spreadsheet report for an individual entity. Report is a combination of the Summary
+// Report referenced in `entities__0__reports__summary.v1` and the Issues Report.
+service Service {
+  rpc Get(GetRequest) returns (stream GetResponse) {}
+}
+
+message GetRequest {
+  mtprm.core.id.v1.PrefixedId entity_id = 1;
+}
+
+// This is a binary data.
+// The mime type is `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`.
+message GetResponse {
+  bytes chunk = 1;
+}
