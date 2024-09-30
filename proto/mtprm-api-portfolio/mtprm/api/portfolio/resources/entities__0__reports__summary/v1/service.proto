@@ -6,8 +6,8 @@ package mtprm.api.portfolio.resources.entities__0__reports__summary.v1;
 import "mtprm/core/summary_report/v1/message.proto";
 import "mtprm/core/id/v1/message.proto";
 
-// Get the Summary Report data for an individual entity.
 service Service {
+  // Retrieve the summary report details for a specific entity.
   rpc Get(GetRequest) returns (GetResponse) {}
 }
 
