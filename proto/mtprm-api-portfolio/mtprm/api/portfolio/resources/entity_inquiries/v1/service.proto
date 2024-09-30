@@ -7,8 +7,11 @@ import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/entity_inquiry/v1/message.proto";
 
 service Service {
+  // Create an inquiry to have an entity manually added for monitoring.
   rpc Create(CreateRequest) returns (CreateResponse) {}
+  // Retrieve details of a specific inquiry.
   rpc Read(ReadRequest) returns (ReadResponse) {}
+  // Retrieve a list of all inquiries.
   rpc List(ListRequest) returns (stream ListResponse) {}
 }
 
