@@ -1,6 +1,6 @@
 async function main() {
   const rawOpenapi = await fetch(
-    'gen-gateway-go/openapi/merged.swagger.json'
+    'openapi/merged.swagger.json'
   )
   const rawOpenapiJson = await rawOpenapi.json()
 
