@@ -7,9 +7,9 @@ import "mtprm/core/entity/v2/message.proto";
 import "mtprm/core/id/v1/message.proto";
 
 service Service {
-  // Read: get details of a monitored entity
+  // Retrieve details of a specific entity being monitored.
   rpc Read(ReadRequest) returns (ReadResponse) {}
-  // List: retrieve a list of all monitored entities; optionally pass a grade to get a filtered list of entities with specified grade
+  // Retrieve a list of all entities being monitored; optionally pass a grade to get a filtered list of entities by specified grade.
   rpc List(ListRequest) returns (stream ListResponse) {}
 }
 
