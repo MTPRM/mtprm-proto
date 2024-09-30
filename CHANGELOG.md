@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.0.0](https://github.com/MTPRM/mtprm-proto/compare/16.4.1...17.0.0) (2024-09-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-portfolio:** remove unnecessary `Create/Update/Delete` endpoints for now
+
+### Features
+
+* **api-portfolio:** remove unnecessary `Create/Update/Delete` endpoints for now ([1bdd91c](https://github.com/MTPRM/mtprm-proto/commit/1bdd91cd094067aaabd73a420dc6df6b9acb8886))
+
 ### [16.4.1](https://github.com/MTPRM/mtprm-proto/compare/16.4.0...16.4.1) (2024-09-30)
 
 ## [16.4.0](https://github.com/MTPRM/mtprm-proto/compare/16.3.1...16.4.0) (2024-09-30)
