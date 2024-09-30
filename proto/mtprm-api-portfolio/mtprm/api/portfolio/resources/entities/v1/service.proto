@@ -7,24 +7,10 @@ import "mtprm/core/entity/v2/message.proto";
 import "mtprm/core/id/v1/message.proto";
 
 service Service {
-  // Create: add a new entity
-  rpc Create(CreateRequest) returns (CreateResponse) {}
-  // Read: get details of an entity by ID
+  // Read: get details of a monitored entity
   rpc Read(ReadRequest) returns (ReadResponse) {}
-  // Update: update an existing entity's details by ID
-  rpc Update(UpdateRequest) returns (UpdateResponse) {}
-  // Delete: remove a entity by ID
-  rpc Delete(DeleteRequest) returns (DeleteResponse) {}
-  // List: retrieve a list of all entities; optionally pass a grade to get a filtered list of entities with specified grade
+  // List: retrieve a list of all monitored entities; optionally pass a grade to get a filtered list of entities with specified grade
   rpc List(ListRequest) returns (stream ListResponse) {}
-}
-
-message CreateRequest {
-  mtprm.core.entity.v2.EntityData entity = 1;
-}
-
-message CreateResponse {
-  mtprm.core.id.v1.PrefixedId entity_id = 1;
 }
 
 message ReadRequest {
@@ -34,18 +20,6 @@ message ReadRequest {
 message ReadResponse {
   mtprm.core.entity.v2.Entity entity = 1;
 }
-
-message UpdateRequest {
-  mtprm.core.entity.v2.Entity entity = 1;
-}
-
-message UpdateResponse {}
-
-message DeleteRequest {
-  mtprm.core.id.v1.PrefixedId entity_id = 1;
-}
-
-message DeleteResponse {}
 
 message ListRequest {
   optional Grade grade = 1;
