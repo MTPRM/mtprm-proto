@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.portfolio.resources.entities__0__reports__summary.v1;
+
+import "mtprm/core/summary_report/v1/message.proto";
+import "mtprm/core/id/v1/message.proto";
+
+// Get the Summary Report data for an individual entity.
+service Service {
+  rpc Get(GetRequest) returns (GetResponse) {}
+}
+
+message GetRequest {
+  mtprm.core.id.v1.PrefixedId entity_id = 1;
+}
+
+message GetResponse {
+  mtprm.core.summary_report.v1.SummaryReport summary_report = 1;
+}
