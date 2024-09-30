@@ -12,10 +12,10 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	entities_api "github.com/MTPRM/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities/v1"
-	entities__0__reports__combined__xlsx "github.com/MTPRM/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities__0__reports__combined__xlsx/v1"
-	entities__0__reports__summary "github.com/MTPRM/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities__0__reports__summary/v1"
-	reports__combined__zip "github.com/MTPRM/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/reports__combined__zip/v1"
+	entities_api "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities/v1"
+	entities__0__reports__combined__xlsx "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities__0__reports__combined__xlsx/v1"
+	entities__0__reports__summary "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities__0__reports__summary/v1"
+	reports__combined__zip "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/reports__combined__zip/v1"
 )
 
 func main() {

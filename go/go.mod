@@ -1,4 +1,4 @@
-module github.com/MTPRM/mtprm-proto-grpc-gateway
+module github.com/mtprm/mtprm-proto-grpc-gateway
 
 go 1.23.1
 

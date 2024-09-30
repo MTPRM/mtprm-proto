@@ -3,7 +3,7 @@ managed:
   enabled: true
   override:
     - file_option: go_package_prefix
-      value: 'github.com/MTPRM/mtprm-proto-grpc-gateway/generated'
+      value: 'github.com/mtprm/mtprm-proto-grpc-gateway/generated'
 plugins:
   - remote: buf.build/protocolbuffers/go:v1.34.2
     out: go/generated/
