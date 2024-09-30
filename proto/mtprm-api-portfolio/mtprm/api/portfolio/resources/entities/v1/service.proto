@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.portfolio.resources.entities.v1;
+
+import "mtprm/core/entity/v2/message.proto";
+import "mtprm/core/id/v1/message.proto";
+
+service Service {
+  // Create: add a new entity
+  rpc Create(CreateRequest) returns (CreateResponse) {}
+  // Read: get details of an entity by ID
+  rpc Read(ReadRequest) returns (ReadResponse) {}
+  // Update: update an existing entity's details by ID
+  rpc Update(UpdateRequest) returns (UpdateResponse) {}
+  // Delete: remove a entity by ID
+  rpc Delete(DeleteRequest) returns (DeleteResponse) {}
+  // List: retrieve a list of all entities; optionally pass a grade to get a filtered list of entities with specified grade
+  rpc List(ListRequest) returns (stream ListResponse) {}
+}
+
+message CreateRequest {
+  mtprm.core.entity.v2.EntityData entity = 1;
+}
+
+message CreateResponse {
+  mtprm.core.id.v1.PrefixedId entity_id = 1;
+}
+
+message ReadRequest {
+  mtprm.core.id.v1.PrefixedId entity_id = 1;
+}
+
+message ReadResponse {
+  mtprm.core.entity.v2.Entity entity = 1;
+}
+
+message UpdateRequest {
+  mtprm.core.entity.v2.Entity entity = 1;
+}
+
+message UpdateResponse {}
+
+message DeleteRequest {
+  mtprm.core.id.v1.PrefixedId entity_id = 1;
+}
+
+message DeleteResponse {}
+
+message ListRequest {
+  optional Grade grade = 1;
+}
+
+message ListResponse {
+  repeated mtprm.core.entity.v2.Entity entities = 1;
+}
+
+enum Grade {
+  GRADE_UNSPECIFIED = 0;
+  GRADE_A = 1;
+  GRADE_B = 2;
+  GRADE_C = 3;
+  GRADE_D = 4;
+  GRADE_F = 5;
+}
