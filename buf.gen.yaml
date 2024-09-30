@@ -22,3 +22,5 @@ plugins:
     out: go/openapi/
     opt:
       - generate_unbound_methods=true
+      - allow_merge=true
+      - merge_file_name=merged
