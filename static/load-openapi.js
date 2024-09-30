@@ -18,6 +18,7 @@ async function main() {
 
 function convert(input) {
   const paths = {}
+  const tags = []
   for (const curr of Object.entries(input.paths)) {
     const [key, value] = curr
 
@@ -28,7 +29,9 @@ function convert(input) {
       const split = fullName.split('.')
       const tag = getTag(split[4])
 
-
+      if (!tags.includes(tag)){
+        tags.push({name: tag})
+      }
 
       paths[key] = Object.fromEntries(
         Object.entries(value).map(([key, value]) => [
@@ -47,9 +50,14 @@ function convert(input) {
     ...input,
     info: {
       title: 'MTPRM Portfolio API',
+      termsOfService: 'https://www.whitehawk.com/terms-conditions',
+      contact: {
+        email: 'info@whitehawk.com',
+      },
       version: '',
     },
     paths,
+    tags,
   }
 }
 
