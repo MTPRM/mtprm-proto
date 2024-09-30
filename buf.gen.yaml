@@ -3,14 +3,22 @@ managed:
   enabled: true
   override:
     - file_option: go_package_prefix
-      value: 'fake'
+      value: 'github.com/MTPRM/mtprm-proto-grpc-gateway/generated'
 plugins:
+  - remote: buf.build/protocolbuffers/go:v1.34.2
+    out: go/generated/
+    opt:
+      - paths=source_relative
+  - remote: buf.build/grpc/go:v1.5.1
+    out: go/generated/
+    opt:
+      - paths=source_relative
   - remote: buf.build/grpc-ecosystem/gateway:v2.22.0
-    out: gen-gateway-go/
+    out: go/generated/
     opt:
       - paths=source_relative
       - generate_unbound_methods=true
   - remote: buf.build/grpc-ecosystem/openapiv2:v2.22.0
-    out: gen-gateway-go/openapi/
+    out: go/openapi/
     opt:
       - generate_unbound_methods=true

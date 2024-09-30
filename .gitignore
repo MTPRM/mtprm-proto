@@ -23,3 +23,6 @@ nohup.out
 
 # generated files
 gen-*/
+go/generated/
+go/openapi/
+go/rest
