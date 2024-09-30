@@ -20,3 +20,6 @@ nohup.out
 
 # idea (https://www.jetbrains.com/idea)
 /.idea/
+
+# generated files
+gen-*/
