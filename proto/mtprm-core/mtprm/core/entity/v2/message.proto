@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package mtprm.core.entity.v2;
+
+import "mtprm/core/pci/dss/v1/message.proto";
+import "mtprm/core/time/v1/message.proto";
+import "mtprm/core/id/v1/message.proto";
+
+message Entity {
+  mtprm.core.id.v1.PrefixedId entity_id = 1;
+  EntityData data = 2;
+}
+
+message EntityData {
+  string name = 1;
+  string domain = 2;
+  optional uint32 duns_number = 3;
+  oneof last_assessment_date_optional {
+    mtprm.core.time.v1.IsoDateTime last_assessment_date = 4;
+  }
+  mtprm.core.pci.dss.v1.ComplianceLevel dss_level = 5;
+  string contact_email_primary = 6;
+  optional string contact_email_secondary = 7;
+}
