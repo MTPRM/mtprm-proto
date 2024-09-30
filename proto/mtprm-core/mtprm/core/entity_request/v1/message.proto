@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package mtprm.core.entity_request.v1;
+
+import "mtprm/core/time/v1/message.proto";
+import "mtprm/core/id/v1/message.proto";
+import "mtprm/core/entity/v2/message.proto";
+
+message EntityRequest {
+  mtprm.core.id.v1.PrefixedId request_id = 1;
+  mtprm.core.entity.v2.EntityData entity = 2;
+  optional uint64 case_number = 3;
+  RequestStatus status = 4;
+}
+
+message RequestStatus {
+  RequestState state = 1;
+  mtprm.core.time.v1.IsoDateTime updated_at = 2;
+}
+
+enum RequestState {
+  REQUEST_STATE_UNSPECIFIED = 0;
+  REQUEST_STATE_PENDING = 1;
+  REQUEST_STATE_COMPLETE = 2;
+  REQUEST_STATE_DUPLICATE = 3;
+  REQUEST_STATE_MISSING_DATA = 4;
+  REQUEST_STATE_NONEXISTENT = 5;
+  REQUEST_STATE_OTHER_ERROR = 6;
+}
