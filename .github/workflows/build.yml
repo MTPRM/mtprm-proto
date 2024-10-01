@@ -6,7 +6,7 @@ on:
       - '*'
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: grpc-gateway
+  IMAGE_NAME: ${{ github.repository }}/grpc-gateway
 
 jobs:
   build:
