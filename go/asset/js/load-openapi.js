@@ -3,10 +3,8 @@ async function main() {
   const rawOpenapiJson = await rawOpenapi.json()
 
   const openapi = convert(rawOpenapiJson)
-  console.log(openapi)
 
   document.getElementById('api-reference').text = JSON.stringify(openapi)
-  console.log({ openapi })
 
   const scalar = document.createElement('script')
   scalar.type = 'text/javascript'
