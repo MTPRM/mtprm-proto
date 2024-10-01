@@ -17,7 +17,6 @@ jobs:
     # See: https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
     permissions:
       packages: write
-      contents: read
 
     steps:
       - uses: actions/checkout@v4
@@ -50,15 +49,14 @@ jobs:
         run: |
           nix develop --command pnpm install
 
-      - name: Build all
-        run: |
-          nix develop --command ./.ci/all-ci build $(git describe)
-
-        env:
-          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BUF_TOKEN: ${{ secrets.BUF_TOKEN }}
+      # - name: Build all
+      #   run: |
+      #     nix develop --command ./.ci/all-ci build $(git describe)
+      #   env:
+      #     GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     BUF_TOKEN: ${{ secrets.BUF_TOKEN }}
 
       - name: Checkout repository
         uses: actions/checkout@v4
