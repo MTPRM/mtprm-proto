@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"reflect"
 	"strings"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
@@ -27,6 +28,11 @@ type NdJsonMarshaller struct {
 }
 
 func (m *NdJsonMarshaller) ContentType(v interface{}) string {
+	// FIXME: there's probably a better way of checking whether it's an error message
+	if reflect.TypeOf(v).String() == "*status.Status" {
+		return "application/json"
+	}
+
 	return ndJsonMimeType
 }
 
