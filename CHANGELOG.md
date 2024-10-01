@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.1.0](https://github.com/mtprm/mtprm-proto/compare/18.0.4...18.1.0) (2024-10-01)
+
+
+### Features
+
+* **go:** remove now impossible situation ([a92977e](https://github.com/mtprm/mtprm-proto/commit/a92977ed16fc4a54bb6ae7eaa97b4923ebdbe552))
+* **go:** support the new api-porfolio endpoints (non-beta) ([a6245b3](https://github.com/mtprm/mtprm-proto/commit/a6245b360d1c0098e1c283fa5590f63c7191e617))
+
 ### [18.0.4](https://github.com/MTPRM/mtprm-proto/compare/18.0.3...18.0.4) (2024-10-01)
 
 ### [18.0.3](https://github.com/MTPRM/mtprm-proto/compare/18.0.2...18.0.3) (2024-10-01)
