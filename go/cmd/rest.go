@@ -12,6 +12,7 @@ import (
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
+	"google.golang.org/protobuf/reflect/protoreflect"
 
 	"github.com/mtprm/mtprm-proto-grpc-gateway/asset"
 	entities_api "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities/v1"
@@ -29,6 +30,20 @@ type NdJsonMarshaller struct {
 func (m *NdJsonMarshaller) ContentType(v interface{}) string {
 	// FIXME: there's probably a better way of checking whether it's an error message
 	if reflect.TypeOf(v).String() == "*status.Status" {
+		return "application/json"
+	}
+
+	// status code: 401
+	//
+	// ```
+	// {
+	//   "error": {
+	//     "code": 16,
+	//     "message": "UnauthenticatedException: Missing or invalid authentication"
+	//   }
+	// }
+	// ```
+	if _, ok := v.(map[string]protoreflect.ProtoMessage); ok {
 		return "application/json"
 	}
 
