@@ -52,24 +52,18 @@ func main() {
 		log.Fatalf("could not connect to order service: %v", err)
 	}
 
-	err = entities_api.RegisterServiceHandler(context.Background(), mux, conn)
-	if err != nil {
-		log.Fatalf("failed to serve: %v", err)
+	registerFuncs := []func(ctx context.Context, mux *runtime.ServeMux, conn *grpc.ClientConn) error{
+		entities_api.RegisterServiceHandler,
+		entities__0__reports__combined__xlsx.RegisterServiceHandler,
+		entities__0__reports__summary.RegisterServiceHandler,
+		reports__combined__zip.RegisterServiceHandler,
 	}
 
-	err = entities__0__reports__combined__xlsx.RegisterServiceHandler(context.Background(), mux, conn)
-	if err != nil {
-		log.Fatalf("failed to serve: %v", err)
-	}
-
-	err = entities__0__reports__summary.RegisterServiceHandler(context.Background(), mux, conn)
-	if err != nil {
-		log.Fatalf("failed to serve: %v", err)
-	}
-
-	err = reports__combined__zip.RegisterServiceHandler(context.Background(), mux, conn)
-	if err != nil {
-		log.Fatalf("failed to serve: %v", err)
+	for _, curr := range registerFuncs {
+		err = curr(context.Background(), mux, conn)
+		if err != nil {
+			log.Fatalf("failed to serve: %v", err)
+		}
 	}
 
 	for path, data := range asset.Router {
