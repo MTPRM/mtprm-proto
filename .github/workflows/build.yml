@@ -15,6 +15,7 @@ jobs:
     # This allows the `GITHUB_TOKEN` to push packages
     # See: https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
     permissions:
+      contents: read
       packages: write
 
     steps:
