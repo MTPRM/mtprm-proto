@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package mtprm.core.entity.v2;
 
+import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/pci/dss/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
-import "mtprm/core/id/v1/message.proto";
 
 message Entity {
   mtprm.core.id.v1.PrefixedId entity_id = 1;

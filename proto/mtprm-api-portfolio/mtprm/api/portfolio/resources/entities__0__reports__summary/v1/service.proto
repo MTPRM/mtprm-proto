@@ -3,8 +3,8 @@ syntax = "proto3";
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.api.portfolio.resources.entities__0__reports__summary.v1;
 
-import "mtprm/core/summary_report/v1/message.proto";
 import "mtprm/core/id/v1/message.proto";
+import "mtprm/core/summary_report/v1/message.proto";
 
 service Service {
   // Retrieve the summary report details for a specific entity.
