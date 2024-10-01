@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"os"
 	"reflect"
-	"strings"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 
@@ -72,10 +71,26 @@ func main() {
 		})
 	}
 
+	serviceDescriptions := []grpc.ServiceDesc{
+		entities_api.Service_ServiceDesc,
+		entities__0__reports__combined__xlsx.Service_ServiceDesc,
+		entities__0__reports__summary.Service_ServiceDesc,
+		reports__combined__zip.Service_ServiceDesc,
+	}
+
+	var knownStreamingUrls = make(map[string]bool)
+
+	for _, serviceDescription := range serviceDescriptions {
+		for _, stream := range serviceDescription.Streams {
+			urlPath := "/" + serviceDescription.ServiceName + "/" + stream.StreamName
+			knownStreamingUrls[urlPath] = true
+		}
+	}
+
 	supportNdjson := func(h http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			// This has to be set so that the marshaller sees it
-			if strings.HasSuffix(r.URL.Path, ".Service/List") {
+			if _, ok := knownStreamingUrls[r.URL.Path]; ok {
 				r.Header.Set("Accept", ndJsonMimeType)
 			}
 
