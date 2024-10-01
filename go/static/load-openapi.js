@@ -1,7 +1,5 @@
 async function main() {
-  const rawOpenapi = await fetch(
-    'openapi/merged.swagger.json'
-  )
+  const rawOpenapi = await fetch('openapi/merged.swagger.json')
   const rawOpenapiJson = await rawOpenapi.json()
 
   const openapi = convert(rawOpenapiJson)
@@ -53,16 +51,12 @@ function convert(input) {
       version: '',
     },
     paths,
-    tags: [
-      {name: 'Entities'},
-      {name: 'Reports'},
-      {name: 'Inquiries'},
-    ],
+    tags: [{ name: 'Entities' }, { name: 'Reports' }, { name: 'Inquiries' }],
   }
 }
 
 function getTag(value) {
-  switch(value) {
+  switch (value) {
     case 'entities':
       return 'Entities'
     case 'entities__0__reports__combined__xlsx':
