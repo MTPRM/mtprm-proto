@@ -50,6 +50,14 @@ function convert(input) {
       },
       version: '',
     },
+    securityDefinitions: {
+      ApiKeyHeader: {
+        type: 'apiKey',
+        name: 'Grpc-Metadata-api-key',
+        in: 'header',
+      },
+    },
+    security: [{ ApiKeyHeader: [] }],
     paths,
     tags: [{ name: 'Entities' }, { name: 'Reports' }, { name: 'Inquiries' }],
   }
