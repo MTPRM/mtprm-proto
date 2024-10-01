@@ -33,7 +33,18 @@ func main() {
 	if err != nil {
 		log.Fatalf("could not connect to order service: %v", err)
 	}
-	defer conn.Close()
+
+	known_files := map[string]string{
+		"/":                            "index.html",
+		"/static/load-openapi.js":      "static/load-openapi.js",
+		"/openapi/merged.swagger.json": "openapi/merged.swagger.json",
+	}
+
+	for path, file_path := range known_files {
+		mux.HandlePath("GET", path, func(w http.ResponseWriter, r *http.Request, pathParams map[string]string) {
+			http.ServeFile(w, r, file_path)
+		})
+	}
 
 	err = entities_api.RegisterServiceHandler(context.Background(), mux, conn)
 	if err != nil {
@@ -59,4 +70,6 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed to serve: %v", err)
 	}
+
+	defer conn.Close()
 }
