@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [18.0.1](https://github.com/MTPRM/mtprm-proto/compare/18.0.0...18.0.1) (2024-10-01)
+
+
+### Bug Fixes
+
+* **go:** send `application/json` upon 401 error ([0ab14dc](https://github.com/MTPRM/mtprm-proto/commit/0ab14dc7a750af3c6d27d0146b104bc7f36c153f))
+
 ## [18.0.0](https://github.com/MTPRM/mtprm-proto/compare/17.0.0...18.0.0) (2024-10-01)
 
 
