@@ -2,6 +2,49 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.0.0](https://github.com/MTPRM/mtprm-proto/compare/17.0.0...18.0.0) (2024-10-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-portfolio:** remove `optional` keyword
+* **go:** switch from `redoc` to `scalar` for openapi UI
+* move `index.html` under go grpc gateway
+* **go:** prefer lowercase module name
+
+### Features
+
+* add `index.html` ([1c5bff7](https://github.com/MTPRM/mtprm-proto/commit/1c5bff736612b25ce1b51b808d2370f911ddcf76))
+* add `load-openapi.js` ([f0c63a1](https://github.com/MTPRM/mtprm-proto/commit/f0c63a11307afc1b68868a0c3709ca083be65b5e))
+* **api-portfolio:** add comments ([7f324a9](https://github.com/MTPRM/mtprm-proto/commit/7f324a9489523e632c5ea22d04c93dc5e57dbe9b))
+* **api-portfolio:** prefer to use `oneof` ([f93c6ea](https://github.com/MTPRM/mtprm-proto/commit/f93c6ea9a17a76d1e386f73aa5b8907aa16425b8))
+* **go:** add helper to point to known file assets ([3d6e6e3](https://github.com/MTPRM/mtprm-proto/commit/3d6e6e3b39c17cedda9f946523ed0712a280460f))
+* **go:** dynamically determine endpoints with streaming server response ([eb9183f](https://github.com/MTPRM/mtprm-proto/commit/eb9183fa66046325720e9f84f80bb8763fa550e9))
+* **go:** move assets to one folder ([9803337](https://github.com/MTPRM/mtprm-proto/commit/980333707629387284d1217c600dbfbf65ca0e27))
+* **go:** prefer lowercase module name ([4a2acbd](https://github.com/MTPRM/mtprm-proto/commit/4a2acbdb53839d348334efbf8a67421771c37a06))
+* **go:** remove `console.log` ([bb22d9e](https://github.com/MTPRM/mtprm-proto/commit/bb22d9e954684d917256cab0498f54989bfabc8e))
+* **go:** remove `console.log` ([35223ca](https://github.com/MTPRM/mtprm-proto/commit/35223cac79cc6f86d0e77f86187603b1169c546a))
+* **go:** switch from `redoc` to `scalar` for openapi UI ([82656d2](https://github.com/MTPRM/mtprm-proto/commit/82656d210eaeafb9271ea339903a283bd3b2ba9d))
+* **go:** use embedded files rather than rely on file system ([09a04f7](https://github.com/MTPRM/mtprm-proto/commit/09a04f7620216ecc9adbd457c071d5685fc1c26c))
+* grpc proxied ([d469254](https://github.com/MTPRM/mtprm-proto/commit/d4692548716786dd620e576e6ba4822501658e60))
+* move `index.html` under go grpc gateway ([0c84698](https://github.com/MTPRM/mtprm-proto/commit/0c84698ceba7b9e86cb7ef5bb679947fc26f97ef))
+* render the swagger yaml ([eaec851](https://github.com/MTPRM/mtprm-proto/commit/eaec851b0c53d8ac3cc9b54373fdb4239c327485))
+* use clearer tags ([d9e9d66](https://github.com/MTPRM/mtprm-proto/commit/d9e9d66bdf680f5869a924e74fe3c8384426c3df))
+
+
+### Bug Fixes
+
+* **api-portfolio:** remove `optional` keyword ([6ddd8fe](https://github.com/MTPRM/mtprm-proto/commit/6ddd8feffd542ee6a0841708f42564b47e12d436))
+* **api-portfolio:** update comments ([6503187](https://github.com/MTPRM/mtprm-proto/commit/65031873e16022f884c5ecd9773ed37ed564f6ab))
+* **api-portfolio:** update comments ([8776146](https://github.com/MTPRM/mtprm-proto/commit/8776146fc1e3d4a8e5f2ac99b6a96be01ec893a7))
+* **api-portfolio:** update comments ([996c774](https://github.com/MTPRM/mtprm-proto/commit/996c774455629fbc656924b15595240b207982bc))
+* **go:** avoid duplicate names ([2f66cff](https://github.com/MTPRM/mtprm-proto/commit/2f66cff191f2c4b81de7bc5b0cbd6155603a19ee))
+* **go:** avoid sending `application/x-ndjson` on error ([95e2379](https://github.com/MTPRM/mtprm-proto/commit/95e23791edb802c06ba10428efb51125fcd4bfb9))
+* **go:** send `application/x-ndjson` for streaming response ([4d946a7](https://github.com/MTPRM/mtprm-proto/commit/4d946a7fecb286e9f9d333226ee402285ab407c5))
+* **go:** update path to file ([1352195](https://github.com/MTPRM/mtprm-proto/commit/1352195e0ed5652a5741583d5288222b7f4e79f9))
+* **go:** update script path ([1963ffd](https://github.com/MTPRM/mtprm-proto/commit/1963ffdc28468661598dbbfd08d1276114b8763e))
+* prefer to hardcode tags ([457838a](https://github.com/MTPRM/mtprm-proto/commit/457838a386173568b4b719fae0625d8c64e8696f))
+
 ## [17.0.0](https://github.com/MTPRM/mtprm-proto/compare/16.4.1...17.0.0) (2024-09-30)
 
 ### ⚠ BREAKING CHANGES
