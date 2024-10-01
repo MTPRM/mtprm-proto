@@ -18,8 +18,6 @@ function convert(input) {
   for (const curr of Object.entries(input.paths)) {
     const [key, value] = curr
 
-    console.log(key)
-
     if (key.startsWith('/mtprm.api.portfolio.resources')) {
       const parts = key.split('/')
       const [, fullName, method] = parts
