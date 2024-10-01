@@ -14,10 +14,15 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 
 	"github.com/mtprm/mtprm-proto-grpc-gateway/asset"
+
 	entities_api "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities/v1"
 	entities__0__reports__combined__xlsx "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities__0__reports__combined__xlsx/v1"
 	entities__0__reports__summary "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities__0__reports__summary/v1"
 	reports__combined__zip "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/reports__combined__zip/v1"
+	v2_entities_api "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities/v1"
+	v2_entities__0__reports__combined__xlsx "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities__0__reports__combined__xlsx/v1"
+	v2_entities__0__reports__summary "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities__0__reports__summary/v1"
+	v2_entity_inquiries "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v1"
 )
 
 const ndJsonMimeType = "application/x-ndjson"
@@ -61,6 +66,10 @@ func main() {
 	}
 
 	registerFuncs := []func(ctx context.Context, mux *runtime.ServeMux, conn *grpc.ClientConn) error{
+		v2_entities_api.RegisterServiceHandler,
+		v2_entities__0__reports__combined__xlsx.RegisterServiceHandler,
+		v2_entities__0__reports__summary.RegisterServiceHandler,
+		v2_entity_inquiries.RegisterServiceHandler,
 		entities_api.RegisterServiceHandler,
 		entities__0__reports__combined__xlsx.RegisterServiceHandler,
 		entities__0__reports__summary.RegisterServiceHandler,
@@ -81,6 +90,10 @@ func main() {
 	}
 
 	serviceDescriptions := []grpc.ServiceDesc{
+		v2_entities_api.Service_ServiceDesc,
+		v2_entities__0__reports__combined__xlsx.Service_ServiceDesc,
+		v2_entities__0__reports__summary.Service_ServiceDesc,
+		v2_entity_inquiries.Service_ServiceDesc,
 		entities_api.Service_ServiceDesc,
 		entities__0__reports__combined__xlsx.Service_ServiceDesc,
 		entities__0__reports__summary.Service_ServiceDesc,
