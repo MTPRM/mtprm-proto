@@ -4,30 +4,28 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [17.0.0](https://github.com/MTPRM/mtprm-proto/compare/16.4.1...17.0.0) (2024-09-30)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **api-portfolio:** remove unnecessary `Create/Update/Delete` endpoints for now
+- **api-portfolio:** remove unnecessary `Create/Update/Delete` endpoints for now
 
 ### Features
 
-* **api-portfolio:** remove unnecessary `Create/Update/Delete` endpoints for now ([1bdd91c](https://github.com/MTPRM/mtprm-proto/commit/1bdd91cd094067aaabd73a420dc6df6b9acb8886))
+- **api-portfolio:** remove unnecessary `Create/Update/Delete` endpoints for now ([1bdd91c](https://github.com/MTPRM/mtprm-proto/commit/1bdd91cd094067aaabd73a420dc6df6b9acb8886))
 
 ### [16.4.1](https://github.com/MTPRM/mtprm-proto/compare/16.4.0...16.4.1) (2024-09-30)
 
 ## [16.4.0](https://github.com/MTPRM/mtprm-proto/compare/16.3.1...16.4.0) (2024-09-30)
 
-
 ### Features
 
-* **api-portfolio:** add `entities__0__reports__combined__xlsx` v1 resource ([62a13d7](https://github.com/MTPRM/mtprm-proto/commit/62a13d7560ecd76ee48b98f53d366491f8bc1f39))
-* **api-portfolio:** add `entities__0__reports__summary` v1 resource ([ecc5cde](https://github.com/MTPRM/mtprm-proto/commit/ecc5cde171b855599d08affb4fa9f659c5807f99))
-* **api-portfolio:** add `entities` v1 resource ([58a5e1d](https://github.com/MTPRM/mtprm-proto/commit/58a5e1de4e85a70ba7aa4d4a6703c0c815e5c4b2))
-* **api-portfolio:** add `entity_inquiries` v1 resource ([b5cc34c](https://github.com/MTPRM/mtprm-proto/commit/b5cc34cf982305dd656e8a72758c68439aebe7b3))
-* **core:** add `Entity` v2 message ([c693113](https://github.com/MTPRM/mtprm-proto/commit/c693113c333dd77b806e2e57b26d83be2e7275ab))
-* **core:** add `EntityRequest` v1 message ([46d6bad](https://github.com/MTPRM/mtprm-proto/commit/46d6badc63dc6ee2ea3a80649ac10ffd3b174bfb))
-* **core:** rename from `EntityRequest` to `EntityInquiry`; add `created_at` field ([29f2c7f](https://github.com/MTPRM/mtprm-proto/commit/29f2c7f72ea4f4eeb6b5fa7a6eb7b8a950f510d6))
-* **proto:** add `PrefixedId` ([72e047d](https://github.com/MTPRM/mtprm-proto/commit/72e047d7bfdf237cc92e7a324fed0cb5e3aef27d))
+- **api-portfolio:** add `entities__0__reports__combined__xlsx` v1 resource ([62a13d7](https://github.com/MTPRM/mtprm-proto/commit/62a13d7560ecd76ee48b98f53d366491f8bc1f39))
+- **api-portfolio:** add `entities__0__reports__summary` v1 resource ([ecc5cde](https://github.com/MTPRM/mtprm-proto/commit/ecc5cde171b855599d08affb4fa9f659c5807f99))
+- **api-portfolio:** add `entities` v1 resource ([58a5e1d](https://github.com/MTPRM/mtprm-proto/commit/58a5e1de4e85a70ba7aa4d4a6703c0c815e5c4b2))
+- **api-portfolio:** add `entity_inquiries` v1 resource ([b5cc34c](https://github.com/MTPRM/mtprm-proto/commit/b5cc34cf982305dd656e8a72758c68439aebe7b3))
+- **core:** add `Entity` v2 message ([c693113](https://github.com/MTPRM/mtprm-proto/commit/c693113c333dd77b806e2e57b26d83be2e7275ab))
+- **core:** add `EntityRequest` v1 message ([46d6bad](https://github.com/MTPRM/mtprm-proto/commit/46d6badc63dc6ee2ea3a80649ac10ffd3b174bfb))
+- **core:** rename from `EntityRequest` to `EntityInquiry`; add `created_at` field ([29f2c7f](https://github.com/MTPRM/mtprm-proto/commit/29f2c7f72ea4f4eeb6b5fa7a6eb7b8a950f510d6))
+- **proto:** add `PrefixedId` ([72e047d](https://github.com/MTPRM/mtprm-proto/commit/72e047d7bfdf237cc92e7a324fed0cb5e3aef27d))
 
 ### [16.3.1](https://github.com/mtprm/mtprm-proto/compare/16.3.0...16.3.1) (2024-09-18)
 
