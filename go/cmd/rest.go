@@ -12,6 +12,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
+	"github.com/mtprm/mtprm-proto-grpc-gateway/asset"
 	entities_api "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities/v1"
 	entities__0__reports__combined__xlsx "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities__0__reports__combined__xlsx/v1"
 	entities__0__reports__summary "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/beta/resources/entities__0__reports__summary/v1"
@@ -34,18 +35,6 @@ func main() {
 		log.Fatalf("could not connect to order service: %v", err)
 	}
 
-	known_files := map[string]string{
-		"/":                            "index.html",
-		"/static/load-openapi.js":      "static/load-openapi.js",
-		"/openapi/merged.swagger.json": "openapi/merged.swagger.json",
-	}
-
-	for path, file_path := range known_files {
-		mux.HandlePath("GET", path, func(w http.ResponseWriter, r *http.Request, pathParams map[string]string) {
-			http.ServeFile(w, r, file_path)
-		})
-	}
-
 	err = entities_api.RegisterServiceHandler(context.Background(), mux, conn)
 	if err != nil {
 		log.Fatalf("failed to serve: %v", err)
@@ -64,6 +53,12 @@ func main() {
 	err = reports__combined__zip.RegisterServiceHandler(context.Background(), mux, conn)
 	if err != nil {
 		log.Fatalf("failed to serve: %v", err)
+	}
+
+	for path, data := range asset.Router {
+		mux.HandlePath("GET", path, func(w http.ResponseWriter, r *http.Request, pathParams map[string]string) {
+			w.Write(data)
+		})
 	}
 
 	err = http.ListenAndServe(port, mux)
