@@ -3,6 +3,7 @@ async function main() {
   const rawOpenapiJson = await rawOpenapi.json()
 
   const openapi = convert(rawOpenapiJson)
+  console.log(openapi)
 
   document.getElementById('api-reference').text = JSON.stringify(openapi)
   console.log({ openapi })
@@ -19,6 +20,8 @@ function convert(input) {
   for (const curr of Object.entries(input.paths)) {
     const [key, value] = curr
 
+    console.log(key)
+
     if (key.startsWith('/mtprm.api.portfolio.resources')) {
       const parts = key.split('/')
       const [, fullName, method] = parts
@@ -27,10 +30,10 @@ function convert(input) {
       const tag = getTag(split[4])
 
       paths[key] = Object.fromEntries(
-        Object.entries(value).map(([key, value]) => [
-          key,
+        Object.entries(value).map(([key2, value2]) => [
+          key2,
           {
-            ...value,
+            ...value2,
             operationId: method,
             tags: [tag],
           },
