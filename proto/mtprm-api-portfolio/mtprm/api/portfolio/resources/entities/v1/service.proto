@@ -22,7 +22,7 @@ message ReadResponse {
 }
 
 message ListRequest {
-  optional Grade grade = 1;
+  Grade grade = 1;
 }
 
 message ListResponse {
