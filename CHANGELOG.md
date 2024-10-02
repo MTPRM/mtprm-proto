@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [21.0.0](https://github.com/MTPRM/mtprm-proto/compare/20.0.2...21.0.0) (2024-10-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **core:** prefer `string` for duns number
+
+### Features
+
+* **core:** prefer `string` for duns number ([bbc669e](https://github.com/MTPRM/mtprm-proto/commit/bbc669eea1d7abfdd3c23595c2b1b0a32dea0f1d))
+
 ### [20.0.2](https://github.com/MTPRM/mtprm-proto/compare/20.0.1...20.0.2) (2024-10-02)
 
 
