@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [20.0.1](https://github.com/MTPRM/mtprm-proto/compare/20.0.0...20.0.1) (2024-10-02)
+
+
+### Bug Fixes
+
+* **api-portfolio:** update description ([8838677](https://github.com/MTPRM/mtprm-proto/commit/8838677c90558f9f111c36891a72dc06fa5d24d0))
+
 ## [20.0.0](https://github.com/MTPRM/mtprm-proto/compare/19.0.0...20.0.0) (2024-10-02)
 
 
