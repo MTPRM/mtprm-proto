@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.0.0](https://github.com/MTPRM/mtprm-proto/compare/18.1.0...19.0.0) (2024-10-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **core:** include `GradeLetter`
+* **core:** prefer `double`
+* **core:** prefer `double` to `string`
+
+### Features
+
+* **core:** include `GradeLetter` ([b5c5f8d](https://github.com/MTPRM/mtprm-proto/commit/b5c5f8dc28367bf0964adf322421a46df328c4e1))
+* **core:** prefer `double` ([6297247](https://github.com/MTPRM/mtprm-proto/commit/6297247679778d5e17afb394a91a3d9418769733))
+* **core:** prefer `double` to `string` ([ab8b838](https://github.com/MTPRM/mtprm-proto/commit/ab8b8387d49094770bc1c3ad5012f1db53330a28))
+
 ## [18.1.0](https://github.com/mtprm/mtprm-proto/compare/18.0.4...18.1.0) (2024-10-01)
 
 ### Features
