@@ -5,6 +5,7 @@ package mtprm.core.entity_inquiry.v1;
 import "mtprm/core/entity/v2/message.proto";
 import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
+import "mtprm/core/inherent_risk_rating/v1/message.proto";
 
 message EntityInquiry {
   mtprm.core.id.v1.PrefixedId inquiry_id = 1;
@@ -19,6 +20,10 @@ message EntityInquiry {
 message EntityInquiryData {
   mtprm.core.entity.v2.EntityData entity = 1;
   optional uint64 case_number = 2;
+  optional string risk_relationship = 3;
+  oneof inherent_risk_rating_optional {
+    mtprm.core.inherent_risk_rating.v1.InherentRiskRating inherent_risk_rating = 4;
+  }
 }
 
 message InquiryStatus {
