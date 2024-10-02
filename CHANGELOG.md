@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [20.0.0](https://github.com/MTPRM/mtprm-proto/compare/19.0.0...20.0.0) (2024-10-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-portfolio:** remove optional `grade` param
+
+### Features
+
+* **api-portfolio:** remove optional `grade` param ([5d44301](https://github.com/MTPRM/mtprm-proto/commit/5d4430137785961997388db51fea92e59631e099))
+* **core:** add `InherentRiskRating` message ([11157c4](https://github.com/MTPRM/mtprm-proto/commit/11157c4f6d7d54ba1fd536cdd853e252a56dbb46))
+* **core:** add `risk_relationship` and `inherent_risk_rating` fields ([290e222](https://github.com/MTPRM/mtprm-proto/commit/290e2220908db00ea1003faaf5e2ba8ef3f5abe5))
+
 ## [19.0.0](https://github.com/MTPRM/mtprm-proto/compare/18.1.0...19.0.0) (2024-10-02)
 
 
