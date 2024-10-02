@@ -46,7 +46,8 @@ enum GradeLetter {
 
 message PerformanceSummary {
   double risk_rating_score = 1;
-  repeated RiskDomainPerformance risk_domain_performance = 2;
+  GradeLetter risk_rating_grade = 2;
+  repeated RiskDomainPerformance risk_domain_performance = 3;
 }
 
 enum RiskDomainId {
