@@ -21,21 +21,8 @@ message ReadResponse {
   mtprm.core.entity.v2.Entity entity = 1;
 }
 
-message ListRequest {
-  oneof grade_optional {
-    Grade grade = 1;
-  }
-}
+message ListRequest {}
 
 message ListResponse {
   repeated mtprm.core.entity.v2.Entity entities = 1;
-}
-
-enum Grade {
-  GRADE_UNSPECIFIED = 0;
-  GRADE_A = 1;
-  GRADE_B = 2;
-  GRADE_C = 3;
-  GRADE_D = 4;
-  GRADE_F = 5;
 }
