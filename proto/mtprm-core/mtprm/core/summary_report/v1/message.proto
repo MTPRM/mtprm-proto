@@ -31,7 +31,7 @@ message Data {
 }
 
 message ScoreSummary {
-  GradeLetter risk_rating_grade = 1;
+  double risk_rating_number = 1;
   string rating_description = 2;
 }
 
