@@ -45,7 +45,7 @@ enum GradeLetter {
 }
 
 message PerformanceSummary {
-  uint32 risk_rating_score = 1;
+  double risk_rating_score = 1;
   repeated RiskDomainPerformance risk_domain_performance = 2;
 }
 
