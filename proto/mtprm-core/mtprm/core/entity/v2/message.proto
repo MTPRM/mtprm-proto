@@ -18,7 +18,9 @@ message EntityData {
   oneof last_assessment_date_optional {
     mtprm.core.time.v1.IsoDateTime last_assessment_date = 4;
   }
-  mtprm.core.pci.dss.v1.ComplianceLevel dss_level = 5;
+  oneof dss_level_optional {
+    mtprm.core.pci.dss.v1.ComplianceLevel dss_level = 5;
+  }
   string contact_email_primary = 6;
   optional string contact_email_secondary = 7;
 }
