@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [20.0.2](https://github.com/MTPRM/mtprm-proto/compare/20.0.1...20.0.2) (2024-10-02)
+
+
+### Bug Fixes
+
+* **go:** re-order tags ([ec6b085](https://github.com/MTPRM/mtprm-proto/commit/ec6b085ecf4fb3d8bb903f9c3d45500e8adb5e8f))
+
 ### [20.0.1](https://github.com/MTPRM/mtprm-proto/compare/20.0.0...20.0.1) (2024-10-02)
 
 
