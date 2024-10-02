@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package mtprm.core.inherent_risk_rating.v1;
+
+enum InherentRiskRating {
+  INHERENT_RISK_RATING_UNSPECIFIED = 0;
+  INHERENT_RISK_RATING_ENTERPRISE_CRIT = 1;
+  INHERENT_RISK_RATING_VERY_HIGH = 2;
+  INHERENT_RISK_RATING_HIGH = 3;
+  INHERENT_RISK_RATING_MED = 4;
+  INHERENT_RISK_RATING_LOW = 5;
+}
