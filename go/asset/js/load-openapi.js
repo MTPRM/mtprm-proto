@@ -57,7 +57,7 @@ function convert(input) {
     },
     security: [{ ApiKeyHeader: [] }],
     paths,
-    tags: [{ name: 'Entities' }, { name: 'Reports' }, { name: 'Inquiries' }],
+    tags: [{ name: 'Inquiries' }, { name: 'Entities' }, { name: 'Reports' } ],
   }
 }
 
