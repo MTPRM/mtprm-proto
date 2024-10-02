@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [22.0.0](https://github.com/MTPRM/mtprm-proto/compare/21.0.0...22.0.0) (2024-10-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* **core:** prefer `dss_level` as optional
+
+### Features
+
+* **core:** prefer `dss_level` as optional ([1ae1f42](https://github.com/MTPRM/mtprm-proto/commit/1ae1f420c3e096669d4d052cc9168b480e693357))
+
 ## [21.0.0](https://github.com/MTPRM/mtprm-proto/compare/20.0.2...21.0.0) (2024-10-02)
 
 
