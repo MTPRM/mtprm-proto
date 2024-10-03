@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package mtprm.core.entity_inquiry.v1;
 
+import "google/api/field_behavior.proto";
 import "mtprm/core/entity/v2/message.proto";
 import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/inherent_risk_rating/v1/message.proto";
@@ -18,7 +19,7 @@ message EntityInquiry {
 }
 
 message EntityInquiryData {
-  mtprm.core.entity.v2.EntityData entity = 1;
+  mtprm.core.entity.v2.EntityData entity = 1 [(google.api.field_behavior) = REQUIRED];
   optional uint64 case_number = 2;
   optional string risk_relationship = 3;
   oneof inherent_risk_rating_optional {
