@@ -2,11 +2,13 @@ syntax = "proto3";
 
 package mtprm.core.time.v1;
 
+import "google/api/field_behavior.proto";
+
 message IsoDateTime {
-  string value = 1;
+  string value = 1 [(google.api.field_behavior) = REQUIRED];
 }
 
 message DateRange {
-  IsoDateTime start = 1;
-  IsoDateTime end = 2;
+  IsoDateTime start = 1 [(google.api.field_behavior) = REQUIRED];
+  IsoDateTime end = 2 [(google.api.field_behavior) = REQUIRED];
 }
