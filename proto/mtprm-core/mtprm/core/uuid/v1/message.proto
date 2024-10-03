@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package mtprm.core.uuid.v1;
 
+import "google/api/field_behavior.proto";
+
 message Uuid {
-  string value = 1;
+  string value = 1 [(google.api.field_behavior) = REQUIRED];
 }
