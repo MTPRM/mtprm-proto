@@ -28,8 +28,8 @@ message EntityInquiryData {
 }
 
 message InquiryStatus {
-  InquiryState state = 1;
-  mtprm.core.time.v1.IsoDateTime updated_at = 2;
+  InquiryState state = 1  [(google.api.field_behavior) = REQUIRED];
+  mtprm.core.time.v1.IsoDateTime updated_at = 2  [(google.api.field_behavior) = REQUIRED];
 }
 
 enum InquiryState {
