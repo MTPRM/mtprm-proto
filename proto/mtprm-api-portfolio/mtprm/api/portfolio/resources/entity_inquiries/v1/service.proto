@@ -25,7 +25,7 @@ message CreateResponse {
 }
 
 message ReadRequest {
-  mtprm.core.id.v1.PrefixedId inquiry_id = 1;
+  mtprm.core.id.v1.PrefixedId inquiry_id = 1 [(google.api.field_behavior) = REQUIRED];
 }
 
 message ReadResponse {
