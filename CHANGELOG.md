@@ -21,6 +21,25 @@ All notable changes to this project will be documented in this file. See [standa
 * **proto:** mark required fields ([fa22d8a](https://github.com/mtprm/mtprm-proto/commit/fa22d8a6769e5ac3e55a9765fefeaf825b547f61))
 * **proto:** mark required fields ([5d2c5da](https://github.com/mtprm/mtprm-proto/commit/5d2c5da7aecce8730b822a9e60c2d5bcb5b493ba))
 
+## [23.1.0](https://github.com/mtprm/mtprm-proto/compare/23.0.0...23.1.0) (2024-10-03)
+
+
+### Features
+
+* **proto:** mark required fields ([0f7c947](https://github.com/mtprm/mtprm-proto/commit/0f7c94743253cc3312ab994c6e06bc928c2663ff))
+* **proto:** mark required fields ([cf1910f](https://github.com/mtprm/mtprm-proto/commit/cf1910fa6339611b4717bb0fb10905f45172c517))
+* **proto:** mark required fields ([880149f](https://github.com/mtprm/mtprm-proto/commit/880149f1394865888fbeca1a5b345dd61960cc61))
+* **proto:** mark required fields ([20d72e3](https://github.com/mtprm/mtprm-proto/commit/20d72e3cf2c371c0d6b9575a78bf04a01ce1f78b))
+* **proto:** mark required fields ([da56571](https://github.com/mtprm/mtprm-proto/commit/da56571424d3e91919e913bb6b6b93ac8233506d))
+* **proto:** mark required fields ([7fd3b96](https://github.com/mtprm/mtprm-proto/commit/7fd3b961ee9ce77792b83db57272908e041f59ea))
+* **proto:** mark required fields ([4ea2139](https://github.com/mtprm/mtprm-proto/commit/4ea2139ba500fd7eb5c47bf7a9c9202f1980a125))
+* **proto:** mark required fields ([7170802](https://github.com/mtprm/mtprm-proto/commit/7170802034be5404c2214844f2c681f2d5c8c01c))
+* **proto:** mark required fields ([5ac5e9b](https://github.com/mtprm/mtprm-proto/commit/5ac5e9b6efeb29c13a1ff5f1aa4cf83a7bb1e602))
+* **proto:** mark required fields ([0b10aac](https://github.com/mtprm/mtprm-proto/commit/0b10aaca2b8e1911a61b848ab9e1c90d8b8f5036))
+* **proto:** mark required fields ([aa05e12](https://github.com/mtprm/mtprm-proto/commit/aa05e12c76c746342f39a26872c0adfdbb6732b9))
+* **proto:** mark required fields ([fa22d8a](https://github.com/mtprm/mtprm-proto/commit/fa22d8a6769e5ac3e55a9765fefeaf825b547f61))
+* **proto:** mark required fields ([5d2c5da](https://github.com/mtprm/mtprm-proto/commit/5d2c5da7aecce8730b822a9e60c2d5bcb5b493ba))
+
 ## [23.1.0](https://github.com/MTPRM/mtprm-proto/compare/23.0.0...23.1.0) (2024-10-03)
 
 
