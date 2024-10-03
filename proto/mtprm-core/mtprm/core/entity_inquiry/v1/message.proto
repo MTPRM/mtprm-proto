@@ -9,13 +9,13 @@ import "mtprm/core/inherent_risk_rating/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
 
 message EntityInquiry {
-  mtprm.core.id.v1.PrefixedId inquiry_id = 1;
-  EntityInquiryData inquiry_data = 2;
-  InquiryStatus status = 3;
+  mtprm.core.id.v1.PrefixedId inquiry_id = 1 [(google.api.field_behavior) = REQUIRED];
+  EntityInquiryData inquiry_data = 2 [(google.api.field_behavior) = REQUIRED];
+  InquiryStatus status = 3 [(google.api.field_behavior) = REQUIRED];
   oneof entity_optional {
     mtprm.core.entity.v2.Entity entity = 4;
   }
-  mtprm.core.time.v1.IsoDateTime created_at = 5;
+  mtprm.core.time.v1.IsoDateTime created_at = 5 [(google.api.field_behavior) = REQUIRED];
 }
 
 message EntityInquiryData {
