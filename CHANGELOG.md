@@ -4,67 +4,61 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [22.0.0](https://github.com/MTPRM/mtprm-proto/compare/21.0.0...22.0.0) (2024-10-02)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **core:** prefer `dss_level` as optional
+- **core:** prefer `dss_level` as optional
 
 ### Features
 
-* **core:** prefer `dss_level` as optional ([1ae1f42](https://github.com/MTPRM/mtprm-proto/commit/1ae1f420c3e096669d4d052cc9168b480e693357))
+- **core:** prefer `dss_level` as optional ([1ae1f42](https://github.com/MTPRM/mtprm-proto/commit/1ae1f420c3e096669d4d052cc9168b480e693357))
 
 ## [21.0.0](https://github.com/MTPRM/mtprm-proto/compare/20.0.2...21.0.0) (2024-10-02)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **core:** prefer `string` for duns number
+- **core:** prefer `string` for duns number
 
 ### Features
 
-* **core:** prefer `string` for duns number ([bbc669e](https://github.com/MTPRM/mtprm-proto/commit/bbc669eea1d7abfdd3c23595c2b1b0a32dea0f1d))
+- **core:** prefer `string` for duns number ([bbc669e](https://github.com/MTPRM/mtprm-proto/commit/bbc669eea1d7abfdd3c23595c2b1b0a32dea0f1d))
 
 ### [20.0.2](https://github.com/MTPRM/mtprm-proto/compare/20.0.1...20.0.2) (2024-10-02)
 
-
 ### Bug Fixes
 
-* **go:** re-order tags ([ec6b085](https://github.com/MTPRM/mtprm-proto/commit/ec6b085ecf4fb3d8bb903f9c3d45500e8adb5e8f))
+- **go:** re-order tags ([ec6b085](https://github.com/MTPRM/mtprm-proto/commit/ec6b085ecf4fb3d8bb903f9c3d45500e8adb5e8f))
 
 ### [20.0.1](https://github.com/MTPRM/mtprm-proto/compare/20.0.0...20.0.1) (2024-10-02)
 
-
 ### Bug Fixes
 
-* **api-portfolio:** update description ([8838677](https://github.com/MTPRM/mtprm-proto/commit/8838677c90558f9f111c36891a72dc06fa5d24d0))
+- **api-portfolio:** update description ([8838677](https://github.com/MTPRM/mtprm-proto/commit/8838677c90558f9f111c36891a72dc06fa5d24d0))
 
 ## [20.0.0](https://github.com/MTPRM/mtprm-proto/compare/19.0.0...20.0.0) (2024-10-02)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **api-portfolio:** remove optional `grade` param
+- **api-portfolio:** remove optional `grade` param
 
 ### Features
 
-* **api-portfolio:** remove optional `grade` param ([5d44301](https://github.com/MTPRM/mtprm-proto/commit/5d4430137785961997388db51fea92e59631e099))
-* **core:** add `InherentRiskRating` message ([11157c4](https://github.com/MTPRM/mtprm-proto/commit/11157c4f6d7d54ba1fd536cdd853e252a56dbb46))
-* **core:** add `risk_relationship` and `inherent_risk_rating` fields ([290e222](https://github.com/MTPRM/mtprm-proto/commit/290e2220908db00ea1003faaf5e2ba8ef3f5abe5))
+- **api-portfolio:** remove optional `grade` param ([5d44301](https://github.com/MTPRM/mtprm-proto/commit/5d4430137785961997388db51fea92e59631e099))
+- **core:** add `InherentRiskRating` message ([11157c4](https://github.com/MTPRM/mtprm-proto/commit/11157c4f6d7d54ba1fd536cdd853e252a56dbb46))
+- **core:** add `risk_relationship` and `inherent_risk_rating` fields ([290e222](https://github.com/MTPRM/mtprm-proto/commit/290e2220908db00ea1003faaf5e2ba8ef3f5abe5))
 
 ## [19.0.0](https://github.com/MTPRM/mtprm-proto/compare/18.1.0...19.0.0) (2024-10-02)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **core:** include `GradeLetter`
-* **core:** prefer `double`
-* **core:** prefer `double` to `string`
+- **core:** include `GradeLetter`
+- **core:** prefer `double`
+- **core:** prefer `double` to `string`
 
 ### Features
 
-* **core:** include `GradeLetter` ([b5c5f8d](https://github.com/MTPRM/mtprm-proto/commit/b5c5f8dc28367bf0964adf322421a46df328c4e1))
-* **core:** prefer `double` ([6297247](https://github.com/MTPRM/mtprm-proto/commit/6297247679778d5e17afb394a91a3d9418769733))
-* **core:** prefer `double` to `string` ([ab8b838](https://github.com/MTPRM/mtprm-proto/commit/ab8b8387d49094770bc1c3ad5012f1db53330a28))
+- **core:** include `GradeLetter` ([b5c5f8d](https://github.com/MTPRM/mtprm-proto/commit/b5c5f8dc28367bf0964adf322421a46df328c4e1))
+- **core:** prefer `double` ([6297247](https://github.com/MTPRM/mtprm-proto/commit/6297247679778d5e17afb394a91a3d9418769733))
+- **core:** prefer `double` to `string` ([ab8b838](https://github.com/MTPRM/mtprm-proto/commit/ab8b8387d49094770bc1c3ad5012f1db53330a28))
 
 ## [18.1.0](https://github.com/mtprm/mtprm-proto/compare/18.0.4...18.1.0) (2024-10-01)
 
