@@ -1,0 +1,12 @@
+version: v2
+modules:
+  - name: buf.build/mtprm/mtprm-api-portfolio
+    path: ./proto/mtprm-api-portfolio
+  - name: buf.build/mtprm/mtprm-core
+    path: ./proto/mtprm-core
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - DEFAULT
