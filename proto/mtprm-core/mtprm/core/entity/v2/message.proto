@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package mtprm.core.entity.v2;
 
+import "google/api/field_behavior.proto";
 import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/pci/dss/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
@@ -12,8 +13,8 @@ message Entity {
 }
 
 message EntityData {
-  string name = 1;
-  string domain = 2;
+  string name = 1 [(google.api.field_behavior) = REQUIRED];
+  string domain = 2 [(google.api.field_behavior) = REQUIRED];
   optional string duns_number = 3;
   oneof last_assessment_date_optional {
     mtprm.core.time.v1.IsoDateTime last_assessment_date = 4;
@@ -21,6 +22,6 @@ message EntityData {
   oneof dss_level_optional {
     mtprm.core.pci.dss.v1.ComplianceLevel dss_level = 5;
   }
-  string contact_email_primary = 6;
+  string contact_email_primary = 6 [(google.api.field_behavior) = REQUIRED];
   optional string contact_email_secondary = 7;
 }
