@@ -1,4 +1,6 @@
 version: v2
+deps:
+  - buf.build/googleapis/googleapis
 modules:
   - name: buf.build/mtprm/mtprm-api-admin
     path: ./proto/mtprm-api-admin
