@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [23.0.0](https://github.com/mtprm/mtprm-proto/compare/22.0.0...23.0.0) (2024-10-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* **go:** remove `api-portfolio-beta` endpoints
+
+### Features
+
+* **go:** remove `api-portfolio-beta` endpoints ([f314cbe](https://github.com/mtprm/mtprm-proto/commit/f314cbeeaa9bc30b0951673e288f9199d360e712))
+
 ## [22.0.0](https://github.com/MTPRM/mtprm-proto/compare/21.0.0...22.0.0) (2024-10-02)
 
 ### ⚠ BREAKING CHANGES
