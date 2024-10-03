@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "gen-grpc-gateway": "buf generate --config buf_grpc-gateway.yaml",
     "release": "standard-version"
   },
   "devDependencies": {
