@@ -8,8 +8,8 @@ import "mtprm/core/pci/dss/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
 
 message Entity {
-  mtprm.core.id.v1.PrefixedId entity_id = 1;
-  EntityData data = 2;
+  mtprm.core.id.v1.PrefixedId entity_id = 1 [(google.api.field_behavior) = REQUIRED];
+  EntityData data = 2 [(google.api.field_behavior) = REQUIRED];
 }
 
 message EntityData {
