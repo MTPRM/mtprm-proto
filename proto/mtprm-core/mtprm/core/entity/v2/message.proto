@@ -25,3 +25,10 @@ message EntityData {
   string contact_email_primary = 6 [(google.api.field_behavior) = REQUIRED];
   optional string contact_email_secondary = 7;
 }
+
+message EntityUpdateData {
+  optional string dss_level = 1;
+  optional string inherent_risk_rating = 2;
+  optional string contact_email_primary = 3;
+  optional string contact_email_secondary = 4;
+}
