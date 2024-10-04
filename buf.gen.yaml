@@ -27,3 +27,5 @@ plugins:
       - generate_unbound_methods=true
       - allow_merge=true
       - merge_file_name=merged
+      # Removes XYZ_UNSPECIFIED from showing up
+      - omit_enum_default_value=true
