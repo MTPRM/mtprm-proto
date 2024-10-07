@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [23.3.1](https://github.com/MTPRM/mtprm-proto/compare/23.3.0...23.3.1) (2024-10-07)
+
+
+### Bug Fixes
+
+* **proto:** entity update message ([eda1f8b](https://github.com/MTPRM/mtprm-proto/commit/eda1f8ba6f16e2c2d6583853414a1db84bf6226b))
+
 ## [23.3.0](https://github.com/MTPRM/mtprm-proto/compare/23.2.0...23.3.0) (2024-10-07)
 
 
