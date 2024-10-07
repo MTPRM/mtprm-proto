@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [23.3.2](https://github.com/MTPRM/mtprm-proto/compare/23.3.1...23.3.2) (2024-10-07)
+
+
+### Bug Fixes
+
+* **proto:** correct types for dss level and irr ([8a62b88](https://github.com/MTPRM/mtprm-proto/commit/8a62b8847abe66c40b708d4197fcfc8996e3bdfd))
+
 ### [23.3.1](https://github.com/MTPRM/mtprm-proto/compare/23.3.0...23.3.1) (2024-10-07)
 
 
