@@ -4,6 +4,7 @@ package mtprm.core.entity.v2;
 
 import "google/api/field_behavior.proto";
 import "mtprm/core/id/v1/message.proto";
+import "mtprm/core/inherent_risk_rating/v1/message.proto";
 import "mtprm/core/pci/dss/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
 
