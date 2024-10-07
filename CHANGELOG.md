@@ -4,11 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [23.2.0](https://github.com/MTPRM/mtprm-proto/compare/23.1.2...23.2.0) (2024-10-04)
 
-
 ### Features
 
-* **proto:** entity update fields ([206b05f](https://github.com/MTPRM/mtprm-proto/commit/206b05fb4aadf775ea11f15c3f025734aa8c2fc5))
-* **proto:** entity update service ([eafe317](https://github.com/MTPRM/mtprm-proto/commit/eafe317c5482b3b2c79aa729071c143710e71fd4))
+- **proto:** entity update fields ([206b05f](https://github.com/MTPRM/mtprm-proto/commit/206b05fb4aadf775ea11f15c3f025734aa8c2fc5))
+- **proto:** entity update service ([eafe317](https://github.com/MTPRM/mtprm-proto/commit/eafe317c5482b3b2c79aa729071c143710e71fd4))
 
 ### [23.1.2](https://github.com/mtprm/mtprm-proto/compare/23.1.1...23.1.2) (2024-10-04)
 
