@@ -31,8 +31,7 @@ message ListResponse {
 }
 
 message UpdateRequest {
-  mtprm.core.id.v1.PrefixedId entity_id = 1 [(google.api.field_behavior) = REQUIRED];
-  mtprm.core.entity.v2.EntityUpdateData entity = 2 [(google.api.field_behavior) = REQUIRED];
+  mtprm.core.entity.v2.EntityUpdate entity = 1 [(google.api.field_behavior) = REQUIRED];
 }
 
 message UpdateResponse {}
