@@ -33,8 +33,12 @@ message EntityUpdate {
 }
 
 message EntityUpdateData {
-  optional mtprm.core.pci.dss.v1.ComplianceLevel dss_level = 1;
-  optional mtprm.core.inherent_risk_rating.v1.InherentRiskRating inherent_risk_rating = 2;
+  oneof dss_level_optional {
+    mtprm.core.pci.dss.v1.ComplianceLevel dss_level = 5;
+  }
+  oneof inherent_risk_rating_optional {
+    mtprm.core.inherent_risk_rating.v1.InherentRiskRating inherent_risk_rating = 2;
+  }
   optional string contact_email_primary = 3;
   optional string contact_email_secondary = 4;
 }
