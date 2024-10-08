@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [23.3.4](https://github.com/MTPRM/mtprm-proto/compare/23.3.3...23.3.4) (2024-10-08)
+
+
+### Bug Fixes
+
+* **proto:** use correct update param ([f0abd44](https://github.com/MTPRM/mtprm-proto/commit/f0abd44a67e7c5f6580e3ce83840aab49ea2b936))
+
 ### [23.3.3](https://github.com/MTPRM/mtprm-proto/compare/23.3.2...23.3.3) (2024-10-07)
 
 ### Bug Fixes
