@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.admin.resources.organizations__0__entities.v2;
+
+import "mtprm/core/entity/v2/message.proto";
+import "mtprm/core/uuid/v1/message.proto";
+
+service Service {
+  rpc Create(CreateRequest) returns (CreateResponse) {}
+  rpc Read(ReadRequest) returns (ReadResponse) {}
+  rpc Update(UpdateRequest) returns (UpdateResponse) {}
+  rpc List(ListRequest) returns (ListResponse) {}
+}
+
+message CreateRequest {
+  string org_id = 1;
+  mtprm.core.entity.v2.EntityData entity = 2;
+}
+
+message CreateResponse {
+  mtprm.core.uuid.v1.Uuid entity_id = 1;
+}
+
+message ReadRequest {
+  string org_id = 1;
+  mtprm.core.uuid.v1.Uuid entity_id = 2;
+}
+
+message ReadResponse {
+  mtprm.core.entity.v2.Entity entity = 1;
+}
+
+message UpdateRequest {
+  string org_id = 1;
+  mtprm.core.entity.v2.EntityUpdate entity = 2;
+}
+
+message UpdateResponse {}
+
+message ListRequest {
+  string org_id = 1;
+}
+
+message ListResponse {
+  repeated mtprm.core.entity.v2.Entity entities = 1;
+}
