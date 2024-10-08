@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.portfolio.resources.entity_inquiries.v2;
+
+import "google/api/field_behavior.proto";
+import "mtprm/core/entity_inquiry/v2/message.proto";
+import "mtprm/core/id/v1/message.proto";
+
+service Service {
+  // Create an inquiry to have an entity manually added for monitoring.
+  rpc Create(CreateRequest) returns (CreateResponse) {}
+  // Retrieve details of a specific inquiry.
+  rpc Read(ReadRequest) returns (ReadResponse) {}
+  // Retrieve a list of all inquiries.
+  rpc List(ListRequest) returns (stream ListResponse) {}
+}
+
+message CreateRequest {
+  mtprm.core.entity_inquiry.v2.EntityInquiryData inquiry_data = 1 [(google.api.field_behavior) = REQUIRED];
+}
+
+message CreateResponse {
+  mtprm.core.id.v1.PrefixedId inquiry_id = 1;
+}
+
+message ReadRequest {
+  mtprm.core.id.v1.PrefixedId inquiry_id = 1 [(google.api.field_behavior) = REQUIRED];
+}
+
+message ReadResponse {
+  mtprm.core.entity_inquiry.v2.EntityInquiry inquiry = 1;
+}
+
+message ListRequest {}
+
+message ListResponse {
+  repeated mtprm.core.entity_inquiry.v2.EntityInquiry inquiries = 1;
+}
