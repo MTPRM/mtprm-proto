@@ -4,7 +4,7 @@ syntax = "proto3";
 package mtprm.api.admin.resources.organizations__0__entities.v2;
 
 import "mtprm/core/entity/v2/message.proto";
-import "mtprm/core/uuid/v1/message.proto";
+import "mtprm/core/id/v1/message.proto";
 
 service Service {
   rpc Create(CreateRequest) returns (CreateResponse) {}
@@ -19,12 +19,12 @@ message CreateRequest {
 }
 
 message CreateResponse {
-  mtprm.core.uuid.v1.Uuid entity_id = 1;
+  mtprm.core.id.v1.PrefixedId entity_id = 1;
 }
 
 message ReadRequest {
   string org_id = 1;
-  mtprm.core.uuid.v1.Uuid entity_id = 2;
+  mtprm.core.id.v1.PrefixedId entity_id = 2;
 }
 
 message ReadResponse {
