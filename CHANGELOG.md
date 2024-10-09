@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [24.1.0](https://github.com/MTPRM/mtprm-proto/compare/24.0.0...24.1.0) (2024-10-09)
+
+
+### Features
+
+* **admin:** add `organizations__0__entities__0__reports__combined__xlsx.v2` ([1aa675b](https://github.com/MTPRM/mtprm-proto/commit/1aa675b47654505b0029d68889719767fa7281f5))
+* **admin:** add `organizations__0__entities__0__reports__summary.v2` ([cde21b6](https://github.com/MTPRM/mtprm-proto/commit/cde21b61fd8ee67da1722e5b9ee6036eddc1141d))
+
 ## [24.0.0](https://github.com/MTPRM/mtprm-proto/compare/23.4.0...24.0.0) (2024-10-09)
 
 
