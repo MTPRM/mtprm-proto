@@ -4,22 +4,20 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [23.4.0](https://github.com/MTPRM/mtprm-proto/compare/23.3.5...23.4.0) (2024-10-08)
 
-
 ### Features
 
-* **admin:** add `organizations__0__entities.v2` ([8ae8fee](https://github.com/MTPRM/mtprm-proto/commit/8ae8fee7326ed49052447333bbc4c99c3a5b2668))
-* **admin:** add `organizations__0__entity_inquiries.v1` ([324419b](https://github.com/MTPRM/mtprm-proto/commit/324419b64e4fa666baaff27dd27df9167f9fb1c0))
-* **core:** add `EntityInquiry` v2 message ([2425a5a](https://github.com/MTPRM/mtprm-proto/commit/2425a5a1230d7f076a7cd1dd5e1980a6a8169696))
-* **portfolio:** add `entity_inquiries.v2` ([b1de917](https://github.com/MTPRM/mtprm-proto/commit/b1de917f07ea5a33a22532504448b3e52ab10131))
+- **admin:** add `organizations__0__entities.v2` ([8ae8fee](https://github.com/MTPRM/mtprm-proto/commit/8ae8fee7326ed49052447333bbc4c99c3a5b2668))
+- **admin:** add `organizations__0__entity_inquiries.v1` ([324419b](https://github.com/MTPRM/mtprm-proto/commit/324419b64e4fa666baaff27dd27df9167f9fb1c0))
+- **core:** add `EntityInquiry` v2 message ([2425a5a](https://github.com/MTPRM/mtprm-proto/commit/2425a5a1230d7f076a7cd1dd5e1980a6a8169696))
+- **portfolio:** add `entity_inquiries.v2` ([b1de917](https://github.com/MTPRM/mtprm-proto/commit/b1de917f07ea5a33a22532504448b3e52ab10131))
 
 ### [23.3.5](https://github.com/MTPRM/mtprm-proto/compare/23.3.4...23.3.5) (2024-10-08)
 
 ### [23.3.4](https://github.com/MTPRM/mtprm-proto/compare/23.3.3...23.3.4) (2024-10-08)
 
-
 ### Bug Fixes
 
-* **proto:** use correct update param ([f0abd44](https://github.com/MTPRM/mtprm-proto/commit/f0abd44a67e7c5f6580e3ce83840aab49ea2b936))
+- **proto:** use correct update param ([f0abd44](https://github.com/MTPRM/mtprm-proto/commit/f0abd44a67e7c5f6580e3ce83840aab49ea2b936))
 
 ### [23.3.3](https://github.com/MTPRM/mtprm-proto/compare/23.3.2...23.3.3) (2024-10-07)
 
