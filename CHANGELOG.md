@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [24.0.0](https://github.com/MTPRM/mtprm-proto/compare/23.4.0...24.0.0) (2024-10-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* **admin:** prefer to use `PrefixedId`
+
+### Bug Fixes
+
+* **admin:** prefer to use `PrefixedId` ([71ebbae](https://github.com/MTPRM/mtprm-proto/commit/71ebbae6a4f5cbebf8e7cb39e3da2a1e24a65df5))
+
 ## [23.4.0](https://github.com/MTPRM/mtprm-proto/compare/23.3.5...23.4.0) (2024-10-08)
 
 ### Features
