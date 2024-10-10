@@ -4,22 +4,20 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [24.1.0](https://github.com/MTPRM/mtprm-proto/compare/24.0.0...24.1.0) (2024-10-09)
 
-
 ### Features
 
-* **admin:** add `organizations__0__entities__0__reports__combined__xlsx.v2` ([1aa675b](https://github.com/MTPRM/mtprm-proto/commit/1aa675b47654505b0029d68889719767fa7281f5))
-* **admin:** add `organizations__0__entities__0__reports__summary.v2` ([cde21b6](https://github.com/MTPRM/mtprm-proto/commit/cde21b61fd8ee67da1722e5b9ee6036eddc1141d))
+- **admin:** add `organizations__0__entities__0__reports__combined__xlsx.v2` ([1aa675b](https://github.com/MTPRM/mtprm-proto/commit/1aa675b47654505b0029d68889719767fa7281f5))
+- **admin:** add `organizations__0__entities__0__reports__summary.v2` ([cde21b6](https://github.com/MTPRM/mtprm-proto/commit/cde21b61fd8ee67da1722e5b9ee6036eddc1141d))
 
 ## [24.0.0](https://github.com/MTPRM/mtprm-proto/compare/23.4.0...24.0.0) (2024-10-09)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **admin:** prefer to use `PrefixedId`
+- **admin:** prefer to use `PrefixedId`
 
 ### Bug Fixes
 
-* **admin:** prefer to use `PrefixedId` ([71ebbae](https://github.com/MTPRM/mtprm-proto/commit/71ebbae6a4f5cbebf8e7cb39e3da2a1e24a65df5))
+- **admin:** prefer to use `PrefixedId` ([71ebbae](https://github.com/MTPRM/mtprm-proto/commit/71ebbae6a4f5cbebf8e7cb39e3da2a1e24a65df5))
 
 ## [23.4.0](https://github.com/MTPRM/mtprm-proto/compare/23.3.5...23.4.0) (2024-10-08)
 
