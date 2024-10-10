@@ -3,8 +3,8 @@ syntax = "proto3";
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.api.admin.resources.organizations__0__entities__0__reports__summary.v2;
 
-import "mtprm/core/summary_report/v1/message.proto";
 import "mtprm/core/id/v1/message.proto";
+import "mtprm/core/summary_report/v1/message.proto";
 
 service Service {
   rpc Get(GetRequest) returns (GetResponse) {}
