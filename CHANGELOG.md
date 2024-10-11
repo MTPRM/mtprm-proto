@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [26.0.2](https://github.com/MTPRM/mtprm-proto/compare/26.0.1...26.0.2) (2024-10-11)
+
+
+### Bug Fixes
+
+* **api-admin:** rename `Entity` field ([0f0d168](https://github.com/MTPRM/mtprm-proto/commit/0f0d1685e85a2691a27db72c57977e389a3e8020))
+
 ### [26.0.1](https://github.com/MTPRM/mtprm-proto/compare/26.0.0...26.0.1) (2024-10-11)
 
 
