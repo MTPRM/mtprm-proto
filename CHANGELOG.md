@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [26.0.0](https://github.com/MTPRM/mtprm-proto/compare/25.0.0...26.0.0) (2024-10-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* **admin:** prefer `Entity` for `UpdateRequest`
+
+### Features
+
+* **admin:** prefer `Entity` for `UpdateRequest` ([d6d53b2](https://github.com/MTPRM/mtprm-proto/commit/d6d53b2ce9d43b8d4f47a7d9969998be9823fba5))
+
 ## [25.0.0](https://github.com/MTPRM/mtprm-proto/compare/24.1.0...25.0.0) (2024-10-11)
 
 
