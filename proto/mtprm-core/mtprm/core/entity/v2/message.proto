@@ -7,7 +7,6 @@ import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/inherent_risk_rating/v1/message.proto";
 import "mtprm/core/pci/dss/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
-import "mtprm/core/inherent_risk_rating/v1/message.proto";
 
 message Entity {
   mtprm.core.id.v1.PrefixedId entity_id = 1 [(google.api.field_behavior) = REQUIRED];
@@ -26,7 +25,7 @@ message EntityData {
   }
   string contact_email_primary = 6 [(google.api.field_behavior) = REQUIRED];
   optional string contact_email_secondary = 7;
-  InherentRiskRating inherent_risk_rating = 8 [(google.api.field_behavior) = REQUIRED];
+  mtprm.core.inherent_risk_rating.v1.InherentRiskRating inherent_risk_rating = 8 [(google.api.field_behavior) = REQUIRED];
 }
 
 message EntityUpdate {
