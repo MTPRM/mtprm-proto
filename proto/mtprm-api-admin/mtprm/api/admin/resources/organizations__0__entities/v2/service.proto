@@ -33,7 +33,8 @@ message ReadResponse {
 
 message UpdateRequest {
   string org_id = 1;
-  mtprm.core.entity.v2.EntityUpdate entity = 2;
+  mtprm.core.entity.v2.EntityUpdate entity = 2 [deprecated = true];
+  mtprm.core.entity.v2.EntityData entity = 3;
 }
 
 message UpdateResponse {}
