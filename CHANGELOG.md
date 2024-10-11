@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [25.0.0](https://github.com/MTPRM/mtprm-proto/compare/24.1.0...25.0.0) (2024-10-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* **core:** add `inherent_risk_rating` to `EntityData`
+
+### Features
+
+* **admin:** prefer `EntityData` for `UpdateRequest` ([5cd70e5](https://github.com/MTPRM/mtprm-proto/commit/5cd70e55e2a03a93484c3b6f14f18fc61adc1f07))
+* **core:** add `inherent_risk_rating` to `EntityData` ([1f07e49](https://github.com/MTPRM/mtprm-proto/commit/1f07e4927a3bc8a7df6793be28f52f9303af7b42))
+
 ## [24.1.0](https://github.com/MTPRM/mtprm-proto/compare/24.0.0...24.1.0) (2024-10-09)
 
 ### Features
