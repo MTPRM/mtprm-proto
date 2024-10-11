@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [26.0.1](https://github.com/MTPRM/mtprm-proto/compare/26.0.0...26.0.1) (2024-10-11)
+
+
+### Bug Fixes
+
+* **core:** remove double import ([6ed5933](https://github.com/MTPRM/mtprm-proto/commit/6ed59339d09545ecaccd910e22071f064ccf5195))
+
 ## [26.0.0](https://github.com/MTPRM/mtprm-proto/compare/25.0.0...26.0.0) (2024-10-11)
 
 
