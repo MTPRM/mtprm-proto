@@ -27,7 +27,7 @@ plugins:
       - generate_unbound_methods=true
       - allow_merge=true
       - merge_file_name=merged
-      # Removes XYZ_UNSPECIFIED from showing up
+      # Prevents `XYZ_UNSPECIFIED` from showing up
       - omit_enum_default_value=true
       # Generate models as `mtprm.api.portfolio.resources.entity_inquiries.v1.CreateRequest` instead of `v1CreateRequest​`
       - fqn_for_openapi_name=true
