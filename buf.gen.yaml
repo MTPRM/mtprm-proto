@@ -31,3 +31,5 @@ plugins:
       - omit_enum_default_value=true
       # Generate models as `mtprm.api.portfolio.resources.entity_inquiries.v1.CreateRequest` instead of `v1CreateRequest​`
       - fqn_for_openapi_name=true
+      # Maintain CRUDL ordering
+      - preserve_rpc_order=true
