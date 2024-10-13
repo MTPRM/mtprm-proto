@@ -13,30 +13,7 @@ async function main() {
 }
 
 function convert(input) {
-  const paths = {}
-
-  for (const curr of Object.entries(input.paths)) {
-    const [key, value] = curr
-
-    if (key.startsWith('/mtprm.api.portfolio.resources')) {
-      const parts = key.split('/')
-      const [, fullName, method] = parts
-
-      const split = fullName.split('.')
-      const tag = getTag(split[4])
-
-      paths[key] = Object.fromEntries(
-        Object.entries(value).map(([key2, value2]) => [
-          key2,
-          {
-            ...value2,
-            operationId: method,
-            tags: [tag],
-          },
-        ])
-      )
-    }
-  }
+  const { fixedPaths, uniqueTags } = fixPaths(input.paths)
 
   return {
     ...input,
@@ -56,20 +33,101 @@ function convert(input) {
       },
     },
     security: [{ ApiKeyHeader: [] }],
-    paths,
-    tags: [{ name: 'Inquiries' }, { name: 'Entities' }, { name: 'Reports' }],
+    paths: fixedPaths,
+    tags: uniqueTags,
   }
 }
 
-function getTag(value) {
-  switch (value) {
-    case 'entities':
-      return 'Entities'
-    case 'entities__0__reports__combined__xlsx':
-    case 'entities__0__reports__summary':
-      return 'Reports'
-    case 'entity_inquiries':
-      return 'Inquiries'
+function fixPaths(paths) {
+  const fixedPaths = {}
+
+  const tagHelper = new TagHelper()
+
+  for (const curr of Object.entries(paths)) {
+    // e.g.
+    //
+    // - pathName = `/mtprm.api.portfolio.resources.entities.v1.Service/List`
+    // - pathValue = `{ ... }`
+    const [pathName, pathValue] = curr
+
+    if (pathName.startsWith('/mtprm.api.portfolio.resources')) {
+      const parts = pathName.split('/')
+      const [, fullName, serviceMethod] = parts
+
+      const split = fullName.split('.')
+
+      const resourceName = split[4]
+      const serviceVersion = split[5]
+
+      const tagName = tagHelper.add(resourceName, serviceVersion)
+
+      fixedPaths[pathName] = Object.fromEntries(
+        Object.entries(pathValue).map(([httpMethod, operationDefinition]) => [
+          httpMethod,
+          {
+            ...operationDefinition,
+            operationId: serviceMethod,
+            tags: [tagName],
+          },
+        ])
+      )
+    }
+  }
+
+  return {
+    fixedPaths,
+    uniqueTags: tagHelper.sortedTags(),
+  }
+}
+
+// Tracks seen tags and deals with proper sorting
+class TagHelper {
+  static GROUP_NAME_TO_ORDER = Object.fromEntries(
+    ['Inquiries', 'Reports', 'Entities'].map((it, index) => [it, index])
+  )
+
+  fullNameToTag = new Map()
+
+  add(resourceName, serviceVersion) {
+    const groupName = this._groupName(resourceName)
+
+    const fullName = `${groupName} (${serviceVersion})`
+
+    this.fullNameToTag.set(fullName, { groupName, fullName })
+
+    return fullName
+  }
+
+  sortedTags() {
+    const uniqueValues = Array.from(this.fullNameToTag.values())
+    uniqueValues.sort((a, b) => {
+      const aGroup = TagHelper.GROUP_NAME_TO_ORDER[a.groupName] || -1
+      const bGroup = TagHelper.GROUP_NAME_TO_ORDER[b.groupName] || -1
+
+      const groupCompare = aGroup - bGroup
+
+      if (groupCompare != 0) {
+        return groupCompare
+      }
+
+      return a.fullName.localeCompare(b.fullName)
+    })
+
+    return uniqueValues.map((it) => ({ name: it.fullName }))
+  }
+
+  _groupName(resourceName) {
+    switch (resourceName) {
+      case 'entities':
+        return 'Entities'
+      case 'entities__0__reports__combined__xlsx':
+      case 'entities__0__reports__summary':
+        return 'Reports'
+      case 'entity_inquiries':
+        return 'Inquiries'
+      default:
+        return resourceName
+    }
   }
 }
 
