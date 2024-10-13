@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [26.1.0](https://github.com/mtprm/mtprm-proto/compare/26.0.2...26.1.0) (2024-10-13)
+
+
+### Features
+
+* **go:** generate openapi schema with fully qualified names for models ([dac314d](https://github.com/mtprm/mtprm-proto/commit/dac314d749f00fdc777c6d1ce2ff3bddaa5f789f))
+
 ### [26.0.2](https://github.com/MTPRM/mtprm-proto/compare/26.0.1...26.0.2) (2024-10-11)
 
 
