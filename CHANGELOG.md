@@ -8,47 +8,42 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [26.1.0](https://github.com/mtprm/mtprm-proto/compare/26.0.2...26.1.0) (2024-10-13)
 
-
 ### Features
 
-* **go:** generate openapi schema with fully qualified names for models ([dac314d](https://github.com/mtprm/mtprm-proto/commit/dac314d749f00fdc777c6d1ce2ff3bddaa5f789f))
+- **go:** generate openapi schema with fully qualified names for models ([dac314d](https://github.com/mtprm/mtprm-proto/commit/dac314d749f00fdc777c6d1ce2ff3bddaa5f789f))
 
 ### [26.0.2](https://github.com/MTPRM/mtprm-proto/compare/26.0.1...26.0.2) (2024-10-11)
 
-
 ### Bug Fixes
 
-* **api-admin:** rename `Entity` field ([0f0d168](https://github.com/MTPRM/mtprm-proto/commit/0f0d1685e85a2691a27db72c57977e389a3e8020))
+- **api-admin:** rename `Entity` field ([0f0d168](https://github.com/MTPRM/mtprm-proto/commit/0f0d1685e85a2691a27db72c57977e389a3e8020))
 
 ### [26.0.1](https://github.com/MTPRM/mtprm-proto/compare/26.0.0...26.0.1) (2024-10-11)
 
-
 ### Bug Fixes
 
-* **core:** remove double import ([6ed5933](https://github.com/MTPRM/mtprm-proto/commit/6ed59339d09545ecaccd910e22071f064ccf5195))
+- **core:** remove double import ([6ed5933](https://github.com/MTPRM/mtprm-proto/commit/6ed59339d09545ecaccd910e22071f064ccf5195))
 
 ## [26.0.0](https://github.com/MTPRM/mtprm-proto/compare/25.0.0...26.0.0) (2024-10-11)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **admin:** prefer `Entity` for `UpdateRequest`
+- **admin:** prefer `Entity` for `UpdateRequest`
 
 ### Features
 
-* **admin:** prefer `Entity` for `UpdateRequest` ([d6d53b2](https://github.com/MTPRM/mtprm-proto/commit/d6d53b2ce9d43b8d4f47a7d9969998be9823fba5))
+- **admin:** prefer `Entity` for `UpdateRequest` ([d6d53b2](https://github.com/MTPRM/mtprm-proto/commit/d6d53b2ce9d43b8d4f47a7d9969998be9823fba5))
 
 ## [25.0.0](https://github.com/MTPRM/mtprm-proto/compare/24.1.0...25.0.0) (2024-10-11)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **core:** add `inherent_risk_rating` to `EntityData`
+- **core:** add `inherent_risk_rating` to `EntityData`
 
 ### Features
 
-* **admin:** prefer `EntityData` for `UpdateRequest` ([5cd70e5](https://github.com/MTPRM/mtprm-proto/commit/5cd70e55e2a03a93484c3b6f14f18fc61adc1f07))
-* **core:** add `inherent_risk_rating` to `EntityData` ([1f07e49](https://github.com/MTPRM/mtprm-proto/commit/1f07e4927a3bc8a7df6793be28f52f9303af7b42))
+- **admin:** prefer `EntityData` for `UpdateRequest` ([5cd70e5](https://github.com/MTPRM/mtprm-proto/commit/5cd70e55e2a03a93484c3b6f14f18fc61adc1f07))
+- **core:** add `inherent_risk_rating` to `EntityData` ([1f07e49](https://github.com/MTPRM/mtprm-proto/commit/1f07e4927a3bc8a7df6793be28f52f9303af7b42))
 
 ## [24.1.0](https://github.com/MTPRM/mtprm-proto/compare/24.0.0...24.1.0) (2024-10-09)
 
