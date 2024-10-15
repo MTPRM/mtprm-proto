@@ -19,6 +19,7 @@ import (
 	v2_entities__0__reports__combined__xlsx "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities__0__reports__combined__xlsx/v1"
 	v2_entities__0__reports__summary "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities__0__reports__summary/v1"
 	v2_entity_inquiries "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v1"
+	api_entity_inquiries_v2 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v2"
 )
 
 const ndJsonMimeType = "application/x-ndjson"
@@ -66,6 +67,7 @@ func main() {
 		v2_entities__0__reports__combined__xlsx.RegisterServiceHandler,
 		v2_entities__0__reports__summary.RegisterServiceHandler,
 		v2_entity_inquiries.RegisterServiceHandler,
+		api_entity_inquiries_v2.RegisterServiceHandler,
 	}
 
 	for _, curr := range registerFuncs {
@@ -86,6 +88,7 @@ func main() {
 		v2_entities__0__reports__combined__xlsx.Service_ServiceDesc,
 		v2_entities__0__reports__summary.Service_ServiceDesc,
 		v2_entity_inquiries.Service_ServiceDesc,
+		api_entity_inquiries_v2.Service_ServiceDesc,
 	}
 
 	var knownStreamingUrls = make(map[string]bool)
