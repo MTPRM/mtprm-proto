@@ -20,6 +20,7 @@ import (
 	api_entities__0__reports__summary_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities__0__reports__summary/v1"
 	api_entity_inquiries_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v1"
 	api_entity_inquiries_v2 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v2"
+	api_entity_inquiries_v3 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v3"
 )
 
 const ndJsonMimeType = "application/x-ndjson"
@@ -68,6 +69,7 @@ func main() {
 		api_entities__0__reports__summary_v1.RegisterServiceHandler,
 		api_entity_inquiries_v1.RegisterServiceHandler,
 		api_entity_inquiries_v2.RegisterServiceHandler,
+		api_entity_inquiries_v3.RegisterServiceHandler,
 	}
 
 	for _, curr := range registerFuncs {
@@ -89,6 +91,7 @@ func main() {
 		api_entities__0__reports__summary_v1.Service_ServiceDesc,
 		api_entity_inquiries_v1.Service_ServiceDesc,
 		api_entity_inquiries_v2.Service_ServiceDesc,
+		api_entity_inquiries_v3.Service_ServiceDesc,
 	}
 
 	var knownStreamingUrls = make(map[string]bool)
