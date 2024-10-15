@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [26.2.0](https://github.com/mtprm/mtprm-proto/compare/26.1.2...26.2.0) (2024-10-15)
+
+
+### Features
+
+* **go:** add service `entity_inquiries.v2` ([95abd9b](https://github.com/mtprm/mtprm-proto/commit/95abd9b69b527e15e8f5be1e70d2cb361c6b8209))
+
 ### [26.1.2](https://github.com/mtprm/mtprm-proto/compare/26.1.1...26.1.2) (2024-10-13)
 
 ### [26.1.1](https://github.com/mtprm/mtprm-proto/compare/26.1.0...26.1.1) (2024-10-13)
