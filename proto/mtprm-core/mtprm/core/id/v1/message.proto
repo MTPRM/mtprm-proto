@@ -3,9 +3,12 @@ syntax = "proto3";
 package mtprm.core.id.v1;
 
 import "google/api/field_behavior.proto";
+import "protoc-gen-openapiv2/options/annotations.proto";
 
 // An identifier that happens to have a human-readable prefix.
 message PrefixedId {
+  option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_schema) = {example: "{\"value\": \"foo_0123456789abcdefg\"}"};
+
   // E.G. `foo_123456`
   string value = 1 [(google.api.field_behavior) = REQUIRED];
 }
