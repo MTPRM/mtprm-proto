@@ -15,10 +15,10 @@ import (
 
 	"github.com/mtprm/mtprm-proto-grpc-gateway/asset"
 
-	v2_entities_api "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities/v1"
-	v2_entities__0__reports__combined__xlsx "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities__0__reports__combined__xlsx/v1"
-	v2_entities__0__reports__summary "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities__0__reports__summary/v1"
-	v2_entity_inquiries "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v1"
+	api_entities_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities/v1"
+	api_entities__0__reports__combined__xlsx_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities__0__reports__combined__xlsx/v1"
+	api_entities__0__reports__summary_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities__0__reports__summary/v1"
+	api_entity_inquiries_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v1"
 	api_entity_inquiries_v2 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v2"
 )
 
@@ -63,10 +63,10 @@ func main() {
 	}
 
 	registerFuncs := []func(ctx context.Context, mux *runtime.ServeMux, conn *grpc.ClientConn) error{
-		v2_entities_api.RegisterServiceHandler,
-		v2_entities__0__reports__combined__xlsx.RegisterServiceHandler,
-		v2_entities__0__reports__summary.RegisterServiceHandler,
-		v2_entity_inquiries.RegisterServiceHandler,
+		api_entities_v1.RegisterServiceHandler,
+		api_entities__0__reports__combined__xlsx_v1.RegisterServiceHandler,
+		api_entities__0__reports__summary_v1.RegisterServiceHandler,
+		api_entity_inquiries_v1.RegisterServiceHandler,
 		api_entity_inquiries_v2.RegisterServiceHandler,
 	}
 
@@ -84,10 +84,10 @@ func main() {
 	}
 
 	serviceDescriptions := []grpc.ServiceDesc{
-		v2_entities_api.Service_ServiceDesc,
-		v2_entities__0__reports__combined__xlsx.Service_ServiceDesc,
-		v2_entities__0__reports__summary.Service_ServiceDesc,
-		v2_entity_inquiries.Service_ServiceDesc,
+		api_entities_v1.Service_ServiceDesc,
+		api_entities__0__reports__combined__xlsx_v1.Service_ServiceDesc,
+		api_entities__0__reports__summary_v1.Service_ServiceDesc,
+		api_entity_inquiries_v1.Service_ServiceDesc,
 		api_entity_inquiries_v2.Service_ServiceDesc,
 	}
 
