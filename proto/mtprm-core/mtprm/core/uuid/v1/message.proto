@@ -3,7 +3,10 @@ syntax = "proto3";
 package mtprm.core.uuid.v1;
 
 import "google/api/field_behavior.proto";
+import "protoc-gen-openapiv2/options/annotations.proto";
 
 message Uuid {
+  option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_schema) = {example: "{\"value\": \"0cf361e1-4b44-483d-a159-54dabdf7e814\"}"};
+
   string value = 1 [(google.api.field_behavior) = REQUIRED];
 }
