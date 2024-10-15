@@ -20,7 +20,7 @@ message EntityInquiry {
 
 message EntityInquiryData {
   mtprm.core.entity.v2.EntityData entity = 1 [(google.api.field_behavior) = REQUIRED];
-  mtprm.core.inherent_risk_rating.v1.InherentRiskRating inherent_risk_rating = 2 [(google.api.field_behavior) = REQUIRED];
+  mtprm.core.inherent_risk_rating.v1.InherentRiskRating inherent_risk_rating = 2 [deprecated = true];
   optional string risk_relationship = 3;
   optional uint64 case_number = 4;
 }
