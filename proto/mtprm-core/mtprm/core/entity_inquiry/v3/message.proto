@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package mtprm.core.entity_inquiry.v3;
+
+import "google/api/field_behavior.proto";
+import "mtprm/core/entity/v2/message.proto";
+import "mtprm/core/id/v1/message.proto";
+import "mtprm/core/time/v1/message.proto";
+
+message EntityInquiry {
+  mtprm.core.id.v1.PrefixedId inquiry_id = 1 [(google.api.field_behavior) = REQUIRED];
+  EntityInquiryData inquiry_data = 2 [(google.api.field_behavior) = REQUIRED];
+  InquiryStatus status = 3 [(google.api.field_behavior) = REQUIRED];
+  oneof entity_optional {
+    mtprm.core.entity.v2.Entity entity = 4;
+  }
+  mtprm.core.time.v1.IsoDateTime created_at = 5 [(google.api.field_behavior) = REQUIRED];
+}
+
+message EntityInquiryData {
+  mtprm.core.entity.v2.EntityData entity = 1 [(google.api.field_behavior) = REQUIRED];
+  optional string risk_relationship = 2;
+  optional uint64 case_number = 3;
+}
+
+message InquiryStatus {
+  InquiryState state = 1 [(google.api.field_behavior) = REQUIRED];
+  mtprm.core.time.v1.IsoDateTime updated_at = 2 [(google.api.field_behavior) = REQUIRED];
+}
+
+enum InquiryState {
+  INQUIRY_STATE_UNSPECIFIED = 0;
+  INQUIRY_STATE_PENDING = 1;
+  INQUIRY_STATE_COMPLETE = 2;
+  INQUIRY_STATE_DUPLICATE = 3;
+  INQUIRY_STATE_MISSING_DATA = 4;
+  INQUIRY_STATE_NONEXISTENT = 5;
+  INQUIRY_STATE_OTHER_ERROR = 6;
+}
