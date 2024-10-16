@@ -4,29 +4,26 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [26.4.0](https://github.com/mtprm/mtprm-proto/compare/26.3.0...26.4.0) (2024-10-15)
 
-
 ### Features
 
-* **go:** add service `entity_inquiries.v3` ([81b44ca](https://github.com/mtprm/mtprm-proto/commit/81b44ca20fd4cc947d4f78f0e7e8ea13cf1ca1db))
+- **go:** add service `entity_inquiries.v3` ([81b44ca](https://github.com/mtprm/mtprm-proto/commit/81b44ca20fd4cc947d4f78f0e7e8ea13cf1ca1db))
 
 ## [26.3.0](https://github.com/MTPRM/mtprm-proto/compare/26.2.1...26.3.0) (2024-10-15)
 
-
 ### Features
 
-* **admin:** add `entity_inquiries/v2` service ([c67afb4](https://github.com/MTPRM/mtprm-proto/commit/c67afb41d4cc70e55fb7c08ff9fd0802ba66b1cb))
-* **core:** add `EntityInquiry` v3 ([d03f7a5](https://github.com/MTPRM/mtprm-proto/commit/d03f7a520e77cbb81bdd0ef1ba6d38fd1c2fb08b))
-* **core:** note `deprecated` field ([3ff4ddb](https://github.com/MTPRM/mtprm-proto/commit/3ff4ddbf9f10438d0dacc53755ca351807a44e58))
-* **portfolio:** add `entity_inquiries/v3` service ([2a76ca8](https://github.com/MTPRM/mtprm-proto/commit/2a76ca8f7ebe27d181d43062d924630e50339d5a))
+- **admin:** add `entity_inquiries/v2` service ([c67afb4](https://github.com/MTPRM/mtprm-proto/commit/c67afb41d4cc70e55fb7c08ff9fd0802ba66b1cb))
+- **core:** add `EntityInquiry` v3 ([d03f7a5](https://github.com/MTPRM/mtprm-proto/commit/d03f7a520e77cbb81bdd0ef1ba6d38fd1c2fb08b))
+- **core:** note `deprecated` field ([3ff4ddb](https://github.com/MTPRM/mtprm-proto/commit/3ff4ddbf9f10438d0dacc53755ca351807a44e58))
+- **portfolio:** add `entity_inquiries/v3` service ([2a76ca8](https://github.com/MTPRM/mtprm-proto/commit/2a76ca8f7ebe27d181d43062d924630e50339d5a))
 
 ### [26.2.1](https://github.com/mtprm/mtprm-proto/compare/26.2.0...26.2.1) (2024-10-15)
 
 ## [26.2.0](https://github.com/mtprm/mtprm-proto/compare/26.1.2...26.2.0) (2024-10-15)
 
-
 ### Features
 
-* **go:** add service `entity_inquiries.v2` ([95abd9b](https://github.com/mtprm/mtprm-proto/commit/95abd9b69b527e15e8f5be1e70d2cb361c6b8209))
+- **go:** add service `entity_inquiries.v2` ([95abd9b](https://github.com/mtprm/mtprm-proto/commit/95abd9b69b527e15e8f5be1e70d2cb361c6b8209))
 
 ### [26.1.2](https://github.com/mtprm/mtprm-proto/compare/26.1.1...26.1.2) (2024-10-13)
 
