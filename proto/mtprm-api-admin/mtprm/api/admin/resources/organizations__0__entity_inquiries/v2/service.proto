@@ -11,6 +11,8 @@ service Service {
   rpc Create(CreateRequest) returns (CreateResponse) {}
   // Retrieve details of a specific inquiry.
   rpc Read(ReadRequest) returns (ReadResponse) {}
+  // Update details of a specific inquiry.
+  rpc Update(UpdateRequest) returns (UpdateResponse) {}
   // Retrieve a list of all inquiries.
   rpc List(ListRequest) returns (stream ListResponse) {}
 }
@@ -32,6 +34,13 @@ message ReadRequest {
 message ReadResponse {
   mtprm.core.entity_inquiry.v3.EntityInquiry inquiry = 1;
 }
+
+message UpdateRequest {
+  string org_id = 1;
+  mtprm.core.entity_inquiry.v3.EntityInquiry inquiry = 2;
+}
+
+message UpdateResponse {}
 
 message ListRequest {
   string org_id = 1;
