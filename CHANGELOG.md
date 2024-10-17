@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [26.5.0](https://github.com/MTPRM/mtprm-proto/compare/26.4.0...26.5.0) (2024-10-16)
 
-
 ### Features
 
-* **api-admin:** add `Update()` service ([32b0120](https://github.com/MTPRM/mtprm-proto/commit/32b01201f992c4ce8936ab0e1a830a94d080af6b))
+- **api-admin:** add `Update()` service ([32b0120](https://github.com/MTPRM/mtprm-proto/commit/32b01201f992c4ce8936ab0e1a830a94d080af6b))
 
 ## [26.4.0](https://github.com/mtprm/mtprm-proto/compare/26.3.0...26.4.0) (2024-10-15)
 
