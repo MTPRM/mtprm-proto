@@ -2,6 +2,7 @@
 
 ## Manual Testing
 
+`go mod download`
 `go build -o bin/ cmd/rest.go`
 
 `./bin/rest ${grpcServerBackend}:${port}`
