@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [26.6.0](https://github.com/MTPRM/mtprm-proto/compare/26.5.0...26.6.0) (2024-10-28)
+
+
+### Features
+
+* **api-portfolio:** version of entity inquires base on excel spreadsheet approved by Meta ([4383331](https://github.com/MTPRM/mtprm-proto/commit/4383331fe55460ed729bcbd961ca50fcf4e75898))
+* **core:** entity definition ([65bc57f](https://github.com/MTPRM/mtprm-proto/commit/65bc57ffa9c6bff1d21228c5f29dbb05eff22bed))
+* **core:** v4 of entity inquiry data ([8748bba](https://github.com/MTPRM/mtprm-proto/commit/8748bba4c9a1c9671eb78a8a6c79e75d2cc81974))
+
+
+### Bug Fixes
+
+* **api-portfolio-v3:** use EntityData from entity definition ([0aceecb](https://github.com/MTPRM/mtprm-proto/commit/0aceecb924d2bb66e27e9fe44265aa15a2408ea5))
+* **api-portfolio:** typo in name ([6f41595](https://github.com/MTPRM/mtprm-proto/commit/6f415957ca9a0c40466f1cb97e65667ac46b9a83))
+* **core:** move to entity definition ([e527131](https://github.com/MTPRM/mtprm-proto/commit/e52713116673be5ce831a129d7082d1d7738974b))
+
 ## [26.5.0](https://github.com/MTPRM/mtprm-proto/compare/26.4.0...26.5.0) (2024-10-16)
 
 ### Features
