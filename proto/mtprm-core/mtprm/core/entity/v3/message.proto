@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package mtprm.core.entity.v3;
+
+import "google/api/field_behavior.proto";
+import "mtprm/core/time/v1/message.proto";
+
+message EntityData {
+  string name = 1 [(google.api.field_behavior) = REQUIRED];
+  string domain = 2 [(google.api.field_behavior) = REQUIRED];
+  optional string duns_number = 3;
+  oneof last_assessment_date_optional {
+    mtprm.core.time.v1.IsoDateTime last_assessment_date = 4;
+  }
+  optional string dss_level = 5;
+  string inherent_risk_rating = 6 [(google.api.field_behavior) = REQUIRED];
+  string contact_email_primary = 7 [(google.api.field_behavior) = REQUIRED];
+  optional string contact_email_secondary = 8;
+  optional uint64 case_number = 9;
+  repeated string portfolio_names = 10;
+}
