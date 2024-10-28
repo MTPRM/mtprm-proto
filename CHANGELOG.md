@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [27.0.2](https://github.com/MTPRM/mtprm-proto/compare/27.0.1...27.0.2) (2024-10-28)
+
 ### [27.0.1](https://github.com/MTPRM/mtprm-proto/compare/27.0.0...27.0.1) (2024-10-28)
 
 ## [27.0.0](https://github.com/MTPRM/mtprm-proto/compare/26.6.0...27.0.0) (2024-10-28)
