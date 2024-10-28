@@ -30,11 +30,11 @@ message ReadRequest {
 }
 
 message ReadResponse {
-  mtprm.core.entity_inquiry.v4.EntityInquiryData inquiry = 1;
+  mtprm.core.entity_inquiry.v4.EntityData inquiry = 1;
 }
 
 message ListRequest {}
 
 message ListResponse {
-  repeated mtprm.core.entity_inquiry.v4.EntityInquiryData inquiries = 1;
+  repeated mtprm.core.entity_inquiry.v4.EntityData inquiries = 1;
 }

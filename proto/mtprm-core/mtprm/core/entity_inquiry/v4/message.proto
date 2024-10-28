@@ -6,7 +6,7 @@ import "google/api/field_behavior.proto";
 import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
 
-message EntityInquiryData {
+message EntityData {
   mtprm.core.id.v1.PrefixedId inquiry_id = 1 [(google.api.field_behavior) = REQUIRED];
   mtprm.core.time.v1.IsoDateTime created_date = 2 [(google.api.field_behavior) = REQUIRED];
   InquiryState state = 3 [(google.api.field_behavior) = REQUIRED];
