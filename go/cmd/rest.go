@@ -17,10 +17,10 @@ import (
 
 	api_entities_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities/v1"
 	api_entities__0__reports__combined__xlsx_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities__0__reports__combined__xlsx/v1"
-	api_entities__0__reports__summary_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entities__0__reports__summary/v1"
-	api_entity_inquiries_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v1"
-	api_entity_inquiries_v2 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v2"
-	api_entity_inquiries_v3 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/resources/entity_inquiries/v3"
+	api_entities__0__reports__summary_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/old/resources/entities__0__reports__summary/v1"
+	api_entity_inquiries_v1 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/old/resources/entity_inquiries/v1"
+	api_entity_inquiries_v2 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/old/resources/entity_inquiries/v2"
+	api_entity_inquiries_v3 "github.com/mtprm/mtprm-proto-grpc-gateway/generated/mtprm/api/portfolio/old/resources/entity_inquiries/v3"
 )
 
 const ndJsonMimeType = "application/x-ndjson"
