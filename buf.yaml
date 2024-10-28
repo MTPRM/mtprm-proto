@@ -11,6 +11,8 @@ modules:
     path: ./proto/mtprm-api-portfolio
   - name: buf.build/mtprm/mtprm-api-portfolio-beta
     path: ./proto/mtprm-api-portfolio-beta
+  - name: buf.build/mtprm/mtprm-api-portfolio-old
+    path: ./proto/mtprm-api-portfolio-old
   - name: buf.build/mtprm/mtprm-core
     path: ./proto/mtprm-core
 breaking:
