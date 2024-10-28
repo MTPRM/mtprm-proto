@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [27.0.0](https://github.com/MTPRM/mtprm-proto/compare/26.6.0...27.0.0) (2024-10-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-portolio:** change EntityInquiryData to EntityData; previous commit should have been breaking change
+* **api-portolio:** rename to api-portfolio-old, breaking change
+
+### Bug Fixes
+
+* **api-portolio:** change EntityInquiryData to EntityData; previous commit should have been breaking change ([f859da3](https://github.com/MTPRM/mtprm-proto/commit/f859da3b978fe66fe79c8c6c2ca0a53c84a8ff68))
+
+
+* **api-portolio:** rename to api-portfolio-old, breaking change ([b18dcd8](https://github.com/MTPRM/mtprm-proto/commit/b18dcd834692f928560ca97cf82d76e44cb726e5))
+
 ## [26.6.0](https://github.com/MTPRM/mtprm-proto/compare/26.5.0...26.6.0) (2024-10-28)
 
 
