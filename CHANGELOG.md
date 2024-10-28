@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [27.1.0](https://github.com/MTPRM/mtprm-proto/compare/27.0.2...27.1.0) (2024-10-28)
+
+
+### Features
+
+* **api-portfolio:** add new v1 version of combined report ([4b65450](https://github.com/MTPRM/mtprm-proto/commit/4b65450e9e0cc52d473c0090c906dc22ba388d99))
+* **api-portfolio:** add new v1 version of entity service ([9365f3d](https://github.com/MTPRM/mtprm-proto/commit/9365f3d374db53a863e17257094173f611d9885f))
+
 ### [27.0.2](https://github.com/MTPRM/mtprm-proto/compare/27.0.1...27.0.2) (2024-10-28)
 
 ### [27.0.1](https://github.com/MTPRM/mtprm-proto/compare/27.0.0...27.0.1) (2024-10-28)
