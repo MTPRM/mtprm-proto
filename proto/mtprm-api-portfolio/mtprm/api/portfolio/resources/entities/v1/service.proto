@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.portfolio.resources.entities.v1;
+
+import "google/api/field_behavior.proto";
+import "mtprm/core/entity/v3/message.proto";
+import "mtprm/core/id/v1/message.proto";
+
+service Service {
+  // Retrieve details of a specific entity being monitored.
+  rpc Read(ReadRequest) returns (ReadResponse) {}
+  // Update an entity
+  rpc Update(UpdateRequest) returns (UpdateResponse) {}
+  // Retrieve a list of all entities being monitored.
+  rpc List(ListRequest) returns (stream ListResponse) {}
+}
+
+message ReadRequest {
+  mtprm.core.id.v1.PrefixedId entity_id = 1 [(google.api.field_behavior) = REQUIRED];
+}
+
+message ReadResponse {
+  mtprm.core.entity.v3.EntityData entity = 1;
+}
+
+message UpdateRequest {
+  mtprm.core.entity.v3.EntityData entity = 1 [(google.api.field_behavior) = REQUIRED];
+}
+
+message UpdateResponse {}
+
+message ListRequest {}
+
+message ListResponse {
+  repeated mtprm.core.entity.v3.EntityData entities = 1;
+}
