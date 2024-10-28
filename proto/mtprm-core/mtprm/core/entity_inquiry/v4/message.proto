@@ -3,32 +3,8 @@ syntax = "proto3";
 package mtprm.core.entity_inquiry.v4;
 
 import "google/api/field_behavior.proto";
-import "mtprm/core/entity/v2/message.proto";
 import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
-
-message EntityCreateData {
-  string name = 1 [(google.api.field_behavior) = REQUIRED];
-  string domain = 2 [(google.api.field_behavior) = REQUIRED];
-  oneof duns_number_optional {
-    string duns_number = 3;
-  }
-  oneof last_assessment_date_optional {
-    mtprm.core.time.v1.IsoDateTime last_assessment_date = 4;
-  }
-  oneof dss_level_optional {
-    string dss_level = 5;
-  }
-  string inherent_risk_rating = 6 [(google.api.field_behavior) = REQUIRED];
-  string contact_email_primary = 7 [(google.api.field_behavior) = REQUIRED];
-  oneof contact_email_secondary_optional {
-    string contact_email_secondary = 8;
-  }
-  oneof case_number_optional {
-    string  case_number = 9;
-  }
-  repeated string portfolio_names = 10;
-}
 
 message EntityInquiryData {
   mtprm.core.id.v1.PrefixedId inquiry_id = 1 [(google.api.field_behavior) = REQUIRED];
