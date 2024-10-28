@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
-package mtprm.api.portfolio.resources.entity_inquiries.v3;
+package mtprm.api.portfolio.old.resources.entity_inquiries.v3;
 
 import "google/api/field_behavior.proto";
 import "mtprm/core/entity_inquiry/v3/message.proto";
