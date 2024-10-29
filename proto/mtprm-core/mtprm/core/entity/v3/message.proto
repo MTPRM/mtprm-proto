@@ -10,7 +10,7 @@ import "mtprm/core/time/v1/message.proto";
 message Entity {
   mtprm.core.id.v1.PrefixedId entity_id = 1 [(google.api.field_behavior) = REQUIRED];
   EntityData data = 2 [(google.api.field_behavior) = REQUIRED];
-  ResolvedEntityData resolved = 3;
+  ThirdPartyEntityData third_party_resolved = 3;
   mtprm.core.entity_performance.v1.PerformanceSummary performance = 4;
 }
 
@@ -29,7 +29,7 @@ message EntityData {
   repeated string portfolio_names = 10;
 }
 
-message ResolvedEntityData {
+message ThirdPartyEntityData {
   string name = 1;
   string domain = 2;
   repeated string duns_number = 3;
