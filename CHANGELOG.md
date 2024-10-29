@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [27.4.2](https://github.com/MTPRM/mtprm-proto/compare/27.4.1...27.4.2) (2024-10-29)
+
+
+### Bug Fixes
+
+* **api-portfolio:** add entity id to update request ([ae2dda9](https://github.com/MTPRM/mtprm-proto/commit/ae2dda938c476366030204faeb42a72592ea4b47))
+
 ### [27.4.1](https://github.com/MTPRM/mtprm-proto/compare/27.4.0...27.4.1) (2024-10-29)
 
 
