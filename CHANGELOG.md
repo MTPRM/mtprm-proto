@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [27.4.0](https://github.com/MTPRM/mtprm-proto/compare/27.3.0...27.4.0) (2024-10-29)
+
+
+### Features
+
+* **core:** entity list response fields ([ef234b5](https://github.com/MTPRM/mtprm-proto/commit/ef234b5b210784e48bfb60d393cc4e6d9fd37d17))
+
+
+### Bug Fixes
+
+* **api-portfolio:** correct fields for read response, list request, list response ([c961b72](https://github.com/MTPRM/mtprm-proto/commit/c961b72377d7c65a84c25039c3d3ab83174e9558))
+
 ## [27.3.0](https://github.com/MTPRM/mtprm-proto/compare/27.2.0...27.3.0) (2024-10-29)
 
 
