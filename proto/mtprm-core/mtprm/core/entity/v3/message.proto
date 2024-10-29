@@ -35,7 +35,7 @@ message ResolvedEntityData {
   repeated string duns_number = 3;
 }
 
-message EntityListData {
+message SummaryEntity {
   mtprm.core.id.v1.PrefixedId entity_id = 1;
   mtprm.core.entity_performance.v1.GradeLetter risk_rating_grade = 2;
 }
