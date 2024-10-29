@@ -3,7 +3,16 @@ syntax = "proto3";
 package mtprm.core.entity.v3;
 
 import "google/api/field_behavior.proto";
+import "mtprm/core/entity_performance/v1/message.proto";
+import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
+
+message Entity {
+  mtprm.core.id.v1.PrefixedId entity_id = 1 [(google.api.field_behavior) = REQUIRED];
+  EntityData data = 2 [(google.api.field_behavior) = REQUIRED];
+  ResolvedEntityData resolved = 3;
+  mtprm.core.entity_performance.v1.PerformanceSummary performance = 4;
+}
 
 message EntityData {
   string name = 1 [(google.api.field_behavior) = REQUIRED];
@@ -18,4 +27,10 @@ message EntityData {
   optional string contact_email_secondary = 8;
   optional uint64 case_number = 9;
   repeated string portfolio_names = 10;
+}
+
+message ResolvedEntityData {
+  string name = 1;
+  string domain = 2;
+  repeated string duns_number = 3;
 }
