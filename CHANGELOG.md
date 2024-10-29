@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [27.2.0](https://github.com/MTPRM/mtprm-proto/compare/27.1.1...27.2.0) (2024-10-29)
+
+
+### Features
+
+* **core:** entity performance fields ([671c7cc](https://github.com/MTPRM/mtprm-proto/commit/671c7cc9356d834a71921c22d520e55d08383606))
+
+
+### Bug Fixes
+
+* **api-portfolio:** change name ([472dd10](https://github.com/MTPRM/mtprm-proto/commit/472dd10a3a19394210ddc3a253ed1b1a02360936))
+* **core:** change name ([6bee8d4](https://github.com/MTPRM/mtprm-proto/commit/6bee8d4d6e2ea2834e2ac02afd42fdb095642b1a))
+* **core:** wrap inquiry status ([779b3ef](https://github.com/MTPRM/mtprm-proto/commit/779b3ef2ba1625781cb3442b6037b1cc2d3aab5c))
+
 ### [27.1.1](https://github.com/MTPRM/mtprm-proto/compare/27.1.0...27.1.1) (2024-10-28)
 
 ## [27.1.0](https://github.com/MTPRM/mtprm-proto/compare/27.0.2...27.1.0) (2024-10-28)
