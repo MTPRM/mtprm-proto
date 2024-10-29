@@ -38,5 +38,5 @@ message ListRequest {
 }
 
 message ListResponse {
-  repeated mtprm.core.entity.v3.EntityListData entities = 1;
+  repeated mtprm.core.entity.v3.SummaryEntity entities = 1;
 }
