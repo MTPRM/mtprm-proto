@@ -25,4 +25,5 @@ nohup.out
 gen-*/
 go/generated/
 go/asset/openapi/
+go/bin/
 go/rest
