@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [27.4.1](https://github.com/MTPRM/mtprm-proto/compare/27.4.0...27.4.1) (2024-10-29)
+
+
+### Bug Fixes
+
+* **api-portfolio:** changes from peer review ([38fe12f](https://github.com/MTPRM/mtprm-proto/commit/38fe12f8a0ef1caa1d4e22468b61ef4ae461c76f))
+* **core:** changes from peer review ([d630ec6](https://github.com/MTPRM/mtprm-proto/commit/d630ec6e8e23863883e13cb64a2c9660354cc9d7))
+
 ## [27.4.0](https://github.com/MTPRM/mtprm-proto/compare/27.3.0...27.4.0) (2024-10-29)
 
 
