@@ -36,5 +36,5 @@ message ReadResponse {
 message ListRequest {}
 
 message ListResponse {
-  repeated mtprm.core.entity_inquiry.v4.EntityData inquiries = 1;
+  repeated mtprm.core.entity_inquiry.v4.InquiryData inquiries = 1;
 }
