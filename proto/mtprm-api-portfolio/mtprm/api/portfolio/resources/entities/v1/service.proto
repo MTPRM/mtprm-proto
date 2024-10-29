@@ -26,7 +26,8 @@ message ReadResponse {
 }
 
 message UpdateRequest {
-  mtprm.core.entity.v3.EntityData entity = 1 [(google.api.field_behavior) = REQUIRED];
+  mtprm.core.id.v1.PrefixedId entity_id = 1 [(google.api.field_behavior) = REQUIRED];
+  mtprm.core.entity.v3.EntityData entity = 2 [(google.api.field_behavior) = REQUIRED];
 }
 
 message UpdateResponse {}
