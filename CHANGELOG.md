@@ -6,11 +6,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [27.1.0](https://github.com/MTPRM/mtprm-proto/compare/27.0.2...27.1.0) (2024-10-28)
 
-
 ### Features
 
-* **api-portfolio:** add new v1 version of combined report ([4b65450](https://github.com/MTPRM/mtprm-proto/commit/4b65450e9e0cc52d473c0090c906dc22ba388d99))
-* **api-portfolio:** add new v1 version of entity service ([9365f3d](https://github.com/MTPRM/mtprm-proto/commit/9365f3d374db53a863e17257094173f611d9885f))
+- **api-portfolio:** add new v1 version of combined report ([4b65450](https://github.com/MTPRM/mtprm-proto/commit/4b65450e9e0cc52d473c0090c906dc22ba388d99))
+- **api-portfolio:** add new v1 version of entity service ([9365f3d](https://github.com/MTPRM/mtprm-proto/commit/9365f3d374db53a863e17257094173f611d9885f))
 
 ### [27.0.2](https://github.com/MTPRM/mtprm-proto/compare/27.0.1...27.0.2) (2024-10-28)
 
@@ -18,34 +17,30 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [27.0.0](https://github.com/MTPRM/mtprm-proto/compare/26.6.0...27.0.0) (2024-10-28)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **api-portolio:** change EntityInquiryData to EntityData; previous commit should have been breaking change
-* **api-portolio:** rename to api-portfolio-old, breaking change
+- **api-portolio:** change EntityInquiryData to EntityData; previous commit should have been breaking change
+- **api-portolio:** rename to api-portfolio-old, breaking change
 
 ### Bug Fixes
 
-* **api-portolio:** change EntityInquiryData to EntityData; previous commit should have been breaking change ([f859da3](https://github.com/MTPRM/mtprm-proto/commit/f859da3b978fe66fe79c8c6c2ca0a53c84a8ff68))
+- **api-portolio:** change EntityInquiryData to EntityData; previous commit should have been breaking change ([f859da3](https://github.com/MTPRM/mtprm-proto/commit/f859da3b978fe66fe79c8c6c2ca0a53c84a8ff68))
 
-
-* **api-portolio:** rename to api-portfolio-old, breaking change ([b18dcd8](https://github.com/MTPRM/mtprm-proto/commit/b18dcd834692f928560ca97cf82d76e44cb726e5))
+- **api-portolio:** rename to api-portfolio-old, breaking change ([b18dcd8](https://github.com/MTPRM/mtprm-proto/commit/b18dcd834692f928560ca97cf82d76e44cb726e5))
 
 ## [26.6.0](https://github.com/MTPRM/mtprm-proto/compare/26.5.0...26.6.0) (2024-10-28)
 
-
 ### Features
 
-* **api-portfolio:** version of entity inquires base on excel spreadsheet approved by Meta ([4383331](https://github.com/MTPRM/mtprm-proto/commit/4383331fe55460ed729bcbd961ca50fcf4e75898))
-* **core:** entity definition ([65bc57f](https://github.com/MTPRM/mtprm-proto/commit/65bc57ffa9c6bff1d21228c5f29dbb05eff22bed))
-* **core:** v4 of entity inquiry data ([8748bba](https://github.com/MTPRM/mtprm-proto/commit/8748bba4c9a1c9671eb78a8a6c79e75d2cc81974))
-
+- **api-portfolio:** version of entity inquires base on excel spreadsheet approved by Meta ([4383331](https://github.com/MTPRM/mtprm-proto/commit/4383331fe55460ed729bcbd961ca50fcf4e75898))
+- **core:** entity definition ([65bc57f](https://github.com/MTPRM/mtprm-proto/commit/65bc57ffa9c6bff1d21228c5f29dbb05eff22bed))
+- **core:** v4 of entity inquiry data ([8748bba](https://github.com/MTPRM/mtprm-proto/commit/8748bba4c9a1c9671eb78a8a6c79e75d2cc81974))
 
 ### Bug Fixes
 
-* **api-portfolio-v3:** use EntityData from entity definition ([0aceecb](https://github.com/MTPRM/mtprm-proto/commit/0aceecb924d2bb66e27e9fe44265aa15a2408ea5))
-* **api-portfolio:** typo in name ([6f41595](https://github.com/MTPRM/mtprm-proto/commit/6f415957ca9a0c40466f1cb97e65667ac46b9a83))
-* **core:** move to entity definition ([e527131](https://github.com/MTPRM/mtprm-proto/commit/e52713116673be5ce831a129d7082d1d7738974b))
+- **api-portfolio-v3:** use EntityData from entity definition ([0aceecb](https://github.com/MTPRM/mtprm-proto/commit/0aceecb924d2bb66e27e9fe44265aa15a2408ea5))
+- **api-portfolio:** typo in name ([6f41595](https://github.com/MTPRM/mtprm-proto/commit/6f415957ca9a0c40466f1cb97e65667ac46b9a83))
+- **core:** move to entity definition ([e527131](https://github.com/MTPRM/mtprm-proto/commit/e52713116673be5ce831a129d7082d1d7738974b))
 
 ## [26.5.0](https://github.com/MTPRM/mtprm-proto/compare/26.4.0...26.5.0) (2024-10-16)
 
