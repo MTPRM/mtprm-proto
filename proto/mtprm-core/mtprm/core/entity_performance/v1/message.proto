@@ -46,7 +46,7 @@ message RiskDomainPerformance {
 
 message PerformanceSummary {
   mtprm.core.time.v1.IsoDateTime last_assessment_date = 1;
-  mtprm.core.time.v1.IsoDateTime last_updated_date = 2 ;
+  mtprm.core.time.v1.IsoDateTime last_updated_date = 2;
   double risk_rating_score = 3;
   GradeLetter risk_rating_grade = 4;
   repeated RiskDomainPerformance risk_domain_performance = 5;
