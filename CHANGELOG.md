@@ -4,65 +4,56 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [27.4.4](https://github.com/MTPRM/mtprm-proto/compare/27.4.3...27.4.4) (2024-10-29)
 
-
 ### Bug Fixes
 
-* **core:** changes from peer review ([8a9cbfc](https://github.com/MTPRM/mtprm-proto/commit/8a9cbfc69b7b9d44a5f2bde1e93718bf121f7054))
+- **core:** changes from peer review ([8a9cbfc](https://github.com/MTPRM/mtprm-proto/commit/8a9cbfc69b7b9d44a5f2bde1e93718bf121f7054))
 
 ### [27.4.3](https://github.com/MTPRM/mtprm-proto/compare/27.4.2...27.4.3) (2024-10-29)
 
 ### [27.4.2](https://github.com/MTPRM/mtprm-proto/compare/27.4.1...27.4.2) (2024-10-29)
 
-
 ### Bug Fixes
 
-* **api-portfolio:** add entity id to update request ([ae2dda9](https://github.com/MTPRM/mtprm-proto/commit/ae2dda938c476366030204faeb42a72592ea4b47))
+- **api-portfolio:** add entity id to update request ([ae2dda9](https://github.com/MTPRM/mtprm-proto/commit/ae2dda938c476366030204faeb42a72592ea4b47))
 
 ### [27.4.1](https://github.com/MTPRM/mtprm-proto/compare/27.4.0...27.4.1) (2024-10-29)
 
-
 ### Bug Fixes
 
-* **api-portfolio:** changes from peer review ([38fe12f](https://github.com/MTPRM/mtprm-proto/commit/38fe12f8a0ef1caa1d4e22468b61ef4ae461c76f))
-* **core:** changes from peer review ([d630ec6](https://github.com/MTPRM/mtprm-proto/commit/d630ec6e8e23863883e13cb64a2c9660354cc9d7))
+- **api-portfolio:** changes from peer review ([38fe12f](https://github.com/MTPRM/mtprm-proto/commit/38fe12f8a0ef1caa1d4e22468b61ef4ae461c76f))
+- **core:** changes from peer review ([d630ec6](https://github.com/MTPRM/mtprm-proto/commit/d630ec6e8e23863883e13cb64a2c9660354cc9d7))
 
 ## [27.4.0](https://github.com/MTPRM/mtprm-proto/compare/27.3.0...27.4.0) (2024-10-29)
 
-
 ### Features
 
-* **core:** entity list response fields ([ef234b5](https://github.com/MTPRM/mtprm-proto/commit/ef234b5b210784e48bfb60d393cc4e6d9fd37d17))
-
+- **core:** entity list response fields ([ef234b5](https://github.com/MTPRM/mtprm-proto/commit/ef234b5b210784e48bfb60d393cc4e6d9fd37d17))
 
 ### Bug Fixes
 
-* **api-portfolio:** correct fields for read response, list request, list response ([c961b72](https://github.com/MTPRM/mtprm-proto/commit/c961b72377d7c65a84c25039c3d3ab83174e9558))
+- **api-portfolio:** correct fields for read response, list request, list response ([c961b72](https://github.com/MTPRM/mtprm-proto/commit/c961b72377d7c65a84c25039c3d3ab83174e9558))
 
 ## [27.3.0](https://github.com/MTPRM/mtprm-proto/compare/27.2.0...27.3.0) (2024-10-29)
 
-
 ### Features
 
-* **core:** entity fields ([e979365](https://github.com/MTPRM/mtprm-proto/commit/e979365b80c72da1ce3f3bfe665e7ceb4a73dc33))
-
+- **core:** entity fields ([e979365](https://github.com/MTPRM/mtprm-proto/commit/e979365b80c72da1ce3f3bfe665e7ceb4a73dc33))
 
 ### Bug Fixes
 
-* **api-portfolio:** change name ([ba7dff4](https://github.com/MTPRM/mtprm-proto/commit/ba7dff4c8ccea5a14fed130f24b3728f85ad8fec))
+- **api-portfolio:** change name ([ba7dff4](https://github.com/MTPRM/mtprm-proto/commit/ba7dff4c8ccea5a14fed130f24b3728f85ad8fec))
 
 ## [27.2.0](https://github.com/MTPRM/mtprm-proto/compare/27.1.1...27.2.0) (2024-10-29)
 
-
 ### Features
 
-* **core:** entity performance fields ([671c7cc](https://github.com/MTPRM/mtprm-proto/commit/671c7cc9356d834a71921c22d520e55d08383606))
-
+- **core:** entity performance fields ([671c7cc](https://github.com/MTPRM/mtprm-proto/commit/671c7cc9356d834a71921c22d520e55d08383606))
 
 ### Bug Fixes
 
-* **api-portfolio:** change name ([472dd10](https://github.com/MTPRM/mtprm-proto/commit/472dd10a3a19394210ddc3a253ed1b1a02360936))
-* **core:** change name ([6bee8d4](https://github.com/MTPRM/mtprm-proto/commit/6bee8d4d6e2ea2834e2ac02afd42fdb095642b1a))
-* **core:** wrap inquiry status ([779b3ef](https://github.com/MTPRM/mtprm-proto/commit/779b3ef2ba1625781cb3442b6037b1cc2d3aab5c))
+- **api-portfolio:** change name ([472dd10](https://github.com/MTPRM/mtprm-proto/commit/472dd10a3a19394210ddc3a253ed1b1a02360936))
+- **core:** change name ([6bee8d4](https://github.com/MTPRM/mtprm-proto/commit/6bee8d4d6e2ea2834e2ac02afd42fdb095642b1a))
+- **core:** wrap inquiry status ([779b3ef](https://github.com/MTPRM/mtprm-proto/commit/779b3ef2ba1625781cb3442b6037b1cc2d3aab5c))
 
 ### [27.1.1](https://github.com/MTPRM/mtprm-proto/compare/27.1.0...27.1.1) (2024-10-28)
 
