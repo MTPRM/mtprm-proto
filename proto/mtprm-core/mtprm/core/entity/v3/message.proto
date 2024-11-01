@@ -9,9 +9,12 @@ import "mtprm/core/time/v1/message.proto";
 
 message Entity {
   mtprm.core.id.v1.PrefixedId entity_id = 1 [(google.api.field_behavior) = REQUIRED];
-  EntityData data = 2 [(google.api.field_behavior) = REQUIRED];
-  ThirdPartyEntityData third_party_resolved = 3;
-  mtprm.core.entity_performance.v1.PerformanceSummary performance = 4;
+  EntityData submitted = 2 [(google.api.field_behavior) = REQUIRED];
+  ThirdPartyEntityData resolved = 3;
+  mtprm.core.time.v1.IsoDateTime last_updated_date = 4;
+  double risk_rating_score = 5;
+  mtprm.core.entity_performance.v1.GradeLetter risk_rating_grade = 6;
+  repeated mtprm.core.entity_performance.v1.RiskDomainPerformance risk_domain_performance = 7;
 }
 
 message EntityData {
@@ -33,9 +36,10 @@ message ThirdPartyEntityData {
   string name = 1;
   string domain = 2;
   repeated string duns_number = 3;
+  mtprm.core.time.v1.IsoDateTime last_assessment_date = 4;
 }
 
 message SummaryEntity {
   mtprm.core.id.v1.PrefixedId entity_id = 1;
-  mtprm.core.entity_performance.v1.GradeLetter risk_rating_grade = 2;
+  mtprm.core.entity_performance.v1.ResolvedRiskRatingGrade resolved = 2;
 }
