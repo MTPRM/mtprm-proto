@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [27.4.6](https://github.com/MTPRM/mtprm-proto/compare/27.4.5...27.4.6) (2024-11-01)
+
+
+### Bug Fixes
+
+* **core:** remove unused import ([cbbed27](https://github.com/MTPRM/mtprm-proto/commit/cbbed27ea263e45d6f660b79958621cbf5937e00))
+
 ### [27.4.5](https://github.com/MTPRM/mtprm-proto/compare/27.4.4...27.4.5) (2024-11-01)
 
 
