@@ -18,7 +18,7 @@ service Service {
 }
 
 message CreateRequest {
-  mtprm.core.entity.v3.EntityData entity_data = 1 [(google.api.field_behavior) = REQUIRED];
+  mtprm.core.entity.v3.EntityData submitted = 1 [(google.api.field_behavior) = REQUIRED];
 }
 
 message CreateResponse {
