@@ -3,8 +3,6 @@ syntax = "proto3";
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.core.entity_performance.v1;
 
-import "mtprm/core/time/v1/message.proto";
-
 enum GradeLetter {
   GRADE_LETTER_UNSPECIFIED = 0;
   GRADE_LETTER_A = 1;
