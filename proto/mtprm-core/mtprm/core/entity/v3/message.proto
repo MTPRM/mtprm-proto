@@ -6,37 +6,40 @@ import "google/api/field_behavior.proto";
 import "mtprm/core/entity_performance/v1/message.proto";
 import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
+import "protoc-gen-openapiv2/options/annotations.proto";
 
 message Entity {
   mtprm.core.id.v1.PrefixedId entity_id = 1 [(google.api.field_behavior) = REQUIRED];
   EntityData submitted = 2 [(google.api.field_behavior) = REQUIRED];
   ThirdPartyEntityData resolved = 3;
-  mtprm.core.time.v1.IsoDateTime last_updated_date = 4;
-  double risk_rating_score = 5;
-  mtprm.core.entity_performance.v1.GradeLetter risk_rating_grade = 6;
+  mtprm.core.time.v1.IsoDateTime last_updated_date = 4 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "{\"value\": \"2024-10-31T01:30:00.000-05:00\"}"}];
+  double risk_rating_score = 5 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "8.4"}];
+  mtprm.core.entity_performance.v1.GradeLetter risk_rating_grade = 6 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"GRADE_LETTER_B\""}];
   repeated mtprm.core.entity_performance.v1.RiskDomainPerformance risk_domain_performance = 7;
 }
 
 message EntityData {
-  string name = 1 [(google.api.field_behavior) = REQUIRED];
-  string domain = 2 [(google.api.field_behavior) = REQUIRED];
-  optional string duns_number = 3;
+  string name = 1 [(google.api.field_behavior) = REQUIRED, (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {
+    example: "\"Company, Inc.\""}];
+  string domain = 2 [(google.api.field_behavior) = REQUIRED, (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {
+    example: "\"company.com\""}];
+  optional string duns_number = 3 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"123456789\""}];
   oneof last_assessment_date_optional {
-    mtprm.core.time.v1.IsoDateTime last_assessment_date = 4;
+    mtprm.core.time.v1.IsoDateTime last_assessment_date = 4 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "{\"value\": \"2024-10-31T01:30:00.000-05:00\"}"}];
   }
-  optional string dss_level = 5;
-  string inherent_risk_rating = 6 [(google.api.field_behavior) = REQUIRED];
-  string contact_email_primary = 7 [(google.api.field_behavior) = REQUIRED];
-  optional string contact_email_secondary = 8;
-  optional uint64 case_number = 9;
-  repeated string portfolio_names = 10;
+  optional string dss_level = 5 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"FOUR\""}];
+  string inherent_risk_rating = 6 [(google.api.field_behavior) = REQUIRED, (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"VERY_HIGH\""}];
+  string contact_email_primary = 7 [(google.api.field_behavior) = REQUIRED, (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"john.doe@company.com\""}];
+  optional string contact_email_secondary = 8 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"jane.doe@company.com\""}];
+  optional uint64 case_number = 9 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "123456"}];
+  repeated string portfolio_names = 10 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "[\"Portfolio1\",\"Portfolio2\"]"}];
 }
 
 message ThirdPartyEntityData {
-  string name = 1;
-  string domain = 2;
-  repeated string duns_number = 3;
-  mtprm.core.time.v1.IsoDateTime last_assessment_date = 4;
+  string name = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"Resolved Company, Inc.\""}];
+  string domain = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"resolved-company.com\""}];
+  repeated string duns_number = 3 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"123456789\""}];
+  mtprm.core.time.v1.IsoDateTime last_assessment_date = 4[(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "{\"value\": \"2024-10-31T01:30:00.000-05:00\"}"}];
 }
 
 message SummaryEntity {

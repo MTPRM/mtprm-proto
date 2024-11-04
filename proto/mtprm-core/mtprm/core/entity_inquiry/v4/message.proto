@@ -5,19 +5,20 @@ package mtprm.core.entity_inquiry.v4;
 import "google/api/field_behavior.proto";
 import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
+import "protoc-gen-openapiv2/options/annotations.proto";
 
 message InquiryData {
   mtprm.core.id.v1.PrefixedId inquiry_id = 1 [(google.api.field_behavior) = REQUIRED];
-  mtprm.core.time.v1.IsoDateTime created_date = 2 [(google.api.field_behavior) = REQUIRED];
+  mtprm.core.time.v1.IsoDateTime created_date = 2 [(google.api.field_behavior) = REQUIRED, (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "{\"value\": \"2024-10-31T01:30:00.000-05:00\"}"}];
   InquiryStatus status = 3 [(google.api.field_behavior) = REQUIRED];
   oneof entity_id_optional {
-    mtprm.core.id.v1.PrefixedId entity_id = 4;
+    mtprm.core.id.v1.PrefixedId entity_id = 4 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "{\"value\": \"foo_0123456789lmnopqrs\"}"}];
   }
 }
 
 message InquiryStatus {
-  InquiryState state = 1 [(google.api.field_behavior) = REQUIRED];
-  mtprm.core.time.v1.IsoDateTime updated_at = 2 [(google.api.field_behavior) = REQUIRED];
+  InquiryState state = 1 [(google.api.field_behavior) = REQUIRED, (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"INQUIRY_STATE_COMPLETE\""}];
+  mtprm.core.time.v1.IsoDateTime updated_at = 2 [(google.api.field_behavior) = REQUIRED, (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "{\"value\": \"2024-10-31T01:30:00.000-05:00\"}"}];
 }
 
 enum InquiryState {

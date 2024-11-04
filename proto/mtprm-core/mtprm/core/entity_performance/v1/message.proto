@@ -2,6 +2,7 @@ syntax = "proto3";
 
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.core.entity_performance.v1;
+import "protoc-gen-openapiv2/options/annotations.proto";
 
 enum GradeLetter {
   GRADE_LETTER_UNSPECIFIED = 0;
@@ -26,22 +27,22 @@ enum RiskDomainId {
 }
 
 message RiskDomain {
-  RiskDomainId id = 1;
-  string name = 2;
+  RiskDomainId id = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"RISK_DOMAIN_ID_APP_SECURITY\""}];
+  string name = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"Application Security\""}];
 }
 
 message IssuesMetrics {
-  uint32 num_crit_issues = 1;
-  uint32 num_high_issues = 2;
-  uint32 num_med_issues = 3;
+  uint32 num_crit_issues = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "10"}];
+  uint32 num_high_issues = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "11"}];
+  uint32 num_med_issues = 3 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "12"}];
 }
 
 message RiskDomainPerformance {
   RiskDomain risk_domain = 1;
-  GradeLetter risk_domain_grade = 2;
+  GradeLetter risk_domain_grade = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"GRADE_LETTER_C\""}];
   IssuesMetrics issues_metrics = 3;
 }
 
 message ResolvedRiskRatingGrade {
-  GradeLetter risk_rating_grade = 1;
+  GradeLetter risk_rating_grade = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"GRADE_LETTER_C\""}];
 }
