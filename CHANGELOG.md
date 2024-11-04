@@ -4,18 +4,16 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [27.4.6](https://github.com/MTPRM/mtprm-proto/compare/27.4.5...27.4.6) (2024-11-01)
 
-
 ### Bug Fixes
 
-* **core:** remove unused import ([cbbed27](https://github.com/MTPRM/mtprm-proto/commit/cbbed27ea263e45d6f660b79958621cbf5937e00))
+- **core:** remove unused import ([cbbed27](https://github.com/MTPRM/mtprm-proto/commit/cbbed27ea263e45d6f660b79958621cbf5937e00))
 
 ### [27.4.5](https://github.com/MTPRM/mtprm-proto/compare/27.4.4...27.4.5) (2024-11-01)
 
-
 ### Bug Fixes
 
-* **api-portfolio:** changes from Internal WHK Meta TPRM Weekly Sync ([c08a5cf](https://github.com/MTPRM/mtprm-proto/commit/c08a5cf21c98defcf0e05749d77203a67bcd51ea))
-* **core:** changes from Internal WHK Meta TPRM Weekly Sync ([82e7ae4](https://github.com/MTPRM/mtprm-proto/commit/82e7ae4efcb5337448b27f8412600cb8e931f9c9))
+- **api-portfolio:** changes from Internal WHK Meta TPRM Weekly Sync ([c08a5cf](https://github.com/MTPRM/mtprm-proto/commit/c08a5cf21c98defcf0e05749d77203a67bcd51ea))
+- **core:** changes from Internal WHK Meta TPRM Weekly Sync ([82e7ae4](https://github.com/MTPRM/mtprm-proto/commit/82e7ae4efcb5337448b27f8412600cb8e931f9c9))
 
 ### [27.4.4](https://github.com/MTPRM/mtprm-proto/compare/27.4.3...27.4.4) (2024-10-29)
 
