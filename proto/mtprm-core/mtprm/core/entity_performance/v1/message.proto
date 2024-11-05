@@ -2,6 +2,7 @@ syntax = "proto3";
 
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.core.entity_performance.v1;
+
 import "protoc-gen-openapiv2/options/annotations.proto";
 
 enum GradeLetter {
