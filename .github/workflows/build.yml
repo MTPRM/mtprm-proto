@@ -85,3 +85,30 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Notify other repository about new version
+        run: |
+          PAYLOAD=$(cat << EOF
+          {
+            "event_type": "update-versions-mtprm-proto-dev",
+            "client_payload": {
+              "modules": {
+                "gateway": {
+                  "dockerImage": {
+                    "url": "${{ vars.MTPRM_BACKEND_APP_SERVER_GRPC_PORTFOLIO_IMAGE }}:${{ steps.meta.outputs.tags }}"
+                  }
+                }
+              },
+              "version": "${{ steps.meta.outputs.tags }}"
+            }
+          }
+          EOF
+          )
+          echo $PAYLOAD
+          curl \
+          --retry 5 \
+          -X POST \
+          -H "Accept: application/vnd.github+json" \
+          -H "Authorization: Bearer ${{ secrets.OTHER_REPO_GITHUB_TOKEN }}" \
+          https://api.github.com/repos/mtprm/mtprm-infrastructure/dispatches \
+          --data "$PAYLOAD"
