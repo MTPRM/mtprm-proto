@@ -95,7 +95,7 @@ jobs:
               "modules": {
                 "gateway": {
                   "dockerImage": {
-                    "url": "github.event.release.tag_name:${{ github.ref_name }}"
+                    "url": "ghcr.io/mtprm/mtprm-proto/grpc-gateway:${{ github.ref_name }}"
                   }
                 }
               },
