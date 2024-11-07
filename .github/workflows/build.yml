@@ -95,7 +95,7 @@ jobs:
               "modules": {
                 "gateway": {
                   "dockerImage": {
-                    "url": "${{ vars.MTPRM_BACKEND_APP_SERVER_GRPC_PORTFOLIO_IMAGE }}"
+                    "url": "${{ vars.env.IMAGE_NAME }}"
                   }
                 }
               },
