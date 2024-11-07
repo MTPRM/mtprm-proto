@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [27.6.5](https://github.com/MTPRM/mtprm-proto/compare/27.6.4...27.6.5) (2024-11-07)
+
+
+### Bug Fixes
+
+* **core:** make third party and performance fields optional ([eb7ab7e](https://github.com/MTPRM/mtprm-proto/commit/eb7ab7e55fbf711b58940c427b7e73df5625ee18))
+
 ### [27.6.4](https://github.com/MTPRM/mtprm-proto/compare/27.6.3...27.6.4) (2024-11-07)
 
 ### [27.6.3](https://github.com/MTPRM/mtprm-proto/compare/27.6.2...27.6.3) (2024-11-07)
