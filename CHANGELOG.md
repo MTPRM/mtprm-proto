@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [27.6.1](https://github.com/MTPRM/mtprm-proto/compare/27.6.0...27.6.1) (2024-11-07)
+
+
+### Bug Fixes
+
+* put only first element of array for version ([aa09562](https://github.com/MTPRM/mtprm-proto/commit/aa095621c4c642be5d13ed546d9a7d2d4984e10c))
+
 ## [27.6.0](https://github.com/MTPRM/mtprm-proto/compare/27.5.0...27.6.0) (2024-11-07)
 
 
