@@ -95,11 +95,11 @@ jobs:
               "modules": {
                 "gateway": {
                   "dockerImage": {
-                    "url": "github.event.release.tag_name:${{ github.event.release.tag_name }}"
+                    "url": "github.event.release.tag_name:${{ github.ref_name }}"
                   }
                 }
               },
-              "version": "${{ github.event.release.tag_name }}"
+              "version": "${{ github.ref_name }}"
             }
           }
           EOF
