@@ -95,11 +95,11 @@ jobs:
               "modules": {
                 "gateway": {
                   "dockerImage": {
-                    "url": "${{ vars.env.IMAGE_NAME }}"
+                    "url": "${{ steps.meta.outputs.tags[1] }}"
                   }
                 }
               },
-              "version": "${{ steps.meta.outputs.tags[0] }}"
+              "version": "${{ steps.meta.outputs.tags[1] }}"
             }
           }
           EOF
