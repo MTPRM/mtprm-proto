@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [27.6.0](https://github.com/MTPRM/mtprm-proto/compare/27.5.0...27.6.0) (2024-11-07)
+
+
+### Features
+
+* adding workflow step for trigging dispatch of proto verion to infrastructure ([c82e538](https://github.com/MTPRM/mtprm-proto/commit/c82e538a27cc768f3346dcaef933fcf0a6e0ebc1))
+
 ## [27.5.0](https://github.com/MTPRM/mtprm-proto/compare/27.4.6...27.5.0) (2024-11-04)
 
 ### Features
