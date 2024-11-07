@@ -11,11 +11,19 @@ import "protoc-gen-openapiv2/options/annotations.proto";
 message Entity {
   mtprm.core.id.v1.PrefixedId entity_id = 1 [(google.api.field_behavior) = REQUIRED];
   EntityData submitted = 2 [(google.api.field_behavior) = REQUIRED];
-  ThirdPartyEntityData resolved = 3;
-  mtprm.core.time.v1.IsoDateTime last_updated_date = 4 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "{\"value\": \"2024-10-31T01:30:00.000-05:00\"}"}];
-  double risk_rating_score = 5 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "8.4"}];
-  mtprm.core.entity_performance.v1.GradeLetter risk_rating_grade = 6 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"GRADE_LETTER_B\""}];
-  repeated mtprm.core.entity_performance.v1.RiskDomainPerformance risk_domain_performance = 7;
+  oneof resolved_optional {
+    ThirdPartyEntityData resolved = 3;
+  }
+  oneof last_updated_date_optional {
+    mtprm.core.time.v1.IsoDateTime last_updated_date = 4 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "{\"value\": \"2024-10-31T01:30:00.000-05:00\"}"}];
+  }
+  oneof risk_rating_score_optional {
+    double risk_rating_score = 5 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "8.4"}];
+  }
+  oneof risk_rating_grade_optional {
+    mtprm.core.entity_performance.v1.GradeLetter risk_rating_grade = 6 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"GRADE_LETTER_B\""}];
+  }
+   repeated mtprm.core.entity_performance.v1.RiskDomainPerformance risk_domain_performance = 7;
 }
 
 message EntityData {
