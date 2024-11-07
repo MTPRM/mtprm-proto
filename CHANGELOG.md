@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [27.6.2](https://github.com/MTPRM/mtprm-proto/compare/27.6.1...27.6.2) (2024-11-07)
+
+
+### Bug Fixes
+
+* emtpy docker image ([9fefe52](https://github.com/MTPRM/mtprm-proto/commit/9fefe52dcfd7662953dbf7ca0dd872ed2f9629bf))
+
 ### [27.6.1](https://github.com/MTPRM/mtprm-proto/compare/27.6.0...27.6.1) (2024-11-07)
 
 
