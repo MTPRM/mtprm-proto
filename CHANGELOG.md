@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [27.6.10](https://github.com/MTPRM/mtprm-proto/compare/27.6.9...27.6.10) (2024-11-08)
+
+
+### Bug Fixes
+
+* **core:** test of api portolio deploy ([5a11ad2](https://github.com/MTPRM/mtprm-proto/commit/5a11ad27a8ae04599fcc5c4d9c0a55c45e0967b7))
+
 ### [27.6.9](https://github.com/MTPRM/mtprm-proto/compare/27.6.8...27.6.9) (2024-11-08)
 
 
