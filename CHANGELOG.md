@@ -6,19 +6,17 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [27.6.7](https://github.com/MTPRM/mtprm-proto/compare/27.6.6...27.6.7) (2024-11-07)
 
-
 ### Bug Fixes
 
-* correct prefix ([f6fc7c6](https://github.com/MTPRM/mtprm-proto/commit/f6fc7c6ba0976705a701d9c5c18d8c5fdb99025c))
+- correct prefix ([f6fc7c6](https://github.com/MTPRM/mtprm-proto/commit/f6fc7c6ba0976705a701d9c5c18d8c5fdb99025c))
 
 ### [27.6.6](https://github.com/MTPRM/mtprm-proto/compare/27.6.5...27.6.6) (2024-11-07)
 
 ### [27.6.5](https://github.com/MTPRM/mtprm-proto/compare/27.6.4...27.6.5) (2024-11-07)
 
-
 ### Bug Fixes
 
-* **core:** make third party and performance fields optional ([eb7ab7e](https://github.com/MTPRM/mtprm-proto/commit/eb7ab7e55fbf711b58940c427b7e73df5625ee18))
+- **core:** make third party and performance fields optional ([eb7ab7e](https://github.com/MTPRM/mtprm-proto/commit/eb7ab7e55fbf711b58940c427b7e73df5625ee18))
 
 ### [27.6.4](https://github.com/MTPRM/mtprm-proto/compare/27.6.3...27.6.4) (2024-11-07)
 
@@ -26,24 +24,21 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [27.6.2](https://github.com/MTPRM/mtprm-proto/compare/27.6.1...27.6.2) (2024-11-07)
 
-
 ### Bug Fixes
 
-* emtpy docker image ([9fefe52](https://github.com/MTPRM/mtprm-proto/commit/9fefe52dcfd7662953dbf7ca0dd872ed2f9629bf))
+- emtpy docker image ([9fefe52](https://github.com/MTPRM/mtprm-proto/commit/9fefe52dcfd7662953dbf7ca0dd872ed2f9629bf))
 
 ### [27.6.1](https://github.com/MTPRM/mtprm-proto/compare/27.6.0...27.6.1) (2024-11-07)
 
-
 ### Bug Fixes
 
-* put only first element of array for version ([aa09562](https://github.com/MTPRM/mtprm-proto/commit/aa095621c4c642be5d13ed546d9a7d2d4984e10c))
+- put only first element of array for version ([aa09562](https://github.com/MTPRM/mtprm-proto/commit/aa095621c4c642be5d13ed546d9a7d2d4984e10c))
 
 ## [27.6.0](https://github.com/MTPRM/mtprm-proto/compare/27.5.0...27.6.0) (2024-11-07)
 
-
 ### Features
 
-* adding workflow step for trigging dispatch of proto verion to infrastructure ([c82e538](https://github.com/MTPRM/mtprm-proto/commit/c82e538a27cc768f3346dcaef933fcf0a6e0ebc1))
+- adding workflow step for trigging dispatch of proto verion to infrastructure ([c82e538](https://github.com/MTPRM/mtprm-proto/commit/c82e538a27cc768f3346dcaef933fcf0a6e0ebc1))
 
 ## [27.5.0](https://github.com/MTPRM/mtprm-proto/compare/27.4.6...27.5.0) (2024-11-04)
 
