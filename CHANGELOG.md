@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [27.6.9](https://github.com/MTPRM/mtprm-proto/compare/27.6.8...27.6.9) (2024-11-08)
+
+
+### Bug Fixes
+
+* **core:** pre management request, call out all domains in the example ([63aad86](https://github.com/MTPRM/mtprm-proto/commit/63aad860926a05be2a3b038d748152c1827c0b4f))
+
 ### [27.6.8](https://github.com/MTPRM/mtprm-proto/compare/27.6.7...27.6.8) (2024-11-07)
 
 ### [27.6.7](https://github.com/MTPRM/mtprm-proto/compare/27.6.6...27.6.7) (2024-11-07)
