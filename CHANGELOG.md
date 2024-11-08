@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [27.6.13](https://github.com/MTPRM/mtprm-proto/compare/27.6.12...27.6.13) (2024-11-08)
+
+
+### Bug Fixes
+
+* **core:** remove test code ([16d6a5a](https://github.com/MTPRM/mtprm-proto/commit/16d6a5a4ab9b84f14d18f566e60e8f97e08b6aa7))
+
 ### [27.6.12](https://github.com/MTPRM/mtprm-proto/compare/27.6.11...27.6.12) (2024-11-08)
 
 ### [27.6.11](https://github.com/MTPRM/mtprm-proto/compare/27.6.10...27.6.11) (2024-11-08)
