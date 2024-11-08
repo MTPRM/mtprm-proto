@@ -23,7 +23,7 @@ message Entity {
   oneof risk_rating_grade_optional {
     mtprm.core.entity_performance.v1.GradeLetter risk_rating_grade = 6 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"GRADE_LETTER_B\""}];
   }
-   repeated mtprm.core.entity_performance.v1.RiskDomainPerformance risk_domain_performance = 7;
+  repeated mtprm.core.entity_performance.v1.RiskDomainPerformance risk_domain_performance = 7;
 }
 
 message EntityData {
