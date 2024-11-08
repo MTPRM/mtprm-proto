@@ -23,7 +23,19 @@ message Entity {
   oneof risk_rating_grade_optional {
     mtprm.core.entity_performance.v1.GradeLetter risk_rating_grade = 6 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example: "\"GRADE_LETTER_B\""}];
   }
-  repeated mtprm.core.entity_performance.v1.RiskDomainPerformance risk_domain_performance = 7;
+  repeated mtprm.core.entity_performance.v1.RiskDomainPerformance risk_domain_performance = 7 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {example:
+    "["
+      "{\"riskDomain\": {\"id\": \"RISK_DOMAIN_ID_APP_SECURITY\",\"name\": \"Application Security\"},\"riskDomainGrade\": \"GRADE_LETTER_C\",\"issuesMetrics\": {\"numCritIssues\": 10,\"numHighIssues\": 11,\"numMedIssues\": 12}},"
+      "{\"riskDomain\": {\"id\": \"RISK_DOMAIN_ID_BREACH_EVENTS\",\"name\": \"Breach Events\"},\"riskDomainGrade\": \"GRADE_LETTER_B\",\"issuesMetrics\": {\"numCritIssues\": 10,\"numHighIssues\": 11,\"numMedIssues\": 11}},"
+      "{\"riskDomain\": {\"id\": \"RISK_DOMAIN_ID_DNS_SECURITY\",\"name\": \"DNS Security\"},\"riskDomainGrade\": \"GRADE_LETTER_C\",\"issuesMetrics\": {\"numCritIssues\": 12,\"numHighIssues\": 12,\"numMedIssues\": 12}},"
+      "{\"riskDomain\": {\"id\": \"RISK_DOMAIN_ID_EMAIL_SECURITY\",\"name\": \"Email Security\"},\"riskDomainGrade\": \"GRADE_LETTER_B\",\"issuesMetrics\": {\"numCritIssues\": 7,\"numHighIssues\": 8,\"numMedIssues\": 9}},"
+      "{\"riskDomain\": {\"id\": \"RISK_DOMAIN_ID_NETWORK_FILTERING\",\"name\": \"Network Filtering\"},\"riskDomainGrade\": \"GRADE_LETTER_B\",\"issuesMetrics\": {\"numCritIssues\": 8,\"numHighIssues\": 9,\"numMedIssues\": 9}},"
+      "{\"riskDomain\": {\"id\": \"RISK_DOMAIN_ID_SOFTWARE_PATCHING\",\"name\": \"Software Patching\"},\"riskDomainGrade\": \"GRADE_LETTER_A\",\"issuesMetrics\": {\"numCritIssues\": 1,\"numHighIssues\": 1,\"numMedIssues\": 2}},"
+      "{\"riskDomain\": {\"id\": \"RISK_DOMAIN_ID_SYSTEM_HOSTING\",\"name\": \"System Hosting\"},\"riskDomainGrade\": \"GRADE_LETTER_C\",\"issuesMetrics\": {\"numCritIssues\": 10,\"numHighIssues\": 11,\"numMedIssues\": 12}},"
+      "{\"riskDomain\": {\"id\": \"RISK_DOMAIN_ID_SYSTEM_REPUTATION\",\"name\": \"System Reputation\"},\"riskDomainGrade\": \"GRADE_LETTER_C\",\"issuesMetrics\": {\"numCritIssues\": 13,\"numHighIssues\": 14,\"numMedIssues\": 15}},"
+      "{\"riskDomain\": {\"id\": \"RISK_DOMAIN_ID_WEB_ENCRYPTION\",\"name\": \"Web Encryption\"},\"riskDomainGrade\": \"GRADE_LETTER_B\",\"issuesMetrics\": {\"numCritIssues\": 10,\"numHighIssues\": 10,\"numMedIssues\": 10}}"
+      "]"
+  }];
 }
 
 message EntityData {
