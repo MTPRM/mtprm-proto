@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [27.6.13](https://github.com/MTPRM/mtprm-proto/compare/27.6.12...27.6.13) (2024-11-08)
 
-
 ### Bug Fixes
 
-* **core:** remove test code ([16d6a5a](https://github.com/MTPRM/mtprm-proto/commit/16d6a5a4ab9b84f14d18f566e60e8f97e08b6aa7))
+- **core:** remove test code ([16d6a5a](https://github.com/MTPRM/mtprm-proto/commit/16d6a5a4ab9b84f14d18f566e60e8f97e08b6aa7))
 
 ### [27.6.12](https://github.com/MTPRM/mtprm-proto/compare/27.6.11...27.6.12) (2024-11-08)
 
@@ -15,17 +14,15 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [27.6.10](https://github.com/MTPRM/mtprm-proto/compare/27.6.9...27.6.10) (2024-11-08)
 
-
 ### Bug Fixes
 
-* **core:** test of api portolio deploy ([5a11ad2](https://github.com/MTPRM/mtprm-proto/commit/5a11ad27a8ae04599fcc5c4d9c0a55c45e0967b7))
+- **core:** test of api portolio deploy ([5a11ad2](https://github.com/MTPRM/mtprm-proto/commit/5a11ad27a8ae04599fcc5c4d9c0a55c45e0967b7))
 
 ### [27.6.9](https://github.com/MTPRM/mtprm-proto/compare/27.6.8...27.6.9) (2024-11-08)
 
-
 ### Bug Fixes
 
-* **core:** pre management request, call out all domains in the example ([63aad86](https://github.com/MTPRM/mtprm-proto/commit/63aad860926a05be2a3b038d748152c1827c0b4f))
+- **core:** pre management request, call out all domains in the example ([63aad86](https://github.com/MTPRM/mtprm-proto/commit/63aad860926a05be2a3b038d748152c1827c0b4f))
 
 ### [27.6.8](https://github.com/MTPRM/mtprm-proto/compare/27.6.7...27.6.8) (2024-11-07)
 
