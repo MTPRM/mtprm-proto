@@ -5,14 +5,8 @@ deps:
 modules:
   - name: buf.build/mtprm/mtprm-api-admin
     path: ./proto/mtprm-api-admin
-  - name: buf.build/mtprm/mtprm-api-audit
-    path: ./proto/mtprm-api-audit
   - name: buf.build/mtprm/mtprm-api-portfolio
     path: ./proto/mtprm-api-portfolio
-  - name: buf.build/mtprm/mtprm-api-portfolio-beta
-    path: ./proto/mtprm-api-portfolio-beta
-  - name: buf.build/mtprm/mtprm-api-portfolio-old
-    path: ./proto/mtprm-api-portfolio-old
   - name: buf.build/mtprm/mtprm-core
     path: ./proto/mtprm-core
 breaking:
