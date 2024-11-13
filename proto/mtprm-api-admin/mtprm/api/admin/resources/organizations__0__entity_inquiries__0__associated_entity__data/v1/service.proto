@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.admin.resources.organizations__0__entity_inquiries__0__associated_entity__data.v1;
+
+import "mtprm/core/entity/v3/message.proto";
+import "mtprm/core/id/v1/message.proto";
+
+service Service {
+  rpc Get(GetRequest) returns ( GetResponse) {}
+}
+
+message GetRequest {
+  string org_id = 1;
+  mtprm.core.id.v1.PrefixedId inquiry_id = 2;
+}
+
+message GetResponse {
+  mtprm.core.id.v1.PrefixedId entity_id = 1;
+  mtprm.core.entity.v3.EntityData entity_data = 2;
+}
