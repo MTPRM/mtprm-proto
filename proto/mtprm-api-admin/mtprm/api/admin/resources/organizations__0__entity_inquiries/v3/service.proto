@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.admin.resources.organizations__0__entity_inquiries.v3;
+
+import "mtprm/core/entity/v3/message.proto";
+import "mtprm/core/entity_inquiry/v4/message.proto";
+import "mtprm/core/id/v1/message.proto";
+
+service Service {
+  rpc Create(CreateRequest) returns (CreateResponse) {}
+  rpc Read(ReadRequest) returns (ReadResponse) {}
+  rpc List(ListRequest) returns (stream ListResponse) {}
+}
+
+message CreateRequest {
+  string org_id = 1;
+  mtprm.core.entity.v3.EntityData submitted = 2;
+}
+
+message CreateResponse {
+  mtprm.core.id.v1.PrefixedId inquiry_id = 1;
+}
+
+message ReadRequest {
+  string org_id = 1;
+  mtprm.core.id.v1.PrefixedId inquiry_id = 2;
+}
+
+message ReadResponse {
+  mtprm.core.entity_inquiry.v4.InquiryData inquiry = 1;
+}
+
+message ListRequest {
+  string org_id = 1;
+}
+
+message ListResponse {
+  repeated mtprm.core.entity_inquiry.v4.InquiryData inquiries = 1;
+}
