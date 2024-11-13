@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [28.2.0](https://github.com/MTPRM/mtprm-proto/compare/28.1.0...28.2.0) (2024-11-13)
+
+
+### Features
+
+* **api-admin:** add additional fields ([f4b24f5](https://github.com/MTPRM/mtprm-proto/commit/f4b24f56dd959472de3ff7cd1b07843bcfcbe61a))
+
 ## [28.1.0](https://github.com/MTPRM/mtprm-proto/compare/28.0.0...28.1.0) (2024-11-13)
 
 
