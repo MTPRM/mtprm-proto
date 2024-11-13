@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [27.7.0](https://github.com/MTPRM/mtprm-proto/compare/27.6.13...27.7.0) (2024-11-13)
+
+
+### Features
+
+* **api-admin:** add `organizations__0__entities__0__reports__combined__xlsx.v3` ([10bdf82](https://github.com/MTPRM/mtprm-proto/commit/10bdf8272fcb446bf03213755a59f0994b5baf9f))
+* **api-admin:** add `organizations__0__entities.v3` ([6873e80](https://github.com/MTPRM/mtprm-proto/commit/6873e80f57cd75101750a071a7e480946e51d560))
+* **api-admin:** add `organizations__0__entity_inquiries.v3` ([ed78544](https://github.com/MTPRM/mtprm-proto/commit/ed78544460d09155bde27fa096aadf57d4efd261))
+* **mtprm-core:** add `AdminSummaryEntity` message ([a5327bd](https://github.com/MTPRM/mtprm-proto/commit/a5327bdb04b72bfb846e64686eb1a4015cca40cf))
+
 ### [27.6.13](https://github.com/MTPRM/mtprm-proto/compare/27.6.12...27.6.13) (2024-11-08)
 
 ### Bug Fixes
