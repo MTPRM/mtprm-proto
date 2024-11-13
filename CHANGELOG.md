@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [28.1.0](https://github.com/MTPRM/mtprm-proto/compare/28.0.0...28.1.0) (2024-11-13)
+
+
+### Features
+
+* **api-admin:** add `organizations__0__entity_inquiries__0__associated_entity__data.v1` ([e6c567a](https://github.com/MTPRM/mtprm-proto/commit/e6c567ae30cb1391726385bba6d3cbba3879805c))
+* **api-admin:** add `organizations__0__entity_inquiries__0__associated_entity__id.v1` ([5c94ee3](https://github.com/MTPRM/mtprm-proto/commit/5c94ee31bbb856a860a0ec935de91e80b965a5db))
+
 ## [28.0.0](https://github.com/MTPRM/mtprm-proto/compare/27.6.13...28.0.0) (2024-11-13)
 
 
