@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.admin.resources.organizations__0__entities.v3;
+
+import "mtprm/core/entity/v3/message.proto";
+import "mtprm/core/entity_performance/v1/message.proto";
+import "mtprm/core/id/v1/message.proto";
+
+service Service {
+  rpc Read(ReadRequest) returns (ReadResponse) {}
+  rpc Update(UpdateRequest) returns (UpdateResponse) {}
+  rpc List(ListRequest) returns (stream ListResponse) {}
+}
+
+message ReadRequest {
+  string org_id = 1;
+  mtprm.core.id.v1.PrefixedId entity_id = 2;
+}
+
+message ReadResponse {
+  mtprm.core.entity.v3.Entity entity = 1;
+}
+
+message UpdateRequest {
+  string org_id = 1;
+  mtprm.core.id.v1.PrefixedId entity_id = 2;
+  mtprm.core.entity.v3.EntityData submitted = 3;
+}
+
+message UpdateResponse {}
+
+message ListRequest {
+  string org_id = 1;
+  oneof risk_rating_grade_optional {
+    mtprm.core.entity_performance.v1.ResolvedRiskRatingGrade resolved = 2;
+  }
+}
+
+message ListResponse {
+  repeated mtprm.core.entity.v3.AdminSummaryEntity entities = 1;
+}
