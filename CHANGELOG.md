@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [28.0.0](https://github.com/MTPRM/mtprm-proto/compare/27.6.13...28.0.0) (2024-11-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **buf:** disable deprecated/unused modules
+
+### Features
+
+* **api-admin:** add `organizations__0__entities__0__reports__combined__xlsx.v3` ([e9eab69](https://github.com/MTPRM/mtprm-proto/commit/e9eab697cdfedfef9fcff4beb88b8a4a4b760de4))
+* **api-admin:** add `organizations__0__entities.v3` ([3aa8332](https://github.com/MTPRM/mtprm-proto/commit/3aa8332f25ccbd4d532d2d7ece8587d46aad21f0))
+* **api-admin:** add `organizations__0__entity_inquiries.v3` ([ecb91c8](https://github.com/MTPRM/mtprm-proto/commit/ecb91c8ed0a1f997906f2c8ab53de26e38d9d0e1))
+* **mtprm-core:** add `AdminSummaryEntity` message ([955c9c6](https://github.com/MTPRM/mtprm-proto/commit/955c9c61b8758220c09a6b1affac4d961bb96473))
+
+
+### build
+
+* **buf:** disable deprecated/unused modules ([603c675](https://github.com/MTPRM/mtprm-proto/commit/603c6753d2ea7e00aaf06eab0b155c043877a428))
+
 ## [27.7.0](https://github.com/MTPRM/mtprm-proto/compare/27.6.13...27.7.0) (2024-11-13)
 
 
