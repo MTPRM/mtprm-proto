@@ -76,3 +76,9 @@ message SummaryEntity {
   mtprm.core.id.v1.PrefixedId entity_id = 1;
   mtprm.core.entity_performance.v1.ResolvedRiskRatingGrade resolved = 2;
 }
+
+message AdminSummaryEntity {
+  mtprm.core.id.v1.PrefixedId entity_id = 1;
+  mtprm.core.entity_performance.v1.ResolvedRiskRatingGrade resolved = 2;
+  repeated string portfolio_names = 3;
+}
