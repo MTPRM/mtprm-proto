@@ -4,47 +4,42 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [28.2.0](https://github.com/MTPRM/mtprm-proto/compare/28.1.0...28.2.0) (2024-11-13)
 
-
 ### Features
 
-* **api-admin:** add additional fields ([f4b24f5](https://github.com/MTPRM/mtprm-proto/commit/f4b24f56dd959472de3ff7cd1b07843bcfcbe61a))
+- **api-admin:** add additional fields ([f4b24f5](https://github.com/MTPRM/mtprm-proto/commit/f4b24f56dd959472de3ff7cd1b07843bcfcbe61a))
 
 ## [28.1.0](https://github.com/MTPRM/mtprm-proto/compare/28.0.0...28.1.0) (2024-11-13)
 
-
 ### Features
 
-* **api-admin:** add `organizations__0__entity_inquiries__0__associated_entity__data.v1` ([e6c567a](https://github.com/MTPRM/mtprm-proto/commit/e6c567ae30cb1391726385bba6d3cbba3879805c))
-* **api-admin:** add `organizations__0__entity_inquiries__0__associated_entity__id.v1` ([5c94ee3](https://github.com/MTPRM/mtprm-proto/commit/5c94ee31bbb856a860a0ec935de91e80b965a5db))
+- **api-admin:** add `organizations__0__entity_inquiries__0__associated_entity__data.v1` ([e6c567a](https://github.com/MTPRM/mtprm-proto/commit/e6c567ae30cb1391726385bba6d3cbba3879805c))
+- **api-admin:** add `organizations__0__entity_inquiries__0__associated_entity__id.v1` ([5c94ee3](https://github.com/MTPRM/mtprm-proto/commit/5c94ee31bbb856a860a0ec935de91e80b965a5db))
 
 ## [28.0.0](https://github.com/MTPRM/mtprm-proto/compare/27.6.13...28.0.0) (2024-11-13)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **buf:** disable deprecated/unused modules
+- **buf:** disable deprecated/unused modules
 
 ### Features
 
-* **api-admin:** add `organizations__0__entities__0__reports__combined__xlsx.v3` ([e9eab69](https://github.com/MTPRM/mtprm-proto/commit/e9eab697cdfedfef9fcff4beb88b8a4a4b760de4))
-* **api-admin:** add `organizations__0__entities.v3` ([3aa8332](https://github.com/MTPRM/mtprm-proto/commit/3aa8332f25ccbd4d532d2d7ece8587d46aad21f0))
-* **api-admin:** add `organizations__0__entity_inquiries.v3` ([ecb91c8](https://github.com/MTPRM/mtprm-proto/commit/ecb91c8ed0a1f997906f2c8ab53de26e38d9d0e1))
-* **mtprm-core:** add `AdminSummaryEntity` message ([955c9c6](https://github.com/MTPRM/mtprm-proto/commit/955c9c61b8758220c09a6b1affac4d961bb96473))
-
+- **api-admin:** add `organizations__0__entities__0__reports__combined__xlsx.v3` ([e9eab69](https://github.com/MTPRM/mtprm-proto/commit/e9eab697cdfedfef9fcff4beb88b8a4a4b760de4))
+- **api-admin:** add `organizations__0__entities.v3` ([3aa8332](https://github.com/MTPRM/mtprm-proto/commit/3aa8332f25ccbd4d532d2d7ece8587d46aad21f0))
+- **api-admin:** add `organizations__0__entity_inquiries.v3` ([ecb91c8](https://github.com/MTPRM/mtprm-proto/commit/ecb91c8ed0a1f997906f2c8ab53de26e38d9d0e1))
+- **mtprm-core:** add `AdminSummaryEntity` message ([955c9c6](https://github.com/MTPRM/mtprm-proto/commit/955c9c61b8758220c09a6b1affac4d961bb96473))
 
 ### build
 
-* **buf:** disable deprecated/unused modules ([603c675](https://github.com/MTPRM/mtprm-proto/commit/603c6753d2ea7e00aaf06eab0b155c043877a428))
+- **buf:** disable deprecated/unused modules ([603c675](https://github.com/MTPRM/mtprm-proto/commit/603c6753d2ea7e00aaf06eab0b155c043877a428))
 
 ## [27.7.0](https://github.com/MTPRM/mtprm-proto/compare/27.6.13...27.7.0) (2024-11-13)
 
-
 ### Features
 
-* **api-admin:** add `organizations__0__entities__0__reports__combined__xlsx.v3` ([10bdf82](https://github.com/MTPRM/mtprm-proto/commit/10bdf8272fcb446bf03213755a59f0994b5baf9f))
-* **api-admin:** add `organizations__0__entities.v3` ([6873e80](https://github.com/MTPRM/mtprm-proto/commit/6873e80f57cd75101750a071a7e480946e51d560))
-* **api-admin:** add `organizations__0__entity_inquiries.v3` ([ed78544](https://github.com/MTPRM/mtprm-proto/commit/ed78544460d09155bde27fa096aadf57d4efd261))
-* **mtprm-core:** add `AdminSummaryEntity` message ([a5327bd](https://github.com/MTPRM/mtprm-proto/commit/a5327bdb04b72bfb846e64686eb1a4015cca40cf))
+- **api-admin:** add `organizations__0__entities__0__reports__combined__xlsx.v3` ([10bdf82](https://github.com/MTPRM/mtprm-proto/commit/10bdf8272fcb446bf03213755a59f0994b5baf9f))
+- **api-admin:** add `organizations__0__entities.v3` ([6873e80](https://github.com/MTPRM/mtprm-proto/commit/6873e80f57cd75101750a071a7e480946e51d560))
+- **api-admin:** add `organizations__0__entity_inquiries.v3` ([ed78544](https://github.com/MTPRM/mtprm-proto/commit/ed78544460d09155bde27fa096aadf57d4efd261))
+- **mtprm-core:** add `AdminSummaryEntity` message ([a5327bd](https://github.com/MTPRM/mtprm-proto/commit/a5327bdb04b72bfb846e64686eb1a4015cca40cf))
 
 ### [27.6.13](https://github.com/MTPRM/mtprm-proto/compare/27.6.12...27.6.13) (2024-11-08)
 
