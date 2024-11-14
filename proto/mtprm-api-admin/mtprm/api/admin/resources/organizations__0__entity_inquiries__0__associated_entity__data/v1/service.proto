@@ -7,7 +7,7 @@ import "mtprm/core/entity/v3/message.proto";
 import "mtprm/core/id/v1/message.proto";
 
 service Service {
-  rpc Get(GetRequest) returns ( GetResponse) {}
+  rpc Get(GetRequest) returns (GetResponse) {}
 }
 
 message GetRequest {

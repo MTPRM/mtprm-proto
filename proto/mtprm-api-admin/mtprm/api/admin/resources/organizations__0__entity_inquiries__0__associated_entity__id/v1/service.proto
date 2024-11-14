@@ -6,8 +6,8 @@ package mtprm.api.admin.resources.organizations__0__entity_inquiries__0__associa
 import "mtprm/core/id/v1/message.proto";
 
 service Service {
-  rpc Get(GetRequest) returns ( GetResponse) {}
-  rpc Set(SetRequest) returns ( SetResponse) {}
+  rpc Get(GetRequest) returns (GetResponse) {}
+  rpc Set(SetRequest) returns (SetResponse) {}
 }
 
 message GetRequest {
