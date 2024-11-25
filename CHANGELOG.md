@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [28.3.0](https://github.com/MTPRM/mtprm-proto/compare/28.2.0...28.3.0) (2024-11-22)
 
-
 ### Features
 
-* **api-admin:** include submitted data in `List`/`Read` calls ([170506a](https://github.com/MTPRM/mtprm-proto/commit/170506ad9465758a570b02abe3cea621c16c0b9d))
+- **api-admin:** include submitted data in `List`/`Read` calls ([170506a](https://github.com/MTPRM/mtprm-proto/commit/170506ad9465758a570b02abe3cea621c16c0b9d))
 
 ## [28.2.0](https://github.com/MTPRM/mtprm-proto/compare/28.1.0...28.2.0) (2024-11-13)
 
