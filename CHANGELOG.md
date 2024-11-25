@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [28.4.0](https://github.com/MTPRM/mtprm-proto/compare/28.3.0...28.4.0) (2024-11-25)
+
+
+### Features
+
+* **api-admin:** add `organizations__0__entity_inquiries__0__status.v1` ([653c74b](https://github.com/MTPRM/mtprm-proto/commit/653c74b41bbb2be2e0f4a92597f41d466699a4bc))
+
 ## [28.3.0](https://github.com/MTPRM/mtprm-proto/compare/28.2.0...28.3.0) (2024-11-22)
 
 ### Features
