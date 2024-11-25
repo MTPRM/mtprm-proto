@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.admin.resources.organizations__0__entity_inquiries__0__status.v1;
+
+import "mtprm/core/id/v1/message.proto";
+import "mtprm/core/time/v1/message.proto";
+
+service Service {
+  rpc Get(GetRequest) returns (GetResponse) {}
+  rpc Set(SetRequest) returns (SetResponse) {}
+}
+
+message GetRequest {
+  string org_id = 1;
+  mtprm.core.id.v1.PrefixedId inquiry_id = 2;
+}
+
+message GetResponse {
+  string status_code_display_name = 1;
+  Status status = 2;
+  mtprm.core.time.v1.IsoDateTime last_updated_at = 3;
+}
+
+message SetRequest {
+  Status status = 1;
+}
+
+message SetResponse {}
+
+message Status {
+  oneof value {
+    StatusPending pending = 1;
+    StatusComplete complete = 2;
+    StatusDuplicate duplicate = 3;
+    StatusMissingData missing_data = 4;
+    StatusNonexistent nonexistent = 5;
+    StatusOtherError other_error = 6;
+  }
+}
+
+message StatusPending {
+  string explanation = 1;
+}
+
+message StatusComplete {
+  mtprm.core.id.v1.PrefixedId entity_id = 1;
+}
+
+message StatusDuplicate {
+  mtprm.core.id.v1.PrefixedId existing_entity_id = 1;
+}
+
+message StatusMissingData {
+  string explanation = 1;
+}
+
+message StatusNonexistent {
+  string explanation = 1;
+}
+
+message StatusOtherError {
+  string explanation = 1;
+}
