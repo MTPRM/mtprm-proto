@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [28.4.1](https://github.com/MTPRM/mtprm-proto/compare/28.4.0...28.4.1) (2024-11-26)
+
+
+### Bug Fixes
+
+* **api-admin:** include `entity_id` in response ([a22bab7](https://github.com/MTPRM/mtprm-proto/commit/a22bab77761ab4c4c70e28e53732548378f9d4db))
+
 ## [28.4.0](https://github.com/MTPRM/mtprm-proto/compare/28.3.0...28.4.0) (2024-11-25)
 
 
