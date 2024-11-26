@@ -41,10 +41,5 @@ message ListResponse {
 
 message Inquiry {
   mtprm.core.entity_inquiry.v4.InquiryData inquiry = 1;
-  SubmittedEntity submitted = 2;
-}
-
-message SubmittedEntity {
-  mtprm.core.id.v1.PrefixedId entity_id = 1;
   mtprm.core.entity.v3.EntityData submitted = 2;
 }
