@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [28.5.0](https://github.com/MTPRM/mtprm-proto/compare/28.4.2...28.5.0) (2024-11-26)
+
+
+### Features
+
+* **api-admin:** prefer only submitted data ([bd512ab](https://github.com/MTPRM/mtprm-proto/commit/bd512ab6c4c0dbbce59dab8f6ceadf0e89f79a04))
+
 ### [28.4.2](https://github.com/MTPRM/mtprm-proto/compare/28.4.1...28.4.2) (2024-11-26)
 
 
