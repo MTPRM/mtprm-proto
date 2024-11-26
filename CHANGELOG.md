@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [28.4.2](https://github.com/MTPRM/mtprm-proto/compare/28.4.1...28.4.2) (2024-11-26)
+
+
+### Bug Fixes
+
+* **api-admin:** add/use `SubmittedEntity` message ([a274149](https://github.com/MTPRM/mtprm-proto/commit/a27414978a1ceae2bb132d10241a1a2ca483f862))
+
 ### [28.4.1](https://github.com/MTPRM/mtprm-proto/compare/28.4.0...28.4.1) (2024-11-26)
 
 
