@@ -4,31 +4,27 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [28.5.0](https://github.com/MTPRM/mtprm-proto/compare/28.4.2...28.5.0) (2024-11-26)
 
-
 ### Features
 
-* **api-admin:** prefer only submitted data ([bd512ab](https://github.com/MTPRM/mtprm-proto/commit/bd512ab6c4c0dbbce59dab8f6ceadf0e89f79a04))
+- **api-admin:** prefer only submitted data ([bd512ab](https://github.com/MTPRM/mtprm-proto/commit/bd512ab6c4c0dbbce59dab8f6ceadf0e89f79a04))
 
 ### [28.4.2](https://github.com/MTPRM/mtprm-proto/compare/28.4.1...28.4.2) (2024-11-26)
 
-
 ### Bug Fixes
 
-* **api-admin:** add/use `SubmittedEntity` message ([a274149](https://github.com/MTPRM/mtprm-proto/commit/a27414978a1ceae2bb132d10241a1a2ca483f862))
+- **api-admin:** add/use `SubmittedEntity` message ([a274149](https://github.com/MTPRM/mtprm-proto/commit/a27414978a1ceae2bb132d10241a1a2ca483f862))
 
 ### [28.4.1](https://github.com/MTPRM/mtprm-proto/compare/28.4.0...28.4.1) (2024-11-26)
 
-
 ### Bug Fixes
 
-* **api-admin:** include `entity_id` in response ([a22bab7](https://github.com/MTPRM/mtprm-proto/commit/a22bab77761ab4c4c70e28e53732548378f9d4db))
+- **api-admin:** include `entity_id` in response ([a22bab7](https://github.com/MTPRM/mtprm-proto/commit/a22bab77761ab4c4c70e28e53732548378f9d4db))
 
 ## [28.4.0](https://github.com/MTPRM/mtprm-proto/compare/28.3.0...28.4.0) (2024-11-25)
 
-
 ### Features
 
-* **api-admin:** add `organizations__0__entity_inquiries__0__status.v1` ([653c74b](https://github.com/MTPRM/mtprm-proto/commit/653c74b41bbb2be2e0f4a92597f41d466699a4bc))
+- **api-admin:** add `organizations__0__entity_inquiries__0__status.v1` ([653c74b](https://github.com/MTPRM/mtprm-proto/commit/653c74b41bbb2be2e0f4a92597f41d466699a4bc))
 
 ## [28.3.0](https://github.com/MTPRM/mtprm-proto/compare/28.2.0...28.3.0) (2024-11-22)
 
