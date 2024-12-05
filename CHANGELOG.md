@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [28.6.0](https://github.com/MTPRM/mtprm-proto/compare/28.5.0...28.6.0) (2024-12-05)
+
+
+### Features
+
+* **api-admin:** include `org_id` and `inquiry_id` in `SetRequest` ([8b6fe83](https://github.com/MTPRM/mtprm-proto/commit/8b6fe837c89dae0b5d61a3615f7a1739bc2422aa))
+
 ## [28.5.0](https://github.com/MTPRM/mtprm-proto/compare/28.4.2...28.5.0) (2024-11-26)
 
 ### Features
