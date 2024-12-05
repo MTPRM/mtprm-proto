@@ -23,6 +23,8 @@ message GetResponse {
 }
 
 message SetRequest {
+  string org_id = 2;
+  mtprm.core.id.v1.PrefixedId inquiry_id = 3;
   Status status = 1;
 }
 
