@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [29.0.0](https://github.com/MTPRM/mtprm-proto/compare/28.8.0...29.0.0) (2024-12-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **api-admin:** rename to `InProgress`
+
+### Features
+
+* **api-admin:** rename to `InProgress` ([1be9d97](https://github.com/MTPRM/mtprm-proto/commit/1be9d9715adf59a93e7440cf304ce4e73b2b86cb))
+
 ## [28.8.0](https://github.com/MTPRM/mtprm-proto/compare/28.7.0...28.8.0) (2024-12-10)
 
 
