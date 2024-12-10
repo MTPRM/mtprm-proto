@@ -38,7 +38,7 @@ message Status {
     StatusMissingData missing_data = 4;
     StatusNonexistent nonexistent = 5;
     StatusOtherError other_error = 6;
-    StatusCompleteV2 complete_v2 = 7;
+    StatusInProgress in_progress = 7;
   }
 }
 
@@ -50,7 +50,7 @@ message StatusComplete {
   mtprm.core.id.v1.PrefixedId entity_id = 1;
 }
 
-message StatusCompleteV2 {
+message StatusInProgress {
   string rr_id = 1;
 }
 
