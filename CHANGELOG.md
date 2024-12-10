@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [28.7.0](https://github.com/MTPRM/mtprm-proto/compare/28.6.0...28.7.0) (2024-12-10)
+
+
+### Features
+
+* **proto:** add admin resource `organizations__0__entities__0__rr_id` ([f8d6d3f](https://github.com/MTPRM/mtprm-proto/commit/f8d6d3ff867689cbd4211006b4bc4e2d5b4a4d6f))
+
 ## [28.6.0](https://github.com/MTPRM/mtprm-proto/compare/28.5.0...28.6.0) (2024-12-05)
 
 ### Features
