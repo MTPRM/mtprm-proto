@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [28.8.0](https://github.com/MTPRM/mtprm-proto/compare/28.7.0...28.8.0) (2024-12-10)
+
+
+### Features
+
+* **api-admin:** add `StatusCompleteV2` ([36ee8fd](https://github.com/MTPRM/mtprm-proto/commit/36ee8fd01f35f8d5d6b0f5ced4d45f503f3f0c88))
+
 ## [28.7.0](https://github.com/MTPRM/mtprm-proto/compare/28.6.0...28.7.0) (2024-12-10)
 
 
