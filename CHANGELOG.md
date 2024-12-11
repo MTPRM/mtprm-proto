@@ -4,28 +4,25 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [29.0.0](https://github.com/MTPRM/mtprm-proto/compare/28.8.0...29.0.0) (2024-12-10)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **api-admin:** rename to `InProgress`
+- **api-admin:** rename to `InProgress`
 
 ### Features
 
-* **api-admin:** rename to `InProgress` ([1be9d97](https://github.com/MTPRM/mtprm-proto/commit/1be9d9715adf59a93e7440cf304ce4e73b2b86cb))
+- **api-admin:** rename to `InProgress` ([1be9d97](https://github.com/MTPRM/mtprm-proto/commit/1be9d9715adf59a93e7440cf304ce4e73b2b86cb))
 
 ## [28.8.0](https://github.com/MTPRM/mtprm-proto/compare/28.7.0...28.8.0) (2024-12-10)
 
-
 ### Features
 
-* **api-admin:** add `StatusCompleteV2` ([36ee8fd](https://github.com/MTPRM/mtprm-proto/commit/36ee8fd01f35f8d5d6b0f5ced4d45f503f3f0c88))
+- **api-admin:** add `StatusCompleteV2` ([36ee8fd](https://github.com/MTPRM/mtprm-proto/commit/36ee8fd01f35f8d5d6b0f5ced4d45f503f3f0c88))
 
 ## [28.7.0](https://github.com/MTPRM/mtprm-proto/compare/28.6.0...28.7.0) (2024-12-10)
 
-
 ### Features
 
-* **proto:** add admin resource `organizations__0__entities__0__rr_id` ([f8d6d3f](https://github.com/MTPRM/mtprm-proto/commit/f8d6d3ff867689cbd4211006b4bc4e2d5b4a4d6f))
+- **proto:** add admin resource `organizations__0__entities__0__rr_id` ([f8d6d3f](https://github.com/MTPRM/mtprm-proto/commit/f8d6d3ff867689cbd4211006b4bc4e2d5b4a4d6f))
 
 ## [28.6.0](https://github.com/MTPRM/mtprm-proto/compare/28.5.0...28.6.0) (2024-12-05)
 
