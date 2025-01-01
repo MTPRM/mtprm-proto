@@ -4,12 +4,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [29.1.0](https://github.com/MTPRM/mtprm-proto/compare/29.0.0...29.1.0) (2024-12-31)
 
-
 ### Features
 
-* **api-admin:** add service `log_groups__0__log_streams__0__events` ([c68970c](https://github.com/MTPRM/mtprm-proto/commit/c68970c82306af0f82330ed0de258311146498d0))
-* **api-admin:** add service `log_groups__0__log_streams` ([aa925fa](https://github.com/MTPRM/mtprm-proto/commit/aa925fad0a1fffd34587116f904f2019582dd33b))
-* **api-admin:** add service `log_groups` ([529f76f](https://github.com/MTPRM/mtprm-proto/commit/529f76f3a5515f7834627f18e5e784c9dbc1fcf8))
+- **api-admin:** add service `log_groups__0__log_streams__0__events` ([c68970c](https://github.com/MTPRM/mtprm-proto/commit/c68970c82306af0f82330ed0de258311146498d0))
+- **api-admin:** add service `log_groups__0__log_streams` ([aa925fa](https://github.com/MTPRM/mtprm-proto/commit/aa925fad0a1fffd34587116f904f2019582dd33b))
+- **api-admin:** add service `log_groups` ([529f76f](https://github.com/MTPRM/mtprm-proto/commit/529f76f3a5515f7834627f18e5e784c9dbc1fcf8))
 
 ## [29.0.0](https://github.com/MTPRM/mtprm-proto/compare/28.8.0...29.0.0) (2024-12-10)
 
