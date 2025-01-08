@@ -1,4 +1,4 @@
-edition = "2023";
+syntax = "proto3";
 
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.api.admin.resources.organizations__0__entities__0__rr_id.v1;
@@ -13,18 +13,18 @@ service Service {
 }
 
 message GetRequest {
-  string org_id = 1 [(google.api.field_behavior) = REQUIRED];
-  mtprm.core.id.v1.PrefixedId entity_id = 2 [(google.api.field_behavior) = REQUIRED];
+  optional string org_id = 1 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.id.v1.PrefixedId entity_id = 2 [(google.api.field_behavior) = REQUIRED];
 }
 
 message GetResponse {
-  mtprm.core.uuid.v1.Uuid rr_id = 1 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.uuid.v1.Uuid rr_id = 1 [(google.api.field_behavior) = REQUIRED];
 }
 
 message SetRequest {
-  string org_id = 1 [(google.api.field_behavior) = REQUIRED];
-  mtprm.core.id.v1.PrefixedId entity_id = 2 [(google.api.field_behavior) = REQUIRED];
-  mtprm.core.uuid.v1.Uuid rr_id = 3 [(google.api.field_behavior) = REQUIRED];
+  optional string org_id = 1 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.id.v1.PrefixedId entity_id = 2 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.uuid.v1.Uuid rr_id = 3 [(google.api.field_behavior) = REQUIRED];
 }
 
 message SetResponse {}
