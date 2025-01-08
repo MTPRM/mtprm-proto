@@ -1,4 +1,4 @@
-syntax = "proto3";
+edition = "2023";
 
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.api.admin.resources.organizations__0__entities__0__rr_id.v1;
