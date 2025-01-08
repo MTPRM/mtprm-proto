@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [29.3.0](https://github.com/MTPRM/mtprm-proto/compare/29.2.0...29.3.0) (2025-01-08)
+
+
+### Features
+
+* **proto:** switch back to `syntax = "proto3"` ([c54040b](https://github.com/MTPRM/mtprm-proto/commit/c54040b7b85671988119a5979817e6effbf6b163))
+
 ## [29.2.0](https://github.com/MTPRM/mtprm-proto/compare/29.1.0...29.2.0) (2025-01-08)
 
 
