@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [29.2.0](https://github.com/MTPRM/mtprm-proto/compare/29.1.0...29.2.0) (2025-01-08)
+
+
+### Features
+
+* **proto:** mark `field_behavior` ([abed386](https://github.com/MTPRM/mtprm-proto/commit/abed3863ccb74d60fa83edcf0cd66b3ebb6a6358))
+* **proto:** use edition 2023 ([46334a6](https://github.com/MTPRM/mtprm-proto/commit/46334a6230800c242a9ae5f7bf27c39ca578a009))
+
 ## [29.1.0](https://github.com/MTPRM/mtprm-proto/compare/29.0.0...29.1.0) (2024-12-31)
 
 ### Features
