@@ -1,4 +1,4 @@
-edition = "2023";
+syntax = "proto3";
 
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
 package mtprm.api.admin.resources.organizations__0__entity_inquiries.v4;
@@ -15,25 +15,25 @@ service Service {
 }
 
 message CreateRequest {
-  string org_id = 1 [(google.api.field_behavior) = REQUIRED];
-  mtprm.core.entity.v3.EntityData submitted = 2 [(google.api.field_behavior) = REQUIRED];
+  optional string org_id = 1 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.entity.v3.EntityData submitted = 2 [(google.api.field_behavior) = REQUIRED];
 }
 
 message CreateResponse {
-  mtprm.core.id.v1.PrefixedId inquiry_id = 1 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.id.v1.PrefixedId inquiry_id = 1 [(google.api.field_behavior) = REQUIRED];
 }
 
 message ReadRequest {
-  string org_id = 1 [(google.api.field_behavior) = REQUIRED];
-  mtprm.core.id.v1.PrefixedId inquiry_id = 2 [(google.api.field_behavior) = REQUIRED];
+  optional string org_id = 1 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.id.v1.PrefixedId inquiry_id = 2 [(google.api.field_behavior) = REQUIRED];
 }
 
 message ReadResponse {
-  Inquiry inquiry = 1 [(google.api.field_behavior) = REQUIRED];
+  optional Inquiry inquiry = 1 [(google.api.field_behavior) = REQUIRED];
 }
 
 message ListRequest {
-  string org_id = 1 [(google.api.field_behavior) = REQUIRED];
+  optional string org_id = 1 [(google.api.field_behavior) = REQUIRED];
 }
 
 message ListResponse {
@@ -41,6 +41,6 @@ message ListResponse {
 }
 
 message Inquiry {
-  mtprm.core.entity_inquiry.v5.InquiryData inquiry = 1 [(google.api.field_behavior) = REQUIRED];
-  mtprm.core.entity.v3.EntityData submitted = 2 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.entity_inquiry.v5.InquiryData inquiry = 1 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.entity.v3.EntityData submitted = 2 [(google.api.field_behavior) = REQUIRED];
 }
