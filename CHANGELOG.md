@@ -4,19 +4,17 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [29.5.0](https://github.com/MTPRM/mtprm-proto/compare/29.4.0...29.5.0) (2025-01-09)
 
-
 ### Features
 
-* **proto:** downgrade from edition syntax ([615b385](https://github.com/MTPRM/mtprm-proto/commit/615b385642e2a167e73c69076aac8c430bc3b8e7))
-* **proto:** downgrade from edition syntax ([fefcbce](https://github.com/MTPRM/mtprm-proto/commit/fefcbce8244b186a18bdcda50dcea7937f4be718))
+- **proto:** downgrade from edition syntax ([615b385](https://github.com/MTPRM/mtprm-proto/commit/615b385642e2a167e73c69076aac8c430bc3b8e7))
+- **proto:** downgrade from edition syntax ([fefcbce](https://github.com/MTPRM/mtprm-proto/commit/fefcbce8244b186a18bdcda50dcea7937f4be718))
 
 ## [29.4.0](https://github.com/MTPRM/mtprm-proto/compare/29.3.0...29.4.0) (2025-01-09)
 
-
 ### Features
 
-* **api-admin:** add service `organizations__0__entity_inquiries.v4` ([6d696b3](https://github.com/MTPRM/mtprm-proto/commit/6d696b3b9c1cc29351c4b59eb046fc55d47473d7))
-* **proto:** add messages for `mtprm.core.entity_inquiry.v5` ([14de1e9](https://github.com/MTPRM/mtprm-proto/commit/14de1e9807fb92a3a8c4b1298ab0bd0ee162cfb8))
+- **api-admin:** add service `organizations__0__entity_inquiries.v4` ([6d696b3](https://github.com/MTPRM/mtprm-proto/commit/6d696b3b9c1cc29351c4b59eb046fc55d47473d7))
+- **proto:** add messages for `mtprm.core.entity_inquiry.v5` ([14de1e9](https://github.com/MTPRM/mtprm-proto/commit/14de1e9807fb92a3a8c4b1298ab0bd0ee162cfb8))
 
 ## [29.3.0](https://github.com/MTPRM/mtprm-proto/compare/29.2.0...29.3.0) (2025-01-08)
 
