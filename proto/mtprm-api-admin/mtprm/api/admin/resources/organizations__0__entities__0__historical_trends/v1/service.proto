@@ -10,15 +10,15 @@ import "mtprm/core/summary_report/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
 
 service Service {
-  rpc List(ListRequest) returns (stream ListResponse) {}
+  rpc Get(GetRequest) returns (stream GetResponse) {}
 }
 
-message ListRequest {
+message GetRequest {
   string org_id = 1;
   mtprm.core.id.v1.PrefixedId entity_id = 2;
   mtprm.core.time.v1.IsoDateTime start_date = 3 [(google.api.field_behavior) = REQUIRED];
 }
 
-message ListResponse {
-  repeated mtprm.core.reports.v1.HistoricalTrendSummary historical_trend_summary = 1;
+message GetResponse {
+  repeated mtprm.core.reports.v1.HistoricalTrendDetails historical_trend_summary = 1;
 }
