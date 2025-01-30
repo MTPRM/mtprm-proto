@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.admin.resources.organizations__0__entities__0__historical_trends.v1;
+
+import "google/api/field_behavior.proto";
+import "mtprm/core/id/v1/message.proto";
+import "mtprm/core/reports/v1/message.proto";
+import "mtprm/core/summary_report/v1/message.proto";
+import "mtprm/core/time/v1/message.proto";
+
+service Service {
+  rpc Read(ReadRequest) returns (stream ReadResponse) {}
+  rpc List(ListRequest) returns (stream ListResponse) {}
+}
+
+message ReadRequest {
+  string org_id = 1;
+  mtprm.core.id.v1.PrefixedId entity_id = 2;
+  mtprm.core.time.v1.IsoDateTime start_date = 3 [(google.api.field_behavior) = REQUIRED];
+}
+
+message ReadResponse {
+  repeated mtprm.core.reports.v1.HistoricalTrendDetails historical_trend_summary = 1;
+}
+
+message ListRequest {
+  string org_id = 1;
+  mtprm.core.time.v1.IsoDateTime start_date = 2 [(google.api.field_behavior) = REQUIRED];
+  mtprm.core.summary_report.v1.GradeLetter risk_rating_grade = 3 [(google.api.field_behavior) = REQUIRED];
+}
+
+message ListResponse {
+  repeated mtprm.core.reports.v1.HistoricalTrendSummary historical_trend_summary = 1;
+}
+
