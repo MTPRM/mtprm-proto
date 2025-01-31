@@ -24,9 +24,9 @@ message RiskVectorSummary {
 message HistoricalPerformance {
   mtprm.core.time.v1.IsoDateTime date = 1;
   uint32 current_risk_rating_score = 2;
-  mtprm.core.summary_report.v1.GradeLetter  current_risk_rating_grade = 3;
+  mtprm.core.summary_report.v1.GradeLetter current_risk_rating_grade = 3;
   uint32 previous_risk_rating_score = 4;
-  mtprm.core.summary_report.v1.GradeLetter  previous_risk_rating_grade = 5;
+  mtprm.core.summary_report.v1.GradeLetter previous_risk_rating_grade = 5;
   RiskVectorSummary risk_vector_summary = 6;
   repeated mtprm.core.entity_performance.v1.RiskDomainPerformance risk_domain_performance = 7;
 }

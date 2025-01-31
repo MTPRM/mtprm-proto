@@ -33,4 +33,3 @@ message ListRequest {
 message ListResponse {
   repeated mtprm.core.reports.v1.HistoricalTrendSummary historical_trend_summary = 1;
 }
-
