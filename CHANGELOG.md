@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [29.6.0](https://github.com/MTPRM/mtprm-proto/compare/29.5.0...29.6.0) (2025-02-03)
+
+
+### Features
+
+* **api-admin:** report tracker method ([7f7ceaf](https://github.com/MTPRM/mtprm-proto/commit/7f7ceafecb35167952ca5651663a0462cc1c28d1))
+* **proto:** historical trends ([7bd9923](https://github.com/MTPRM/mtprm-proto/commit/7bd9923363436dfc8e3eef0d38a5fc469024658b))
+
+
+### Bug Fixes
+
+* **api-admin:** consolidate historical trends methods ([6dc7c90](https://github.com/MTPRM/mtprm-proto/commit/6dc7c905a9e677fb5d8efc235cb8de603bbc7c31))
+* **api-admin:** consolidate historical trends methods ([0081a71](https://github.com/MTPRM/mtprm-proto/commit/0081a7100e75820677b6db48111736ca03d60bb8))
+* **api-admin:** get instead of list, return correct response type ([19b5321](https://github.com/MTPRM/mtprm-proto/commit/19b53217a58ebf7b7d959dc398cf21d253a194ed))
+
 ## [29.1.0](https://github.com/MTPRM/mtprm-proto/compare/29.0.0...29.1.0) (2025-02-03)
 
 
