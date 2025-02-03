@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 // buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
-package mtprm.api.admin.resources.organizations__0__entities__reports__tracker__xlsx.v1;
+package mtprm.api.admin.resources.organizations__0__entities__0__reports__tracker__xlsx.v1;
 
 import "mtprm/core/id/v1/message.proto";
 
