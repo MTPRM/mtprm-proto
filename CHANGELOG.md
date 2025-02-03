@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [29.6.1](https://github.com/MTPRM/mtprm-proto/compare/29.6.0...29.6.1) (2025-02-03)
+
+
+### Bug Fixes
+
+* **api-admin:** package name ([959cef2](https://github.com/MTPRM/mtprm-proto/commit/959cef21f861e6f28dbacc1bfaa351effa10f86d))
+
 ## [29.6.0](https://github.com/MTPRM/mtprm-proto/compare/29.5.0...29.6.0) (2025-02-03)
 
 
