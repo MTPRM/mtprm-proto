@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [29.1.0](https://github.com/MTPRM/mtprm-proto/compare/29.0.0...29.1.0) (2025-02-03)
+
+
+### Features
+
+* **api-admin:** add service `log_groups__0__log_streams__0__events` ([c68970c](https://github.com/MTPRM/mtprm-proto/commit/c68970c82306af0f82330ed0de258311146498d0))
+* **api-admin:** add service `log_groups__0__log_streams` ([aa925fa](https://github.com/MTPRM/mtprm-proto/commit/aa925fad0a1fffd34587116f904f2019582dd33b))
+* **api-admin:** add service `log_groups` ([529f76f](https://github.com/MTPRM/mtprm-proto/commit/529f76f3a5515f7834627f18e5e784c9dbc1fcf8))
+* **api-admin:** add service `organizations__0__entity_inquiries.v4` ([6d696b3](https://github.com/MTPRM/mtprm-proto/commit/6d696b3b9c1cc29351c4b59eb046fc55d47473d7))
+* **api-admin:** report tracker method ([7f7ceaf](https://github.com/MTPRM/mtprm-proto/commit/7f7ceafecb35167952ca5651663a0462cc1c28d1))
+* **proto:** add messages for `mtprm.core.entity_inquiry.v5` ([14de1e9](https://github.com/MTPRM/mtprm-proto/commit/14de1e9807fb92a3a8c4b1298ab0bd0ee162cfb8))
+* **proto:** downgrade from edition syntax ([615b385](https://github.com/MTPRM/mtprm-proto/commit/615b385642e2a167e73c69076aac8c430bc3b8e7))
+* **proto:** downgrade from edition syntax ([fefcbce](https://github.com/MTPRM/mtprm-proto/commit/fefcbce8244b186a18bdcda50dcea7937f4be718))
+* **proto:** historical trends ([7bd9923](https://github.com/MTPRM/mtprm-proto/commit/7bd9923363436dfc8e3eef0d38a5fc469024658b))
+* **proto:** mark `field_behavior` ([abed386](https://github.com/MTPRM/mtprm-proto/commit/abed3863ccb74d60fa83edcf0cd66b3ebb6a6358))
+* **proto:** switch back to `syntax = "proto3"` ([c54040b](https://github.com/MTPRM/mtprm-proto/commit/c54040b7b85671988119a5979817e6effbf6b163))
+* **proto:** use edition 2023 ([46334a6](https://github.com/MTPRM/mtprm-proto/commit/46334a6230800c242a9ae5f7bf27c39ca578a009))
+
+
+### Bug Fixes
+
+* **api-admin:** consolidate historical trends methods ([6dc7c90](https://github.com/MTPRM/mtprm-proto/commit/6dc7c905a9e677fb5d8efc235cb8de603bbc7c31))
+* **api-admin:** consolidate historical trends methods ([0081a71](https://github.com/MTPRM/mtprm-proto/commit/0081a7100e75820677b6db48111736ca03d60bb8))
+* **api-admin:** get instead of list, return correct response type ([19b5321](https://github.com/MTPRM/mtprm-proto/commit/19b53217a58ebf7b7d959dc398cf21d253a194ed))
+
 ## [29.5.0](https://github.com/MTPRM/mtprm-proto/compare/29.4.0...29.5.0) (2025-01-09)
 
 ### Features
