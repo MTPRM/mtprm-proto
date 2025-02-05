@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [29.6.2](https://github.com/MTPRM/mtprm-proto/compare/29.6.1...29.6.2) (2025-02-04)
 
-
 ### Bug Fixes
 
-* **core:** double instead of int ([907b009](https://github.com/MTPRM/mtprm-proto/commit/907b0094e9593eac266c17519a87a5ef9f00ba9d))
+- **core:** double instead of int ([907b009](https://github.com/MTPRM/mtprm-proto/commit/907b0094e9593eac266c17519a87a5ef9f00ba9d))
 
 ### [29.6.1](https://github.com/MTPRM/mtprm-proto/compare/29.6.0...29.6.1) (2025-02-03)
 
