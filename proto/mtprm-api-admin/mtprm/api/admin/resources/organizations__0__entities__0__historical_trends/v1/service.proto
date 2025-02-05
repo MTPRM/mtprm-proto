@@ -21,7 +21,7 @@ message ReadRequest {
 }
 
 message ReadResponse {
-  repeated mtprm.core.reports.v1.HistoricalTrendDetails historical_trend_summary = 1;
+  repeated mtprm.core.reports.v1.HistoricalTrendDetails historical_trend_details = 1;
 }
 
 message ListRequest {
