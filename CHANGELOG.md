@@ -4,17 +4,15 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [29.6.4](https://github.com/MTPRM/mtprm-proto/compare/29.6.3...29.6.4) (2025-02-05)
 
-
 ### Bug Fixes
 
-* **api-admin:** response is not repeated ([485bc2a](https://github.com/MTPRM/mtprm-proto/commit/485bc2af2c667b1e650a12ee8bba7044f26101c9))
+- **api-admin:** response is not repeated ([485bc2a](https://github.com/MTPRM/mtprm-proto/commit/485bc2af2c667b1e650a12ee8bba7044f26101c9))
 
 ### [29.6.3](https://github.com/MTPRM/mtprm-proto/compare/29.6.2...29.6.3) (2025-02-05)
 
-
 ### Bug Fixes
 
-* **api-admin:** field name to match field type ([e9a7c21](https://github.com/MTPRM/mtprm-proto/commit/e9a7c212a88ef931b6e49cfa661771d51b893a7c))
+- **api-admin:** field name to match field type ([e9a7c21](https://github.com/MTPRM/mtprm-proto/commit/e9a7c212a88ef931b6e49cfa661771d51b893a7c))
 
 ### [29.6.2](https://github.com/MTPRM/mtprm-proto/compare/29.6.1...29.6.2) (2025-02-04)
 
