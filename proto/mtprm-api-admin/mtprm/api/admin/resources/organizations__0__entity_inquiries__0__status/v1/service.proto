@@ -52,6 +52,7 @@ message StatusComplete {
 
 message StatusInProgress {
   string rr_id = 1;
+  string explanation = 2;
 }
 
 message StatusDuplicate {
