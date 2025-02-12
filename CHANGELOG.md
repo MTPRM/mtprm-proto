@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [29.7.0](https://github.com/MTPRM/mtprm-proto/compare/29.6.4...29.7.0) (2025-02-11)
 
-
 ### Features
 
-* add `explanation` field to `StatusInProgress` ([0d2d494](https://github.com/MTPRM/mtprm-proto/commit/0d2d4946d74c96f4056bcf21023028af53d70a15))
+- add `explanation` field to `StatusInProgress` ([0d2d494](https://github.com/MTPRM/mtprm-proto/commit/0d2d4946d74c96f4056bcf21023028af53d70a15))
 
 ### [29.6.4](https://github.com/MTPRM/mtprm-proto/compare/29.6.3...29.6.4) (2025-02-05)
 
