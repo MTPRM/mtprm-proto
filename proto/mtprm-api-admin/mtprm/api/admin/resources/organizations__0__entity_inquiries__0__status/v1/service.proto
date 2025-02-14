@@ -39,6 +39,7 @@ message Status {
     StatusNonexistent nonexistent = 5;
     StatusOtherError other_error = 6;
     StatusInProgress in_progress = 7;
+    StatusRequested requested = 8;
   }
 }
 
@@ -53,6 +54,10 @@ message StatusComplete {
 message StatusInProgress {
   string rr_id = 1;
   string explanation = 2;
+}
+
+message StatusRequested {
+  string explanation = 1;
 }
 
 message StatusDuplicate {
