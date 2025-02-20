@@ -25,7 +25,7 @@ message GetResponse {
     optional MetricsSummary metrics_summary = 3 [(google.api.field_behavior) = REQUIRED];
   }
 
-  optional Entry entries = 1 [(google.api.field_behavior) = REQUIRED];
+  repeated Entry entries = 1;
 }
 
 message Metrics {
