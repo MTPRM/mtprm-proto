@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [30.0.0](https://github.com/MTPRM/mtprm-proto/compare/29.9.0...30.0.0) (2025-02-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* **proto:** use repeated for field that was intended to be an array
+
+### Bug Fixes
+
+* **proto:** use repeated for field that was intended to be an array ([c40ff17](https://github.com/MTPRM/mtprm-proto/commit/c40ff175a6766db03e73a96363b0b184044ed6e2))
+
 ## [29.9.0](https://github.com/MTPRM/mtprm-proto/compare/29.8.0...29.9.0) (2025-02-20)
 
 
