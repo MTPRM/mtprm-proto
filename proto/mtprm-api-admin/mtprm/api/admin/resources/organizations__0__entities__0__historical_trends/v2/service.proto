@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.admin.resources.organizations__0__entities__0__historical_trends.v2;
+
+import "google/api/field_behavior.proto";
+import "mtprm/core/id/v1/message.proto";
+import "mtprm/core/time/v1/message.proto";
+import "mtprm/core/entity_performance/v1/message.proto";
+
+service Service {
+  rpc Get(GetRequest) returns (stream GetResponse) {}
+}
+
+message GetRequest {
+  optional string org_id = 1 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.id.v1.PrefixedId entity_id = 2 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.time.v1.IsoDateTime start_date = 3 [(google.api.field_behavior) = REQUIRED];
+}
+
+message GetResponse {
+  message Entry {
+    optional Metrics metrics_current = 1 [(google.api.field_behavior) = REQUIRED];
+    optional Metrics metrics_previous = 2 [(google.api.field_behavior) = REQUIRED];
+    optional MetricsSummary metrics_summary = 3 [(google.api.field_behavior) = REQUIRED];
+  }
+
+  optional Entry entries = 1 [(google.api.field_behavior) = REQUIRED];
+}
+
+message Metrics {
+  optional mtprm.core.time.v1.IsoDateTime observed_at = 1 [(google.api.field_behavior) = REQUIRED];
+  optional Rating rating = 2 [(google.api.field_behavior) = REQUIRED];
+  optional string industry = 3 [(google.api.field_behavior) = REQUIRED];
+  repeated mtprm.core.entity_performance.v1.RiskDomainPerformance risk_domain_performance = 4;
+  optional uint32 num_critical_observations = 5 [(google.api.field_behavior) = REQUIRED];
+}
+
+message MetricsSummary {
+  optional uint32 num_consecutive_occurrences_of_current_rating_grade = 1 [(google.api.field_behavior) = REQUIRED];
+  optional int32 diff_in_num_critical_observations = 2 [(google.api.field_behavior) = REQUIRED];
+}
+
+message Rating {
+  optional mtprm.core.entity_performance.v1.GradeLetter grade = 1 [(google.api.field_behavior) = REQUIRED];
+  optional double numeric = 2 [(google.api.field_behavior) = REQUIRED];
+}
