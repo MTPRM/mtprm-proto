@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+// buf:lint:ignore PACKAGE_LOWER_SNAKE_CASE
+package mtprm.api.admin.resources.organizations__0__entity_historical_grade_summary.v1;
+
+import "google/api/field_behavior.proto";
+import "mtprm/core/entity_performance/v1/message.proto";
+import "mtprm/core/time/v1/message.proto";
+
+service Service {
+  rpc Get(GetRequest) returns (stream GetResponse) {}
+}
+
+message GetRequest {
+  optional string org_id = 1 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.entity_performance.v1.GradeLetter grade = 2 [(google.api.field_behavior) = REQUIRED];
+  optional mtprm.core.time.v1.IsoDateTime start_date = 3 [(google.api.field_behavior) = REQUIRED];
+}
+
+message GetResponse {
+  message Entry {
+    optional mtprm.core.time.v1.IsoDateTime date = 1 [(google.api.field_behavior) = REQUIRED];
+    optional uint32 total_new = 2 [(google.api.field_behavior) = REQUIRED];
+    optional uint32 total = 3 [(google.api.field_behavior) = REQUIRED];
+  }
+
+  repeated Entry entries = 1 [(google.api.field_behavior) = REQUIRED];
+}
