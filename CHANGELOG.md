@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [29.9.0](https://github.com/MTPRM/mtprm-proto/compare/29.8.0...29.9.0) (2025-02-20)
+
+
+### Features
+
+* **proto:** add service `organizations__0__entities__0__historical_trends.v2` ([6f834e7](https://github.com/MTPRM/mtprm-proto/commit/6f834e75ebabafe043e0b2267c7a1d324986b241))
+* **proto:** add service `organizations__0__entity_historical_grade_summary.v1` ([abde044](https://github.com/MTPRM/mtprm-proto/commit/abde04453a8d501bfb959cd833f2e2939bde404d))
+* **proto:** remove unnecessary `REQUIRED` on `repeated` field ([649694b](https://github.com/MTPRM/mtprm-proto/commit/649694bc135acc6bee102cbaef41b420af75dc1f))
+
 ## [29.8.0](https://github.com/MTPRM/mtprm-proto/compare/29.7.0...29.8.0) (2025-02-19)
 
 ### Features
