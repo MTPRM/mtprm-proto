@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [29.8.0](https://github.com/MTPRM/mtprm-proto/compare/29.7.0...29.8.0) (2025-02-19)
 
-
 ### Features
 
-* **admin:** add `StatusRequested` ([41eae5d](https://github.com/MTPRM/mtprm-proto/commit/41eae5dc03f84582a4c0f1e432df12060cd0a75a))
+- **admin:** add `StatusRequested` ([41eae5d](https://github.com/MTPRM/mtprm-proto/commit/41eae5dc03f84582a4c0f1e432df12060cd0a75a))
 
 ## [29.7.0](https://github.com/MTPRM/mtprm-proto/compare/29.6.4...29.7.0) (2025-02-11)
 
