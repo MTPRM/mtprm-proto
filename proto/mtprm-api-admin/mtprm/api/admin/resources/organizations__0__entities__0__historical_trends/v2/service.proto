@@ -4,9 +4,9 @@ syntax = "proto3";
 package mtprm.api.admin.resources.organizations__0__entities__0__historical_trends.v2;
 
 import "google/api/field_behavior.proto";
+import "mtprm/core/entity_performance/v1/message.proto";
 import "mtprm/core/id/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
-import "mtprm/core/entity_performance/v1/message.proto";
 
 service Service {
   rpc Get(GetRequest) returns (stream GetResponse) {}
