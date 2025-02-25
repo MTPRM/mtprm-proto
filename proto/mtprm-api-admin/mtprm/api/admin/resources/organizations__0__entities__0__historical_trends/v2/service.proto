@@ -21,7 +21,7 @@ message GetRequest {
 message GetResponse {
   message Entry {
     optional Metrics metrics_current = 1 [(google.api.field_behavior) = REQUIRED];
-    optional Metrics metrics_previous = 2 [(google.api.field_behavior) = REQUIRED];
+    optional Metrics metrics_previous = 2 [deprecated = true, (google.api.field_behavior) = OPTIONAL];
     optional MetricsSummary metrics_summary = 3 [(google.api.field_behavior) = REQUIRED];
   }
 
