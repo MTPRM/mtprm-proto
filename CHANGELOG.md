@@ -4,15 +4,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [31.0.0](https://github.com/MTPRM/mtprm-proto/compare/30.0.0...31.0.0) (2025-02-26)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **proto:** stop sending `metrics_previous`
+- **proto:** stop sending `metrics_previous`
 
 ### Features
 
-* **api-admin:** add `organizations__0__reports__tracker__xlsx` resource ([1a58d8e](https://github.com/MTPRM/mtprm-proto/commit/1a58d8ef1928579b6599667c2ed76d6386df3858))
-* **proto:** stop sending `metrics_previous` ([08dad8a](https://github.com/MTPRM/mtprm-proto/commit/08dad8a06f5fb7ffbb4d7836a2e6785be582b125))
+- **api-admin:** add `organizations__0__reports__tracker__xlsx` resource ([1a58d8e](https://github.com/MTPRM/mtprm-proto/commit/1a58d8ef1928579b6599667c2ed76d6386df3858))
+- **proto:** stop sending `metrics_previous` ([08dad8a](https://github.com/MTPRM/mtprm-proto/commit/08dad8a06f5fb7ffbb4d7836a2e6785be582b125))
 
 ## [30.0.0](https://github.com/MTPRM/mtprm-proto/compare/29.9.0...30.0.0) (2025-02-20)
 
