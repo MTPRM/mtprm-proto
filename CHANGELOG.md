@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [31.1.0](https://github.com/MTPRM/mtprm-proto/compare/31.0.0...31.1.0) (2025-03-04)
 
-
 ### Features
 
-* **proto:** add `INQUIRY_STATE_REQUESTED` to v5 message ([ab801f1](https://github.com/MTPRM/mtprm-proto/commit/ab801f15eb1aa3a8ae6fe116a3b9c2dcc62f05db))
+- **proto:** add `INQUIRY_STATE_REQUESTED` to v5 message ([ab801f1](https://github.com/MTPRM/mtprm-proto/commit/ab801f15eb1aa3a8ae6fe116a3b9c2dcc62f05db))
 
 ## [31.0.0](https://github.com/MTPRM/mtprm-proto/compare/30.0.0...31.0.0) (2025-02-26)
 
