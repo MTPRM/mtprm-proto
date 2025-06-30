@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [32.0.0](https://github.com/MTPRM/mtprm-proto/compare/31.2.0...32.0.0) (2025-06-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* **proto:** use correct type for inherent risk rating
+
+### Bug Fixes
+
+* **proto:** use correct type for inherent risk rating ([8cf01a4](https://github.com/MTPRM/mtprm-proto/commit/8cf01a4ade21480caeb5b90c2cbb3c8bfd251bf5))
+
 ## [31.2.0](https://github.com/MTPRM/mtprm-proto/compare/31.1.0...31.2.0) (2025-06-30)
 
 
