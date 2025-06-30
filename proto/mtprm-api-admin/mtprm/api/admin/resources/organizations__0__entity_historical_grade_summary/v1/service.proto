@@ -5,7 +5,6 @@ package mtprm.api.admin.resources.organizations__0__entity_historical_grade_summ
 
 import "google/api/field_behavior.proto";
 import "mtprm/core/entity_performance/v1/message.proto";
-import "mtprm/core/inherent_risk_rating/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
 
 service Service {
