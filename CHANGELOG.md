@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [31.2.0](https://github.com/MTPRM/mtprm-proto/compare/31.1.0...31.2.0) (2025-06-30)
+
+
+### Features
+
+* **proto:** add extra inputs to `resources.organizations__0__entity_historical_grade_summary.v1` `GetRequest` ([5d6e114](https://github.com/MTPRM/mtprm-proto/commit/5d6e1144503259d78743535eb503d9792a36edbe))
+
 ## [31.1.0](https://github.com/MTPRM/mtprm-proto/compare/31.0.0...31.1.0) (2025-03-04)
 
 ### Features
