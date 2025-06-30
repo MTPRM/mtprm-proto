@@ -5,6 +5,7 @@ package mtprm.api.admin.resources.organizations__0__entity_historical_grade_summ
 
 import "google/api/field_behavior.proto";
 import "mtprm/core/entity_performance/v1/message.proto";
+import "mtprm/core/inherent_risk_rating/v1/message.proto";
 import "mtprm/core/time/v1/message.proto";
 
 service Service {
@@ -15,6 +16,8 @@ message GetRequest {
   optional string org_id = 1 [(google.api.field_behavior) = REQUIRED];
   optional mtprm.core.entity_performance.v1.GradeLetter grade = 2 [(google.api.field_behavior) = REQUIRED];
   optional mtprm.core.time.v1.IsoDateTime start_date = 3 [(google.api.field_behavior) = REQUIRED];
+  optional string portfolio_name = 4 [(google.api.field_behavior) = OPTIONAL];
+  optional mtprm.core.inherent_risk_rating.v1.InherentRiskRating inherent_risk_rating = 5 [(google.api.field_behavior) = OPTIONAL];
 }
 
 message GetResponse {
