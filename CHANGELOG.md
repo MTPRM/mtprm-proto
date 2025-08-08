@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [32.1.1](https://github.com/MTPRM/mtprm-proto/compare/32.1.0...32.1.1) (2025-08-08)
+
+
+### Bug Fixes
+
+* **api-admin:** remove unused import ([a7e8f75](https://github.com/MTPRM/mtprm-proto/commit/a7e8f752affb5768d7811067d334d380c27d2a73))
+
 ## [32.1.0](https://github.com/MTPRM/mtprm-proto/compare/32.0.1...32.1.0) (2025-08-08)
 
 
