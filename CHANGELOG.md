@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [32.1.0](https://github.com/MTPRM/mtprm-proto/compare/32.0.1...32.1.0) (2025-08-08)
+
+
+### Features
+
+* **api-admin:** add `organizations__0__entity_inquiries__status` for bulk status update ([4e988a1](https://github.com/MTPRM/mtprm-proto/commit/4e988a11e0eeccbafe311a2d60f7d43ab834b8eb))
+
 ### [32.0.1](https://github.com/MTPRM/mtprm-proto/compare/32.0.0...32.0.1) (2025-06-30)
 
 ## [32.0.0](https://github.com/MTPRM/mtprm-proto/compare/31.2.0...32.0.0) (2025-06-30)
